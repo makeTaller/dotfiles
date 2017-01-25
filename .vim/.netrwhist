@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/var/spool/mail/kbriki'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/spook/Downloads'
+let g:netrw_dirhist_2='/home/spook'
+let g:netrw_dirhist_3='/home/spook/.kodi'
+let g:netrw_dirhist_4='/home/spook/.kodi/addons'
+let g:netrw_dirhist_5='/home/spook/.kodi/addons/metadata.album.universal'
+let g:netrw_dirhist_6='/home/spook'
+let g:netrw_dirhist_7='/home/spook/Projects'
+let g:netrw_dirhist_8='/home/spook/Projects/Python'
