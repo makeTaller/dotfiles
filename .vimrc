@@ -1,37 +1,10 @@
-
-if 0 | endif
-
- if &compatible
-	    set nocompatible               " Be iMproved
-	     endif
-
-	      " Required:
-	        set runtimepath+=~/.vim/bundle/neobundle.vim/
-	      
-	         " Required:
-                call neobundle#begin(expand('~/.vim/bundle/'))
-	     
-	      "     " Let NeoBundle manage NeoBundle
-	      "      " Required:
-	              NeoBundleFetch 'Shougo/neobundle.vim'
-	      "
-	      "        " My Bundles here:
-	      "         " Refer to |:NeoBundle-examples|.
-	             " Note: You don't set neobundle setting in .gvimrc!
-                 call neobundle#end()
-
-" Required:
-NeoBundleCheck
-
+set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -39,7 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 " All of your Plugins must be added before the following line
 
-call vundle#end()            " required
 
 filetype plugin indent on    " required
 
@@ -65,18 +37,25 @@ nnoremap <space> za
 Plugin 'tmhedberg/SimpylFold'
 
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+      set tabstop=4 
+      set softtabstop=4
+      set shiftwidth=4
+      set textwidth=79 
+      set expandtab 
+      set autoindent 
+      set fileformat=unix 
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+ au BufNewFile,BufRead *.js, *.html, *.css
+      set tabstop=2 
+      set softtabstop=2 
+      set shiftwidth=2 
+
+ au BufNewFile,BufRead *.go
+      set tabstop=4 
+      set softtabstop=4 
+      set shiftwidth=4 
+      set noexpandtab 
+      set smarttab
 
 Plugin 'vim-scripts/indentpython.vim'
 
@@ -99,14 +78,8 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
 
-if has('gui_running')
-	set background=dark
-	colorscheme solarized
-else
-	colorscheme zenburn
-endif
+colorscheme peachpuff
 
-call togglebg#map("<F5>")
 
 Plugin 'scrooloose/nerdtree'
 
@@ -130,3 +103,5 @@ Bundle 'christoomey/vim-tmux-navigator'
 " make sure that it is loaded after jedi-vim is loaded.
 Plugin 'jmcantrell/vim-virtualenv'
 
+call vundle#end()            " required
+filetype plugin indent on    " required
