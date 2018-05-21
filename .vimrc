@@ -26,6 +26,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Buffer Operations
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
 " Enable Folding
 set foldmethod=indent
 set foldlevel=99
@@ -36,26 +41,26 @@ nnoremap <space> za
 
 Plugin 'tmhedberg/SimpylFold'
 
-au BufNewFile,BufRead *.py
-      set tabstop=4 
-      set softtabstop=4
-      set shiftwidth=4
-      set textwidth=79 
-      set expandtab 
-      set autoindent 
-      set fileformat=unix 
+au BufNewFile,BufRead, *.py
+		\set tabstop=4 
+		\set softtabstop=4
+		\set shiftwidth=4
+		\set textwidth=79 
+		\set expandtab 
+		\set autoindent 
+		\set fileformat=unix 
 
- au BufNewFile,BufRead *.js, *.html, *.css
-      set tabstop=2 
-      set softtabstop=2 
-      set shiftwidth=2 
+ au BufNewFile,BufRead,  *.html, *.js, *.css
+			 \set tabstop=2 
+			 \set softtabstop=2 
+			 \set shiftwidth=2 
 
- au BufNewFile,BufRead *.go
-      set tabstop=4 
-      set softtabstop=4 
-      set shiftwidth=4 
-      set noexpandtab 
-      set smarttab
+ au BufNewFile,BufRead, *.go
+			 \set tabstop=4 
+			 \set softtabstop=4 
+			 \set shiftwidth=4 
+			 \set noexpandtab 
+			 \set smarttab
 
 Plugin 'vim-scripts/indentpython.vim'
 

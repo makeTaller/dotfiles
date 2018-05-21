@@ -94,4 +94,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 set -o vi 
 screenfetch
+alias w3m='w3m duckduckgo.com'
 #[ -z "$TMUX" ] && command -v tmux > /dev/null && TERM=xterm-256color && exec tmux
