@@ -1,5 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+execute pathogen#infect()
+
+let g:javascript_plugin_flow = 1
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,7 +15,16 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 " All of your Plugins must be added before the following line
+"
+"
+"Javascript santax 
+Plugin 'pangloss/vim-javascript'
 
+Plugin 'mxw/vim-jsx'
+
+Plugin 'editorconfig/editorconfig-vim'
+
+Plugin 'w0rp/ale'
 
 filetype plugin indent on    " required
 
@@ -88,11 +101,11 @@ colorscheme peachpuff
 
 Plugin 'scrooloose/nerdtree'
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 "Plugin 'jistr/vim-nerdtree-tabs'
 
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+"let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 Plugin 'kien/ctrlp.vim'
 
