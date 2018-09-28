@@ -1,0 +1,1098 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 2002:a17:90a:3450:0:0:0:0 with SMTP id o74-v6csp1188951pjb;
+        Tue, 5 Jun 2018 10:05:34 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKIEnaC/Ni2ne/uuArrMJp7KwIVQ2+RlXM1Rofbz3Q6TTbqBLLI38Q/XJMvazK0AobZ5cFvq
+X-Received: by 2002:a0d:de85:: with SMTP id h127-v6mr7620725ywe.75.1528218334060;
+        Tue, 05 Jun 2018 10:05:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528218334; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AuqFLlbQK1KFQr0FRnH3Y4jWjyhenMILricq0D1BkJ6csQxy/qf3UmgVIE+g9WxYmD
+         jZ3LVyUY4SrCLjnl4Jg1zr8oyMiONg9xTJQR3WP2Hz6OnRGP0qaYh4QaaHztp4W00cgc
+         QH8ZIfhZKSCC2KMMLM+XYwZBwY5uw1bFtayQbMroyeBJFdxzgV42GuU39PQ57OQJ5ygL
+         Zymz9UeX+DhAUKpLCWR2Ed4rePpth9qy5hn5L0a7LdYJg5jBe0oDuuqTOsgsu99A95z5
+         Vo74BHGe/wq9VF5y0nV39aLF1q/3Jz9Os/zXkxcSaenwJZ8WcHBEdXAU7S2xRCz5L6nw
+         sc4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:sender:list-unsubscribe-post:list-unsubscribe:list-id
+         :feedback-id:message-id:date:to:reply-to:from:subject:dkim-signature
+         :dkim-signature:arc-authentication-results;
+        bh=6nJdqSQpv5EcVYzlrbH/86G9hfvBydFxuHk9ZufltIc=;
+        b=f64z2NAgrRMEmZC9xkUgT88RZ8FbRF3Hr8ZadCsZhGw/ZctzycgdXk2kP62kjXOW56
+         E93aDYu6vDSigQHEZ0f3aiLgxkrYXoXrBqNC9/KzW/7SDITByoV5lyJSYaVLQeLIKY7w
+         KiNqEBxeiqLDCyNhwYTm7mTn/NVuC6QNeAEOuxsdQJV24Taxg46tMuxfroSBAjAIQlXH
+         iUmUHR7ZcSwgqcu02m1ecHQPSgv/Jhb+5d4vJ380Zy7q8jiQFM8GarAt6MRkGI10TU4f
+         GCPd76EnD0uYpNKbE1uoyaCFoCr6tm9p4aq5++RY7dycnraIbHzvDAabHJm7/m7hg6J2
+         vR/Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail94.wdc01.mcdlv.net header.s=k1 header.b=FGxhZ4sB;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=V9Mdg80r;
+       spf=pass (google.com: domain of bounce-mc.us9_33225261.1829045-kirktolliver28=gmail.com@mail94.wdc01.mcdlv.net designates 205.201.129.94 as permitted sender) smtp.mailfrom=bounce-mc.us9_33225261.1829045-kirktolliver28=gmail.com@mail94.wdc01.mcdlv.net
+Return-Path: <bounce-mc.us9_33225261.1829045-kirktolliver28=gmail.com@mail94.wdc01.mcdlv.net>
+Received: from mail94.wdc01.mcdlv.net (mail94.wdc01.mcdlv.net. [205.201.129.94])
+        by mx.google.com with ESMTPS id e192-v6si6486545ywa.383.2018.06.05.10.05.33
+        for <kirktolliver28@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 05 Jun 2018 10:05:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mc.us9_33225261.1829045-kirktolliver28=gmail.com@mail94.wdc01.mcdlv.net designates 205.201.129.94 as permitted sender) client-ip=205.201.129.94;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail94.wdc01.mcdlv.net header.s=k1 header.b=FGxhZ4sB;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=V9Mdg80r;
+       spf=pass (google.com: domain of bounce-mc.us9_33225261.1829045-kirktolliver28=gmail.com@mail94.wdc01.mcdlv.net designates 205.201.129.94 as permitted sender) smtp.mailfrom=bounce-mc.us9_33225261.1829045-kirktolliver28=gmail.com@mail94.wdc01.mcdlv.net
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mail94.wdc01.mcdlv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:Sender:
+ Content-Type:MIME-Version; i=hello=3Dcolony.io@mail94.wdc01.mcdlv.net;
+ bh=6nJdqSQpv5EcVYzlrbH/86G9hfvBydFxuHk9ZufltIc=;
+ b=FGxhZ4sBRpkvxx30/Tn+5sZg35ReEog9cwqN1IjPdafvsi6ievii1bz1gwW62tuX7PUSbiTsptGK
+   iXT8+0cSMxLD41SOE8EhRUek4/jCtSRA7VYnWbLgr+gvd585Fv+18wr4geZC21wV3soH2Pdb5jGh
+   D7sE3ynd82KbYKBxFkA=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=gmail.mcsv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:Feedback-ID:List-ID:
+ List-Unsubscribe:Sender:Content-Type:MIME-Version;
+ bh=6nJdqSQpv5EcVYzlrbH/86G9hfvBydFxuHk9ZufltIc=;
+ b=V9Mdg80rDkPPeoYbluVnafnMINVJr0WKuTvO0eEB85fJhZeaZITxgWCGMdkxp7P6vencUL2Wxkwf
+   YwDXq2JledPvs5x+H2NDlJwiZb1cfotCicz9fxofI9JsupvsFrYU5x/8nzN46N+oqL04rf8BRDji
+   MrgAbbyEX3cpcqdyYYE=
+Received: from (127.0.0.1) by mail94.wdc01.mcdlv.net id h2r1dq2ddl4d for <kirktolliver28@gmail.com>; Tue, 5 Jun 2018 17:03:56 +0000 (envelope-from <bounce-mc.us9_33225261.1829045-kirktolliver28=gmail.com@mail94.wdc01.mcdlv.net>)
+Subject: =?utf-8?Q?Ready.=20Set.=20BUIDL=21?=
+From: =?utf-8?Q?Colony?= <hello@colony.io>
+Reply-To: =?utf-8?Q?Colony?= <hello@colony.io>
+To: <kirktolliver28@gmail.com>
+Date: Tue, 5 Jun 2018 17:03:56 +0000
+Message-ID: <f4d1f0850fe4aaa32124d89ca.3be10903c0.20180605170215.3508b7aa56.3079cc80@mail94.wdc01.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CID3508b7aa563be10903c0**
+X-Campaign: mailchimpf4d1f0850fe4aaa32124d89ca.3508b7aa56
+X-campaignid: mailchimpf4d1f0850fe4aaa32124d89ca.3508b7aa56
+X-Report-Abuse: Please report abuse for this campaign here: http://www.mailchimp.com/abuse/abuse.phtml?u=f4d1f0850fe4aaa32124d89ca&id=3508b7aa56&e=3be10903c0
+X-MC-User: f4d1f0850fe4aaa32124d89ca
+Feedback-ID: 33225261:33225261.1829045:us9:mc
+List-ID: f4d1f0850fe4aaa32124d89camc list <f4d1f0850fe4aaa32124d89ca.592029.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://colony.us9.list-manage.com/unsubscribe?u=f4d1f0850fe4aaa32124d89ca&id=fef68720b5&e=3be10903c0&c=3508b7aa56>, <mailto:unsubscribe-mc.us9_f4d1f0850fe4aaa32124d89ca.3508b7aa56-3be10903c0@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Sender: "Colony" <hello=colony.io@mail94.wdc01.mcdlv.net>
+x-mcda: FALSE
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1400232892"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1400232892
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+The $25k Colony Global Hackathon starts now
+
+View this email in your browser (https://mailchi.mp/colony/announcing-the-=
+colony-global-hackathon-1829045?e=3D3be10903c0)
+
+The Colony Global Hackathon starts...NOW! (http://bit.ly/CLNYHK4?utm_sourc=
+e=3DColony+Beta&utm_campaign=3D3508b7aa56-EMAIL_CAMPAIGN_2018_05_29_05_15_=
+COPY_01&utm_medium=3Demail&utm_term=3D0_fef68720b5-3508b7aa56-=
+322972677&mc_cid=3D3508b7aa56&mc_eid=3D[UNIQID])
+
+Over the next 20 days=2C we=E2=80=99re looking for creative=2C brilliant m=
+inds (hey=2C that=E2=80=99s you!) to build on=2C integrate=2C and extend C=
+olony using the colonyJS library. We can=E2=80=99t wait to see what you co=
+me up with.
+
+Submit your project by 11:59 pm GMT on Sunday=2C June 24th for a chance to=
+ win prizes totalling $25=2C000 paid in DAI (https://makerdao.com?utm_sour=
+ce=3DColony+Beta&utm_campaign=3D3508b7aa56-EMAIL_CAMPAIGN_2018_05_29_05_15=
+_COPY_01&utm_medium=3Demail&utm_term=3D0_fef68720b5-3508b7aa56-=
+322972677&mc_cid=3D3508b7aa56&mc_eid=3D[UNIQID]) via Gitcoin (https://gitcoin.=
+co/issue/JoinColony/colonyHackathon/4?utm_source=3DColony+Beta&utm_campaig=
+n=3D3508b7aa56-EMAIL_CAMPAIGN_2018_05_29_05_15_COPY_01&utm_medium=3Demail&=
+utm_term=3D0_fef68720b5-3508b7aa56-322972677&mc_cid=3D3508b7aa56&mc_=
+eid=3D[UNIQID]) . We=E2=80=99ve got 16 awesome judges looking to award 16=
+ prizes!
+
+Join the Hackathon (Go=2C do it now (http://bit.ly/CLNYHK4?utm_source=3DCo=
+lony+Beta&utm_campaign=3D3508b7aa56-EMAIL_CAMPAIGN_2018_05_29_05_15_COPY_0=
+1&utm_medium=3Demail&utm_term=3D0_fef68720b5-3508b7aa56-322972677&mc=
+_cid=3D3508b7aa56&mc_eid=3D[UNIQID]) !)
+
+Make sure you sign up (http://bit.ly/CLNYHK4?utm_source=3DColony+Beta&utm_=
+campaign=3D3508b7aa56-EMAIL_CAMPAIGN_2018_05_29_05_15_COPY_01&utm_medium=
+=3Demail&utm_term=3D0_fef68720b5-3508b7aa56-322972677&mc_cid=3D3508b=
+7aa56&mc_eid=3D[UNIQID]) so we can communicate updates=2C rules=2C and he=
+lpful tips during the hackathon. Part of your registration includes creati=
+ng a Github issue with your project idea=E2=80=94don=E2=80=99t worry=2C we=
+ can also help you find teammates or brainstorm ideas on Gitter.
+
+Our panel of judges will be evaluating projects equally on functionality=
+=2C creativity=2C visual design=2C and difficulty. There are no strict rul=
+es on what you should build=2C or how to go about building=E2=80=94some pr=
+ojects will be plugins or integrations for colony=2C others might be demon=
+strations of a real-world colony use case. Your potential for collaborativ=
+e innovation is unbounded.
+
+Spread the Word
+
+The hackathon is a unique opportunity for folks to cut their teeth in dApp=
+ development. The blockchain space needs more talent and this is a great w=
+ay to get involved! If someone you know needs a little encouragement=2C yo=
+u can point them to Dive into dApps: A Crash Course (https://medium.com/@c=
+olony/301def084301?utm_source=3DColony+Beta&utm_campaign=3D3508b7aa56-EMAI=
+L_CAMPAIGN_2018_05_29_05_15_COPY_01&utm_medium=3Demail&utm_term=3D0_fef687=
+20b5-3508b7aa56-322972677&mc_cid=3D3508b7aa56&mc_eid=3D[UNIQID]) .
+
+Share the TL;DR on your favorite social channel or community:
+
+The Colony Global hackathon starts today! Sign up at colony.io/hackathon (=
+http://bit.ly/CLNYHK4?utm_source=3DColony+Beta&utm_campaign=3D3508b7aa56-E=
+MAIL_CAMPAIGN_2018_05_29_05_15_COPY_01&utm_medium=3Demail&utm_term=3D0_fef=
+68720b5-3508b7aa56-322972677&mc_cid=3D3508b7aa56&mc_eid=3D[UNIQID])=
+ #Buidl #hackathon
+* $25k in prizes=2C paid in Dai
+* A panel of 16 awesome judges
+* Fully supported first-access to Colony=E2=80=99s new tools
+* Runs from June 5 - 24
+
+Please kindly spread the word=E2=80=94and help us build the future of work=
+ together!
+
+- The Colony team
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Copyright =C2=A9 2018 Colony Foundation Ltd.=2C All rights reserved.
+ You registered to be kept informed of updates about Colony=2C at http://c=
+olony.io.
+
+Our mailing address is:
+Colony Foundation Ltd.
+5th Floor=2C Genesis Building=2C
+Genesis Close=2C PO Box 446=2C
+Grand Cayman=2C Grand Cayman KY1-1106
+Cayman Islands
+Want to change how you receive these emails?
+You can ** update your preferences (https://colony.us9.list-manage.com/pro=
+file?u=3Df4d1f0850fe4aaa32124d89ca&id=3Dfef68720b5&e=3D3be10903c0)
+or ** unsubscribe from this list (https://colony.us9.list-manage.com/unsub=
+scribe?u=3Df4d1f0850fe4aaa32124d89ca&id=3Dfef68720b5&e=3D3be10903c0&c=3D3508=
+b7aa56)
+=2E
+--_----------=_MCPart_1400232892
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+    <head>
+    =09<!-- NAME: 1 COLUMN -->
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial=
+-scale=3D1.0">
+        <title>Ready. Set. BUIDL!</title>
+
+    <style type=3D"text/css">
+=09=09body=2C#bodyTable=2C#bodyCell{
+=09=09=09height:100% !important;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100% !important;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09img=2Ca img{
+=09=09=09border:0;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09h1=2Ch2=2Ch3=2Ch4=2Ch5=2Ch6{
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09p{
+=09=09=09margin:1em 0;
+=09=09=09padding:0;
+=09=09}
+=09=09a{
+=09=09=09word-wrap:break-word;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass=2C.ExternalClass p=2C.ExternalClass span=2C.ExternalC=
+lass font=2C.ExternalClass td=2C.ExternalClass div{
+=09=09=09line-height:100%;
+=09=09}
+=09=09table=2Ctd{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09#templatePreheader=2C#templateHeader=2C#templateBody=2C#templateFoot=
+er{
+=09=09=09min-width:100%;
+=09=09}
+=09=09#bodyCell{
+=09=09=09padding:20px;
+=09=09}
+=09=09.mcnImage=2C.mcnRetinaImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09body=2C#bodyTable{
+=09=09=09background-color:#F2F2F2;
+=09=09}
+=09=09#bodyCell{
+=09=09=09border-top:0;
+=09=09}
+=09=09#templateContainer{
+=09=09=09border:0;
+=09=09}
+=09=09h1{
+=09=09=09color:#606060 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:40px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-1px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h2{
+=09=09=09color:#404040 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:26px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.75px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h3{
+=09=09=09color:#606060 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:18px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.5px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h4{
+=09=09=09color:#808080 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:16px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:normal;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09#templatePreheader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent=2C.preheaderContainer .mcnTextCo=
+ntent p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateHeader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.headerContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateBody{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.bodyContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateFooter{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.footerContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09@media only screen and (max-width: 480px){
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnRetinaImage{
+=09=09=09max-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[id=3DbodyCell]{
+=09=09=09padding:10px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnTextContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3Dmcpreview-image-uploader]{
+=09=09=09width:100% !important;
+=09=09=09display:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09img[class=3DmcnImage]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnImageGroupContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupContent]{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupBlockInner]{
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-top:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09tbody[class=3DmcnImageGroupBlockOuter]{
+=09=09=09padding-bottom:9px !important;
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionTopContent]=2Ctable[class=3DmcnCaptionBott=
+omContent]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftTextContentContainer]=2Ctable[class=3D=
+mcnCaptionRightTextContentContainer]=2Ctable[class=3DmcnCaptionLeftImageC=
+ontentContainer]=2Ctable[class=3DmcnCaptionRightImageContentContainer]=2C=
+table[class=3DmcnImageCardLeftTextContentContainer]=2Ctable[class=3DmcnI=
+mageCardRightTextContentContainer]=2C.mcnImageCardLeftImageContentContaine=
+r=2C.mcnImageCardRightImageContentContainer{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardLeftImageContent]=2Ctd[class=3DmcnImageCard=
+RightImageContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardBottomImageContent]{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardTopImageContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardLeftImageContent]=2Ctd[class=3DmcnImageCard=
+RightImageContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardBottomImageContent]{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardTopImageContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftContentOuter] td[class=3DmcnTextConten=
+t]=2Ctable[class=3DmcnCaptionRightContentOuter] td[class=3DmcnTextConten=
+t]{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnCaptionBlockInner] table[class=3DmcnCaptionTopConten=
+t]:last-child td[class=3DmcnTextContent]=2C.mcnImageCardTopImageContent=
+=2C.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnBoxedTextContentColumn]{
+=09=09=09padding-left:18px !important;
+=09=09=09padding-right:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnTextContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplateContainer]=2Ctable[id=3DtemplatePreheader]=2Cta=
+ble[id=3DtemplateHeader]=2Ctable[id=3DtemplateBody]=2Ctable[id=3Dtempla=
+teFooter]{
+=09=09=09max-width:600px !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h1{
+=09=09=09font-size:24px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h2{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h3{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h4{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextCont=
+ent]=2Ctd[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextConten=
+t] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplatePreheader]{
+=09=09=09display:block !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DpreheaderContainer] td[class=3DmcnTextContent]=2Ctd[cl=
+ass=3DpreheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DheaderContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DbodyContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DbodyContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DfooterContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] a[class=3DutilityLink]{
+=09=09=09display:block !important;
+=09=09}
+
+}</style></head>
+    <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=
+=3D"0" offset=3D"0" style=3D"margin: 0;padding: 0;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;background-color: #F2F2F2;height: 100% !=
+important;width: 100% !important;">
+        <!--
+-->
+        <!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=
+=3D"display:none; font-size:0px; line-height:0px; max-height:0px; max-widt=
+h:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">The $=
+25k Colony Global Hackathon starts now</span><!--<![endif]-->
+        <!--
+-->
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;backg=
+round-color: #F2F2F2;height: 100% !important;width: 100% !important;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" st=
+yle=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;margin: 0;padding: 20px;border-top: 0;h=
+eight: 100% !important;width: 100% !important;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"600" id=3D"templateContainer" style=3D"border-collapse: co=
+llapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;border: 0;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN PREHEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templatePreheader" style=3D"border-=
+collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-=
+color: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                        =09<td valign=3D"top" class=3D"pre=
+headerContainer" style=3D"padding-top: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"390" style=3D"width:390px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 390px;border-collapse: collapse;mso-table=
+-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 11px;line-height: 125%;text-align: left;">
+
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"210" style=3D"width:210px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 210px;border-collapse: collapse;mso-table=
+-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 11px;line-height: 125%;text-align: left;">
+
+                            <a href=3D"https://mailchi.mp/colony/announcin=
+g-the-colony-global-hackathon-1829045?e=3D3be10903c0" target=3D"_blank" styl=
+e=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;color: #606060;font-weight: normal;text-decoration: underline;"=
+>View this email in your browser</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END PREHEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN HEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateHeader" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-col=
+or: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"he=
+aderContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageBlock=
+" style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;text-align: center;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/f4d1f0850fe4aaa32124d89ca/images/8b8d155=
+0-82d9-48c7-830a-27547d022a5e.png" width=3D"564" style=3D"max-width: 1190p=
+x;padding-bottom: 0;display: inline !important;vertical-align: bottom;bord=
+er: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;=
+" class=3D"mcnImage">
+
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN BODY // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateBody" style=3D"border-colla=
+pse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-color=
+: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"bo=
+dyContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnTextBlock" st=
+yle=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso=
+-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 10=
+0%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+                            <p dir=3D"ltr" style=3D"margin: 1em 0;padding:=
+ 0;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #60606=
+0;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: lef=
+t;">The Colony Global Hackathon starts...<a href=3D"https://colony.us9.lis=
+t-manage.com/track/click?u=3Df4d1f0850fe4aaa32124d89ca&id=3D86b079285e&e=
+=3D3be10903c0" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-dec=
+oration: underline;">NOW!</a></p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">Over the next 20 days=2C=
+ we=E2=80=99re looking for creative=2C brilliant minds (hey=2C that=E2=80=
+=99s you!) to build on=2C integrate=2C and extend Colony using the colonyJ=
+S library. We can=E2=80=99t wait to see what you come up with.</p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">Submit your project by 1=
+1:59 pm GMT on Sunday=2C June 24th for a chance to win prizes totalling $2=
+5=2C000 paid in <a href=3D"https://colony.us9.list-manage.com/track/click?=
+u=3Df4d1f0850fe4aaa32124d89ca&id=3D7d9bbe2aa8&e=3D3be10903c0" style=3D"wo=
+rd-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 1=
+00%;color: #6DC6DD;font-weight: normal;text-decoration: underline;">DAI</a=
+> via <a href=3D"https://colony.us9.list-manage.com/track/click?u=3Df4d1f0=
+850fe4aaa32124d89ca&id=3Dc51699ffb6&e=3D3be10903c0" target=3D"_blank" sty=
+le=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;=
+">Gitcoin</a>. We=E2=80=99ve got 16 awesome judges looking to award 16 pri=
+zes!</p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;"><span style=3D"font-size=
+:18px"><strong>Join the Hackathon</strong> (Go=2C <a href=3D"https://colon=
+y.us9.list-manage.com/track/click?u=3Df4d1f0850fe4aaa32124d89ca&id=3Dfdd3a=
+2ba0e&e=3D3be10903c0" style=3D"word-wrap: break-word;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;t=
+ext-decoration: underline;">do it now</a>!)</span></p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">Make sure you <a href=3D=
+"https://colony.us9.list-manage.com/track/click?u=3Df4d1f0850fe4aaa32124d8=
+9ca&id=3D19c60fd84d&e=3D3be10903c0" style=3D"word-wrap: break-word;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-we=
+ight: normal;text-decoration: underline;">sign up</a> so we can communicat=
+e updates=2C rules=2C and helpful tips during the hackathon. Part of your=
+ registration includes creating a Github issue with your project idea=E2=
+=80=94don=E2=80=99t worry=2C we can also help you find teammates or brains=
+torm ideas on Gitter.</p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">Our panel of judges will=
+ be evaluating projects equally on functionality=2C creativity=2C visual d=
+esign=2C and difficulty. There are no strict rules on what you should buil=
+d=2C or how to go about building=E2=80=94some projects will be plugins or=
+ integrations for colony=2C others might be demonstrations of a real-world=
+ colony use case. Your potential for collaborative innovation is unbounded=
+=2E</p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;"><span style=3D"font-size=
+:18px"><strong>Spread the Word</strong></span></p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">The hackathon is a uniqu=
+e opportunity for folks to cut their teeth in dApp development. The blockc=
+hain space needs more talent and this is a great way to get involved! If s=
+omeone you know needs a little encouragement=2C you can point them to&nbsp=
+;<a href=3D"https://colony.us9.list-manage.com/track/click?u=3Df4d1f0850fe=
+4aaa32124d89ca&id=3D9f80fc32f5&e=3D3be10903c0" style=3D"word-wrap: break-=
+word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC=
+6DD;font-weight: normal;text-decoration: underline;">Dive into dApps: A Cr=
+ash Course</a>.</p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">Share the TL;DR on your=
+ favorite social channel or community:</p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">The Colony Global hackat=
+hon starts today! Sign up at <a href=3D"https://colony.us9.list-manage.com=
+/track/click?u=3Df4d1f0850fe4aaa32124d89ca&id=3Dd66a65d549&e=3D3be10903c0=
+" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: under=
+line;">colony.io/hackathon</a> #Buidl #hackathon</p>
+
+<ul dir=3D"ltr">
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">$25k in prizes=2C paid in Dai</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">A panel of 16 awesome judges</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">Fully supported first-access to Colony=E2=80=99s new tools</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">Runs from June 5 - 24</li>
+</ul>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">Please kindly spread the=
+ word=E2=80=94and help us build the future of work together!</p>
+
+<p dir=3D"ltr" style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fon=
+t-size: 15px;line-height: 150%;text-align: left;">- The Colony team</p>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN FOOTER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateFooter" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-col=
+or: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"fo=
+oterContainer" style=3D"padding-bottom: 9px;mso-table-lspace: 0pt;mso-tabl=
+e-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" cla=
+ss=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: collapse;=
+mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pa=
+dding: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adju=
+st: 100%;-webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-t=
+op: 2px solid #505050;border-collapse: collapse;mso-table-lspace: 0pt;mso-=
+table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;">
+                    <tbody><tr>
+                        <td style=3D"mso-table-lspace: 0pt;mso-table-rspac=
+e: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;=
+">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-col=
+or:none; border-left-color:none; border-right-color:none; border-bottom-wi=
+dth:0; border-left-width:0; border-right-width:0; margin-top:0; margin-rig=
+ht:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 11px;line-height: 125%;text-align: left;">
+
+                            <div style=3D"text-align: center;"><em>Copyrig=
+ht =C2=A9 2018 Colony Foundation Ltd.=2C All rights reserved.</em><br>
+ You registered to be kept informed of updates about Colony=2C at http://c=
+olony.io.<br>
+<br>
+<strong>Our mailing address is:</strong><br>
+<div class=3D"vcard"><span class=3D"org fn">Colony Foundation Ltd.</span><=
+div class=3D"adr"><div class=3D"street-address">5th Floor=2C Genesis Build=
+ing=2C</div><div class=3D"extended-address">Genesis Close=2C PO Box 446=2C=
+</div><span class=3D"locality">Grand Cayman</span>=2C <span class=3D"regio=
+n">Grand Cayman</span>  <span class=3D"postal-code">KY1-1106</span> <div c=
+lass=3D"country-name">Cayman Islands</div></div><br><a href=3D"//colony.us=
+9.list-manage.com/vcard?u=3Df4d1f0850fe4aaa32124d89ca&id=3Dfef68720b5" cla=
+ss=3D"hcard-download">Add us to your address book</a></div>
+<br>
+<br>
+Want to change how you receive these emails?<br>
+You can <a href=3D"https://colony.us9.list-manage.com/profile?u=3Df4d1f085=
+0fe4aaa32124d89ca&id=3Dfef68720b5&e=3D3be10903c0" style=3D"word-wrap: break-=
+word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606=
+060;font-weight: normal;text-decoration: underline;">update your preferenc=
+es</a> or <a href=3D"https://colony.us9.list-manage.com/unsubscribe?u=3Df4=
+d1f0850fe4aaa32124d89ca&id=3Dfef68720b5&e=3D3be10903c0&c=3D3508b7aa56" style=
+=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;color: #606060;font-weight: normal;text-decoration: underline;">=
+unsubscribe from this list</a>.</div>
+
+<div style=3D"text-align: center;">
+</div>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"https://colony.us9.list-manage.com/track/open.php?u=3Df4d1=
+f0850fe4aaa32124d89ca&id=3D3508b7aa56&e=3D3be10903c0" height=3D"1" width=
+=3D"1"></body>
+</html>
+--_----------=_MCPart_1400232892--

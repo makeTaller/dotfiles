@@ -157,5 +157,5 @@ bar {
         status_command i3status
 }
 
-exec_always feh --bg-scale /home/david/Pictures/bluewood.jpg
+exec_always feh --bg-scale /home/kbriki/Pictures/bluewood.jpg
 

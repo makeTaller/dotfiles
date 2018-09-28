@@ -1,0 +1,1098 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 2002:a17:90a:3450:0:0:0:0 with SMTP id o74-v6csp5447087pjb;
+        Tue, 12 Jun 2018 07:25:15 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLrvozaD11vqQeqtOg/jL1Ghmi0PzKJHCAAdabiIpcnmHK8nwUmgArTmijDhiCGtsYSuM/o
+X-Received: by 2002:a63:aa4c:: with SMTP id x12-v6mr476086pgo.387.1528813515756;
+        Tue, 12 Jun 2018 07:25:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528813515; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OlfH15Bv27qb1fI3RsUXwSl5DvWhk8WFiJlqX6iD9iYeLuBUr8l0ujNXm2ANrPPTJU
+         RQVQ/uoQ4GYjxi08OJ1rfamU2BHOR2WkzeO2VQqY494BcczNjTj8trZBW+aafVzduO6v
+         3QD6dlDViyLt9S8qR7xZZrAvtAT6kWqicNBs6nb+dVT5TvJCcX6CTFL0EiGBRvZMVXCs
+         Q4/JJ4JScJKpqgIyeqNEem0SCXDVFeEqWOua2djgz38ItuwFJcQoPAXWZ367HoeGF4yl
+         lfBU0jQaKn7nM9UtgCEWMFaKwQ6yKhwA7Ekq1cHuBjxXsfg1m9Y5ikMVD1Qv/LTyHQT4
+         VoYg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:list-unsubscribe:feedback-id:subject:reply-to:from:to
+         :date:content-transfer-encoding:mime-version:dkim-signature
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=RdpT+yhwfnXTP7RnxxrJNwy1n2eaZi6313kL3gpyXRU=;
+        b=l8HPLrn+c3i8ofxDZm7HyzbJjJoEVgwjc3lcyJ70zeepcuw6cc28qPPIDHOakZOdrU
+         wcW2fypJYiUhe0SO90A/hbJBXDpOXC7OIHBpsxBEhDDRCLdS6WSE61HgR1N54sMQHSkD
+         bNnHtZyFdrQCaD6DIYhgPinuMOl19ljjanOeec3yM+gH9SJNPLpO7Xfxga3M0ta5NAbh
+         V+V4M+8HV0mECfKZUGsoeNX7CKLbdEX7Fdq2eRS6Qwp5OiOnPJMw1IpJ92xzreAAi6ET
+         aFeEPT620SHwsrARY662eBeueinfUXF+wj4qTArF7ENsnsALmgc9eySUfmN3Ft1VMZH/
+         gPoA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@communications.rosettastone.com header.s=rosettastone2 header.b=3zqj8DeU;
+       dkim=pass header.i=@responsys.net header.s=oraclersys header.b=wYzVys3G;
+       dkim=pass header.i=@responsys.net header.s=oraclersys header.b=wYzVys3G;
+       spf=pass (google.com: domain of rosettastone@communications.rosettastone.com designates 199.7.206.35 as permitted sender) smtp.mailfrom=RosettaStone@communications.rosettastone.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=communications.rosettastone.com
+Return-Path: <RosettaStone@communications.rosettastone.com>
+Received: from omp1.communications.rosettastone.com (omp1.communications.rosettastone.com. [199.7.206.35])
+        by mx.google.com with ESMTPS id 124-v6si238446pgg.29.2018.06.12.07.25.15
+        for <kirktolliver28@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 Jun 2018 07:25:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of rosettastone@communications.rosettastone.com designates 199.7.206.35 as permitted sender) client-ip=199.7.206.35;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@communications.rosettastone.com header.s=rosettastone2 header.b=3zqj8DeU;
+       dkim=pass header.i=@responsys.net header.s=oraclersys header.b=wYzVys3G;
+       dkim=pass header.i=@responsys.net header.s=oraclersys header.b=wYzVys3G;
+       spf=pass (google.com: domain of rosettastone@communications.rosettastone.com designates 199.7.206.35 as permitted sender) smtp.mailfrom=RosettaStone@communications.rosettastone.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=communications.rosettastone.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=rosettastone2;
+ d=communications.rosettastone.com;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:Feedback-ID:List-Unsubscribe:Message-ID;
+ i=RosettaStone@communications.rosettastone.com;
+ bh=RdpT+yhwfnXTP7RnxxrJNwy1n2eaZi6313kL3gpyXRU=;
+ b=3zqj8DeUvbhh6qa0Sxf5e0VQl7Snt13/We3s+DVu65X/eau838p64oh3rQ5ozZLt3jmClJ0aXayT
+   aq2lBVQaevTvIN+Z8nt1Sey0qmaN2OhtkU7Y2ukOCJcV4xWpau5iiy+RLCiFL2sTZp6adsgq9LaI
+   7C6CJr5zwSNs7Vg1P3Y=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=oraclersys; d=responsys.net;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:Feedback-ID:List-Unsubscribe:Message-ID;
+ bh=RdpT+yhwfnXTP7RnxxrJNwy1n2eaZi6313kL3gpyXRU=;
+ b=wYzVys3Gl8Q3M8IFKDh66gdiXkn5kH+ZXdR/APWWnn6Qg6QiunJtsouZ1UYaC3uop2rnxDuzkh/k
+   0YNhbYhJZTtxOyaN8FiaS5cdW88OVO94Rj02MIDHVFaZZvc4JDrYYN/MunCW93AIWbQ6J0ZBev5C
+   kcUdw3PYWyMF0TFzK8Q=
+Received: by omp1.communications.rosettastone.com id h3vbsm2b6102 for <kirktolliver28@gmail.com>; Tue, 12 Jun 2018 06:52:44 -0700 (envelope-from <RosettaStone@communications.rosettastone.com>)
+X-CSA-Complaints: whitelist-complaints@eco.de
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=oraclersys; d=responsys.net;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:Feedback-ID:List-Unsubscribe:Message-ID;
+ bh=RdpT+yhwfnXTP7RnxxrJNwy1n2eaZi6313kL3gpyXRU=;
+ b=wYzVys3Gl8Q3M8IFKDh66gdiXkn5kH+ZXdR/APWWnn6Qg6QiunJtsouZ1UYaC3uop2rnxDuzkh/k
+   0YNhbYhJZTtxOyaN8FiaS5cdW88OVO94Rj02MIDHVFaZZvc4JDrYYN/MunCW93AIWbQ6J0ZBev5C
+   kcUdw3PYWyMF0TFzK8Q=
+Received: by omp.communications.rosettastone.com id h3v82o2b610h for <kirktolliver28@gmail.com>; Tue, 12 Jun 2018 06:44:48 -0700 (envelope-from <RosettaStone@communications.rosettastone.com>)
+X-CSA-Complaints: whitelist-complaints@eco.de
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 12 Jun 2018 06:44:48 -0700
+To: kirktolliver28@gmail.com
+From: =?UTF-8?B?Um9zZXR0YSBTdG9uZQ==?=
+ <RosettaStone@communications.rosettastone.com>
+Reply-To: =?UTF-8?B?Um9zZXR0YSBTdG9uZQ==?= <reply-dtc@communications.rosettastone.com>
+Subject: =?UTF-8?B?Rmxhc2ggU2FsZSDij7MgNiBGcmVlIE1vbnRocw==?=
+Feedback-ID: 51627:3721615:oraclersys
+List-Unsubscribe: <https://communications.rosettastone.com/pub/optout/UnsubscribeOneStepConfirmAction?YES=true&_ri_=X0Gzc2X%3DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNazeDEkIC5juDl&_ei_=EolaGGF4SNMvxFF7KucKuWOq1xslChIo8oxQwJLGBjuIJiS9dwN-H54>, <mailto:unsubscribe-YQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNazeDEkIC5juDl@imh.rsys5.com?subject=List-Unsubscribe>
+X-sgxh1: spjslhttpNLjTCxnuHptQJhu
+X-rext: 5.interact5.EhQFpXVcHYDbAikyXI6J2NF95BDms_oW4E75aUavHV9Gsb8Yrm9t
+X-cid: rosettastone.14985695
+Message-ID: <0.1.2F.BBE.1D4025387E188EC.0@omp.communications.rosettastone.com>
+
+<=21DOCTYPE html PUBLIC =22-//W3C//DTD XHTML 1=2E0 Transitional//EN=22 =22h=
+ttps://www=2Ew3=2Eorg/TR/xhtml1/DTD/xhtml1-transitional=2Edtd=22>
+<html xmlns=3D=22https://www=2Ew3=2Eorg/1999/xhtml=22>
+ <head>
+  <title></title>
+ </head>
+ <body style=3D=22font-size: 12px; background-color: =23f8f6f0;=22>
+  <p>
+  <meta http-equiv=3D=22Content-Type=22 content=3D=22text/html; charset=3DU=
+TF-8=22>
+  <meta name=3D=22viewport=22 content=3D=22initial-scale=3D1=2E0=22>
+  <meta name=3D=22format-detection=22 content=3D=22telephone=3Dno=22>   <st=
+yle type=3D=22text/css=22>
+/* Resets: see reset=2Ecss for details */
+=2EReadMsgBody =7B
+	width: 100%;
+	background-color: =23f8f6f0;
+=7D
+=2EExternalClass =7B
+	width: 100%;
+	background-color: =23f8f6f0;
+=7D
+=2EExternalClass, =2EExternalClass p, =2EExternalClass span, =2EExternalCla=
+ss font, =2EExternalClass td, =2EExternalClass div =7B
+	line-height: 100%;
+=7D
+html =7B
+	width: 100%;
+=7D
+body =7B
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+=7D
+body =7B
+	margin: 0;
+	padding: 0;
+=7D
+table =7B
+	border-spacing: 0;
+=7D
+img =7B
+	display: block =21important;
+=7D
+table td =7B
+	border-collapse: collapse;
+	font-family: Gotham, =22Helvetica Neue=22, Helvetica, Arial, sans-serif;
+	color: =23969696;
+	font-size: 12px;
+=7D
+=2Eyshortcuts a =7B
+	border-bottom: none =21important;
+=7D
+html, body =7B
+	background-color: =23f8f6f0;
+	margin: 0;
+	padding: 0;
+=7D
+img =7B
+	height: auto;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+	display: block;
+=7D
+br, strong br, b br, em br, i br =7B
+	line-height: 100%;
+=7D
+h1, h2, h3, h4, h5, h6 =7B
+	line-height: 100% =21important;
+	-webkit-font-smoothing: antialiased;
+=7D
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a =7B
+	color: blue =21important;
+=7D
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:activ=
+e =7B
+	color: red =21important;
+=7D
+/* Preferably not the same color as the 300 header link color=2E  There is =
+limited support for psuedo classes in email clients, this was added just fo=
+r good measure=2E */
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:=
+visited =7B
+	color: purple =21important;
+=7D
+/* Preferably not the same color as the 300 header link color=2E There is l=
+imited support for psuedo classes in email clients, this was added just for=
+ good measure=2E */
+
+span a =7B
+	text-decoration: none =21important;
+=7D
+a =7B
+	text-decoration: none =21important;
+	color: =233A98D7;
+	font-family: Gotham, =22Helvetica Neue=22, Helvetica, Arial, sans-serif;
+=7D
+=2Enav-ul =7B
+	margin-left: -23px =21important;
+	margin-top: 0px =21important;
+	margin-bottom: 0px =21important;
+=7D
+img =7B
+	height: auto =21important;
+=7D
+td=5Bclass=3D=22image-168px=22=5D img =7B
+	width: 168px =21important;
+	height: auto =21important;
+	max-width: 168px =21important;
+=7D
+td=5Bclass=3D=22image-270px=22=5D img =7B
+	width: 270px =21important;
+	height: auto =21important;
+	max-width: 270px =21important;
+=7D
+td=5Bclass=3D=22image-170px=22=5D img =7B
+	width: 170px =21important;
+	height: auto =21important;
+	max-width: 170px =21important;
+=7D
+td=5Bclass=3D=22image-185px=22=5D img =7B
+	width: 185px =21important;
+	height: auto =21important;
+	max-width: 185px =21important;
+=7D
+td=5Bclass=3D=22image-100px=22=5D img =7B
+	width: 100px =21important;
+	height: auto =21important;
+	max-width: 100px =21important;
+=7D
+
+=40media only screen and (max-width: 640px) =7B
+body =7B
+	width: auto=21important;
+	font-size: 12px =21important;
+=7D
+table=5Bclass=3D=22container=22=5D =7B
+	width: 100%=21important;
+	padding-left: 20px=21important;
+	padding-right: 20px=21important;
+	background-color: =23ffffff;
+=7D
+td=5Bclass=3D=22image-168px=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+=7D
+td=5Bclass=3D=22image-270px=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+=7D
+td=5Bclass=3D=22image-170px=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+=7D
+td=5Bclass=3D=22image-185px=22=5D img =7B
+	width: 185px =21important;
+	height: auto =21important;
+	max-width: 185px =21important;
+=7D
+td=5Bclass=3D=22image-100px=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+=7D
+td=5Bclass=3D=22image-100-percent=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+=7D
+td=5Bclass=3D=22small-image-100-percent=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+=7D
+table=5Bclass=3D=22full-width=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bclass=3D=22full-width-text=22=5D =7B
+	width: 100% =21important;
+	background-color: =23f8f6f0;
+	padding-left: 20px =21important;
+	padding-right: 20px =21important;
+=7D
+table=5Bclass=3D=22full-width-text2=22=5D =7B
+	width: 100% =21important;
+	background-color: =23f8f6f0;
+	padding-left: 20px =21important;
+	padding-right: 20px =21important;
+=7D
+table=5Bclass=3D=22col-2-3img=22=5D =7B
+	width: 50% =21important;
+	margin-right: 20px =21important;
+=7D
+table=5Bclass=3D=22col-2-3img-last=22=5D =7B
+	width: 50% =21important;
+=7D
+table=5Bclass=3D=22col-2-footer=22=5D =7B
+	width: 55% =21important;
+	margin-right: 20px =21important;
+=7D
+table=5Bclass=3D=22col-2-footer-last=22=5D =7B
+	width: 40% =21important;
+=7D
+table=5Bclass=3D=22col-2-box-radius=22=5D =7B
+	width: 47% =21important;
+=7D
+table=5Bclass=3D=22col-2=22=5D =7B
+	width: 47% =21important;
+	margin-right: 20px =21important;
+=7D
+table=5Bclass=3D=22col-2-last=22=5D =7B
+	width: 47% =21important;
+=7D
+table=5Bclass=3D=22col-3=22=5D =7B
+	width: 29% =21important;
+	margin-right: 20px =21important;
+=7D
+table=5Bclass=3D=22col-3-last=22=5D =7B
+	width: 29% =21important;
+=7D
+table=5Bclass=3D=22row-2=22=5D =7B
+	width: 50% =21important;
+=7D
+td=5Bclass=3D=22text-center=22=5D =7B
+	text-align: center =21important;
+=7D
+/* start clear and remove*/
+table=5Bclass=3D=22remove=22=5D =7B
+	display: none =21important;
+=7D
+td=5Bclass=3D=22remove=22=5D =7B
+	display: none =21important;
+=7D
+/* end clear and remove*/
+
+table=5Bclass=3D=22fix-box=22=5D =7B
+	padding-left: 20px =21important;
+	padding-right: 20px =21important;
+=7D
+td=5Bclass=3D=22fix-box=22=5D =7B
+	padding-left: 20px =21important;
+	padding-right: 20px =21important;
+=7D
+td=5Bclass=3D=22font-resize=22=5D =7B
+	font-size: 18px =21important;
+	line-height: 22px =21important;
+=7D
+table=5Bclass=3D=22space-scale=22=5D =7B
+	width: 19px =21important;
+	float: none =21important;
+=7D
+table=5Bclass=3D=22clear-align-640=22=5D =7B
+	float: none =21important;
+=7D
+=7D
+
+=40media only screen and (max-width: 479px) =7B
+
+=23mainStructure =7B
+	margin-top: 0px =21important;
+=7D
+
+body =7B
+	font-size: 14px =21important;
+=7D
+table=5Bclass=3D=22container=22=5D =7B
+	width: 100%=21important;
+	padding-left: 10px=21important;
+	padding-right: 10px=21important;
+=7D
+table=5Bclass=3D=22container2=22=5D =7B
+	width: 100%=21important;
+	float: none =21important;
+=7D
+td=5Bclass=3D=22full-width=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 124px =21important;
+=7D
+td=5Bclass=3D=22image-168px=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 124px =21important;
+=7D
+td=5Bclass=3D=22image-270px=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 124px =21important;
+=7D
+td=5Bclass=3D=22image-170px=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 124px =21important;
+=7D
+td=5Bclass=3D=22image-185px=22=5D img =7B
+	width: 185px =21important;
+	height: auto =21important;
+	max-width: 185px =21important;
+	min-width: 124px =21important;
+=7D
+td=5Bclass=3D=22image-100px=22=5D img =7B
+	width: 100px =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 100px =21important;
+=7D
+td=5Bclass=3D=22image-100-percent=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 124px =21important;
+=7D
+td=5Bclass=3D=22small-image-100-percent=22=5D img =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 124px =21important;
+=7D
+table=5Bclass=3D=22full-width=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bclass=3D=22full-width-text=22=5D =7B
+	width: 100% =21important;
+	background-color: =23f8f6f0;
+	padding-left: 20px =21important;
+	padding-right: 20px =21important;
+=7D
+table=5Bclass=3D=22full-width-text2=22=5D =7B
+	width: 100% =21important;
+	/*     background-color:=23f8f6f0;
+*/     padding-left: 20px =21important;
+	padding-right: 20px =21important;
+=7D
+table=5Bclass=3D=22col-2-footer=22=5D =7B
+	width: 100% =21important;
+	margin-right: 0px =21important;
+=7D
+table=5Bclass=3D=22col-2-footer-last=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bclass=3D=22col-2-box-radius=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bclass=3D=22col-2=22=5D =7B
+	width: 100% =21important;
+	margin-right: 0px =21important;
+=7D
+table=5Bclass=3D=22col-2-last=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bclass=3D=22col-3=22=5D =7B
+	width: 100% =21important;
+	margin-right: 0px =21important;
+=7D
+table=5Bclass=3D=22col-3-last=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bclass=3D=22row-2=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bid=3D=22col-underline=22=5D =7B
+	float: none =21important;
+	width: 100% =21important;
+	border-bottom: 1px solid =23e4e4e4;
+=7D
+td=5Bid=3D=22col-underline=22=5D =7B
+	float: none =21important;
+	width: 100% =21important;
+	border-bottom: 1px solid =23e4e4e4;
+=7D
+td=5Bclass=3D=22col-underline=22=5D =7B
+	float: none =21important;
+	width: 100% =21important;
+	border-bottom: 1px solid =23e4e4e4;
+=7D
+/*start text center*/
+td=5Bclass=3D=22text-center=22=5D =7B
+	text-align: center =21important;
+=7D
+div=5Bclass=3D=22text-center=22=5D =7B
+	text-align: center =21important;
+=7D
+/*end text center*/
+
+
+
+  /* start  clear and remove */
+
+table=5Bid=3D=22clear-padding=22=5D =7B
+	padding: 0 =21important;
+=7D
+td=5Bid=3D=22clear-padding=22=5D =7B
+	padding: 0 =21important;
+=7D
+td=5Bclass=3D=22clear-padding=22=5D =7B
+	padding: 0 =21important;
+=7D
+table=5Bclass=3D=22remove-479=22=5D =7B
+	display: none =21important;
+=7D
+td=5Bclass=3D=22remove-479=22=5D =7B
+	display: none =21important;
+=7D
+table=5Bclass=3D=22clear-align=22=5D =7B
+	float: none =21important;
+=7D
+/* end  clear and remove */
+
+table=5Bclass=3D=22width-small=22=5D =7B
+	width: 100% =21important;
+=7D
+table=5Bclass=3D=22fix-box=22=5D =7B
+	padding-left: 0px =21important;
+	padding-right: 0px =21important;
+=7D
+td=5Bclass=3D=22fix-box=22=5D =7B
+	padding-left: 0px =21important;
+	padding-right: 0px =21important;
+=7D
+td=5Bclass=3D=22font-resize=22=5D =7B
+	font-size: 14px =21important;
+=7D
+td=5Bclass=3D=22increase-Height=22=5D =7B
+	height: 10px =21important;
+=7D
+td=5Bclass=3D=22increase-Height-20=22=5D =7B
+	height: 20px =21important;
+=7D
+td=5Bclass=3D=22remove-border=22=5D =7B
+	border: 0 =21important;
+=7D
+=7D
+
+=40media only screen and (max-width: 320px) =7B
+table=5Bclass=3D=22width-small=22=5D =7B
+	width: 125px =21important;
+=7D
+img=5Bclass=3D=22image-100-percent=22=5D =7B
+	width: 100% =21important;
+	height: auto =21important;
+	max-width: 100% =21important;
+	min-width: 124px =21important;
+=7D
+=7D
+  </style>                                                                 =
+                                                               </meta>
+  </meta>
+  </meta>
+  </p>
+  <table width=3D=22100%=22 cellspacing=3D=220=22 cellpadding=3D=220=22 bor=
+der=3D=220=22 id=3D=22mainStructure=22 bgcolor=3D=22=23f8f6f0=22 style=3D=
+=22margin-top: 15px;=22>
+   <tbody>
+    <tr>
+     <td align=3D=22center=22 valign=3D=22top=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=22bor=
+der-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb=
+(228, 228, 228); color: =23F8F8F8;=22>
+      <tbody>
+       <tr bgcolor=3D=22=23FFFFFF=22>
+        <td width=3D=22600=22 valign=3D=22top=22>
+        <table width=3D=22100%=22 cellspacing=3D=220=22 cellpadding=3D=220=
+=22 border=3D=220=22 align=3D=22center=22 class=3D=22full-width=22>
+         <tbody>
+          <tr bgcolor=3D=22=23FFFFFF=22>
+           <td valign=3D=22top=22>
+           <table width=3D=22100%=22 cellspacing=3D=220=22 cellpadding=3D=
+=2210=22 border=3D=220=22 align=3D=22left=22>
+            <tbody>
+             <tr bgcolor=3D=22=23FFFFFF=22>
+              <td colspan=3D=222=22 align=3D=22center=22 style=3D=22padding=
+: 0px; font-size: 1px; font-family: Helvetica, sans-serif; color: =23ffffff=
+; text-align: center;=22>Today only, when you buy 6 months you get 6 additi=
+onal months for FREE=21</td>
+             </tr>
+             <tr bgcolor=3D=22=23FFFFFF=22>
+              <td align=3D=22left=22 style=3D=22font-size: 16px; line-heigh=
+t: 22px; font-family: Helvetica, sans-serif; color: =233A98D7; font-weight:=
+ 300; text-align: left;=22><span style=3D=22color: =233A98D7; font-weight: =
+300;=22> <a href=3D=22https://communications=2Erosettastone=2Ecom/pub/cc?_r=
+i_=3DX0Gzc2X%3DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNaz=
+eDEkIC5juDlVXtpKX%3DWRRUWCY&_ei_=3DEikbMnhT1SVzNU75E1iS4B0bF22UUej-ynMZQ7Uf=
+uLuFVVJ780xDICakSGwu2OViXpK9PnEzyo_PkUUARzZJfQ3okPNmsM4z3LCz7hf2C_Xw0MEAzFY=
+qkrdsBpUpgZqK-tLznujZSf1_Fi7u3SvNIz42jI6O33EyAkNs9jRMR8BS=2E=22> <img src=
+=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i5/responsysimages/rosettaston=
+e/contentlibrary/us_ab_tests/images/rosetta_logo=2Egif=22 alt=3D=22Rosetta =
+Stone=22 width=3D=22125=22 height=3D=2255=22 style=3D=22display:block; max-=
+width:142px;=22 border=3D=220=22 hspace=3D=220=22 vspace=3D=220=22 /></a></=
+span></td>
+              <td align=3D=22right=22 valign=3D=22middle=22 style=3D=22font=
+-size: 1em; line-height: 22px; font-family: Helvetica, sans-serif; color: =
+=233A98D7; font-weight: 300; text-align: right;=22><a style=3D=22color: =23=
+3A98D7; font-weight: 300; text-decoration: none;=22 href=3D=22https://commu=
+nications=2Erosettastone=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGozazgiz=
+czeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNazeDEkIC5juDlVXtpKX%3DWRRUWCY&_ei_=3D=
+EikbMnhT1SVzNU75E1iS4B0bF22UUej-ynMZQ7UfuLuFVVJ780xDICakSGwu2OViXpK9PnEzyo_=
+PkUUARzZJfQ3okPNmsM4z3LCz7hf2C_Xw0MEAzFYqkrdsBpUpgZqK-tLznujZSf1_Fi7u3SvNIz=
+42jI6O33EyAkNs9jRMR8BS=2E=22>Order Online</a><br />                        =
+         <span style=3D=22color: =231A1A1A=22><a href=3D=22tel:18007673882=
+=22>1-800-767-3882</a></span></td>
+             </tr>
+            </tbody>
+           </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr> <td valign=3D=22top=22 height=3D=222=22 align=3D=22center=22 class=
+=3D=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22full-width=22>
+      <tbody>
+       <tr>
+        <td height=3D=224=22 bgcolor=3D=22=235e2365=22 style=3D=22backgroun=
+d-color: =234195D3;=22></td>
+       </tr>
+      </tbody>
+     </table>
+		 <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 bor=
+der=3D=220=22 align=3D=22center=22 class=3D=22full-width=22>
+      <tbody>
+     =20
+       <tr>
+         <td align=3D=22center=22 valign=3D=22middle=22 bgcolor=3D=22=23419=
+5D3=22 style=3D =22padding-top: 5px; padding-bottom: 10px; font-family: Got=
+ham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color=
+: =23ffffff; line-height: 24px; font-weight: normal;=22><img src=3D=22http:=
+//s=2Emmgo=2Eio/t/_HU=22 alt=3D=22=22 /></td>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22container2=22 style=3D=22=
+=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+        <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=
+=22 border=3D=220=22 align=3D=22center=22 class=3D=22container2=22 style=3D=
+=22background-color: =23ffffff; border-bottom-width: 0px; border-bottom-sty=
+le: solid; border-bottom-color: rgb(228, 228, 228);=22>
+         <tbody>
+          <tr>
+           <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=
+=22>
+           <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=22=
+0=22 border=3D=220=22 align=3D=22center=22 class=3D=22container2=22 style=
+=3D=22background-color: =23ffffff; font-size: 14px;=22>
+            <tbody>
+             <tr bgcolor=3D=22=23990000=22>
+             </tr>
+            </tbody>
+            <tbody>
+            </tbody>
+           </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+   =20
+    <tr>
+     <td valign=3D=22top=22 height=3D=222=22 align=3D=22center=22 class=3D=
+=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22full-width=22>
+      <tbody>
+     =20
+       <tr bgcolor=3D=22=23FFFFFF=22>
+
+       <td align=3D=22center=22 valign=3D=22top=22 class=3D=22image-100-per=
+cent=22><a href=3D=22https://communications=2Erosettastone=2Ecom/pub/cc?_ri=
+_=3DX0Gzc2X%3DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNaze=
+DEkIC5juDlVXtpKX%3DWRRUWCY&_ei_=3DEikbMnhT1SVzNU75E1iS4B0bF22UUej-ynMZQ7Ufu=
+LuFVVJ780xDICakSGwu2OViXpK9PnEzyo_PkUUARzZJfQ3okPNmsM4z3LCz7hf2C_Xw0MEAzFYq=
+krdsBpUpgZqK-tLznujZSf1_Fi7u3SvNIz42jI6O33EyAkNs9jRMR8BS=2E=22 target=3D=22=
+_blank=22><img src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i5/responsys=
+images/rosettastone/contentlibrary/us_ab_tests/images/Orange_Email_6=2Epng=
+=22 alt=3D=22Buy 6 Months, Get 6 Months FREE=22 width=3D=22600=22 style=3D=
+=22display: block;=22 border=3D=220=22 /></a></td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22></td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=22bac=
+kground-color: =23ffffff=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+        <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=
+=22 border=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=
+=22background-color: =23ffffff; border-bottom-width: 0px; border-bottom-sty=
+le: solid; border-bottom-color: rgb(228, 228, 228);=22>
+         <tbody>
+          <tr>
+           <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=
+=22>
+           <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=22=
+0=22 border=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=
+=22background-color: =23ffffff; =22>
+            <tbody>
+            </tbody>
+           </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 align=3D=22center=22 border=3D=220=22 cellspa=
+cing=3D=220=22 cellpadding=3D=220=22 class=3D=22container=22 style=3D=22bac=
+kground-color: =23ffffff; =22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22>
+        <table width=3D=22540=22 align=3D=22center=22 border=3D=220=22 cell=
+spacing=3D=220=22 cellpadding=3D=220=22 class=3D=22full-width=22 style=3D=
+=22background-color:=23ffffff;=22>
+         <tbody>
+          <tr>
+           <td valign=3D=22top=22>
+           <table width=3D=22100%=22 border=3D=220=22 cellspacing=3D=220=22=
+ cellpadding=3D=220=22 align=3D=22center=22 style=3D=22background-color: =
+=23ffffff=22>
+            <tbody>
+            </tbody>
+           </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=22=22>
+      <tbody> <tr bgcolor=3D=22=23FFFFFF=22>
+       <=21--Spacer-->
+                                             =20
+                                        <td height=3D=2230=22 style=3D=22fo=
+nt-size:1px; line-height:1px; height:30px;=22>&nbsp;</td>
+                            =20
+                        <=21--End Spacer-->
+       =20
+       </tr>
+       <tr bgcolor=3D=22=23FFFFFF=22>
+        <td valign=3D=22top=22>
+        <table width=3D=22540=22 cellspacing=3D=220=22 cellpadding=3D=220=
+=22 border=3D=220=22 align=3D=22center=22 class=3D=22full-width=22 style=3D=
+=22=22>
+         <tbody>
+          <tr>
+           <td valign=3D=22top=22>
+           <table width=3D=22100%=22 cellspacing=3D=220=22 cellpadding=3D=
+=220=22 border=3D=220=22 align=3D=22center=22>
+            <tbody>
+             <tr>
+              <td valign=3D=22top=22>
+				  <table cellspacing=3D=220=22 cellpadding=3D=220=22 border=3D=220=22 a=
+lign=3D=22center=22>
+                  <tbody>
+                         <tr>
+                    <td width=3D=2250=22>&nbsp;</td>
+                    <td width=3D=22500=22 style=3D=22font-size: medium; lin=
+e-height: 24px; font-size:18px; font-family: Gotham, 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; color: =23555555; font-weight: 300; text-align: c=
+enter;=22><Strong>FLASH SALE=21</Strong> Today only, when you buy 6 months =
+you get an additional 6 for <strong>free</strong>=2E Start learning Spanish=
+ now=2E </td>
+                    <td width=3D=2250=22>&nbsp;</td>
+                  =20
+                   </tr>
+               =20
+
+                =20
+                 =20
+
+                  </tbody>
+                 </table>
+				 =20
+				  <table cellspacing=3D=220=22 cellpadding=3D=220=22 border=3D=220=22 a=
+lign=3D=22center=22>
+                  <tbody>
+                    <=21--SPACER-->
+					<tr>
+						<td height=3D=2220=22 style=3D=22font-size:1px; line-height:1px; heig=
+ht:20px;=22>&nbsp;</td>
+					</tr>
+					<=21--END SPACER-->
+					 =20
+					    <tr align=3D=22center=22>
+    <td align=3D=22center=22>
+      <table border=3D=220=22 cellspacing=3D=220=22 cellpadding=3D=220=22 a=
+lign=3D=22center=22>
+        <tr>
+         <td align=3D=22center=22 style=3D=22border-radius: 5px;=22 bgcolor=
+=3D=22=234195D3=22><a href=3D=22https://communications=2Erosettastone=2Ecom=
+/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4=
+WGBYH3HNazeDEkIC5juDlVXtpKX%3DWRRUWCY&_ei_=3DEikbMnhT1SVzNU75E1iS4B0bF22UUe=
+j-ynMZQ7UfuLuFVVJ780xDICakSGwu2OViXpK9PnEzyo_PkUUARzZJfQ3okPNmsM4z3LCz7hf2C=
+_Xw0MEAzFYqkrdsBpUpgZqK-tLznujZSf1_Fi7u3SvNIz42jI6O33EyAkNs9jRMR8BS=2E=22 t=
+arget=3D=22_blank=22 style=3D=22font-size: 20px; font-family: Gotham, 'Helv=
+etica Neue', Helvetica, Arial, sans-serif; font-weight: bold; color: =23fff=
+fff; text-decoration: none; text-decoration: none;border-radius: 3px; paddi=
+ng: 22px 55px; border: 1px solid =234195D3; display: inline-block;=22>BUY N=
+OW</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+					    <=21--SPACER-->
+					<tr>
+						<td height=3D=2220=22 style=3D=22font-size:1px; line-height:1px; heig=
+ht:20px;=22>&nbsp;</td>
+					</tr>
+					<=21--END SPACER-->
+                   <tr>
+                    <td colspan=3D=223=22 valign=3D=22top=22 class=3D=22ima=
+ge-100-percent=22 style=3D=22text-align: center;=22><a href=3D=22https://co=
+mmunications=2Erosettastone=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGozaz=
+gizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNazeDEkIC5juDlVXtpKX%3DWRRUWCY&_ei_=
+=3DEikbMnhT1SVzNU75E1iS4B0bF22UUej-ynMZQ7UfuLuFVVJ780xDICakSGwu2OViXpK9PnEz=
+yo_PkUUARzZJfQ3okPNmsM4z3LCz7hf2C_Xw0MEAzFYqkrdsBpUpgZqK-tLznujZSf1_Fi7u3Sv=
+NIz42jI6O33EyAkNs9jRMR8BS=2E=22 target=3D=22_blank=22><span class=3D=22imag=
+e-100-percent=22 style=3D=22line-height:0px;=22><img src=3D=22https://stati=
+c=2Ecdn=2Eresponsys=2Enet/i5/responsysimages/rosettastone/contentlibrary/us=
+_ab_tests/images/em_divbar=2Epng=22 width=3D=22600=22 alt=3D=22=22 border=
+=3D=220=22 style=3D=22display: block;=22 /></span></a></td>
+                   </tr>
+                  </tbody>
+                 </table>
+             =20
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=22=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+        <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=
+=22 border=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=
+=22background-color: rgb(255, 255, 255); border-bottom-width: 0px; border-b=
+ottom-style: solid; border-bottom-color: rgb(228, 228, 228);=22>
+         <tbody>
+          <tr>
+           <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=
+=22>
+           <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=22=
+0=22 border=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=
+=22background-color: =23ffffff; =22>
+            <tbody>
+             <tr bgcolor=3D=22=23ffffff=22>
+              <td valign=3D=22top=22 bgcolor=3D=22=23ffffff=22 style=3D=22t=
+ext-align: center;=22>&nbsp;</td>
+             </tr>
+            </tbody>
+           </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 height=3D=222=22 align=3D=22center=22 class=3D=
+=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22full-width=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22 class=3D=22image-100-percent=22 style=3D=22t=
+ext-align: center;=22><a href=3D=22https://communications=2Erosettastone=2E=
+com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79uk=
+Xh4WGBYH3HNazeDEkIC5juDlVXtpKX%3DWRRUWCY&_ei_=3DEikbMnhT1SVzNU75E1iS4B0bF22=
+UUej-ynMZQ7UfuLuFVVJ780xDICakSGwu2OViXpK9PnEzyo_PkUUARzZJfQ3okPNmsM4z3LCz7h=
+f2C_Xw0MEAzFYqkrdsBpUpgZqK-tLznujZSf1_Fi7u3SvNIz42jI6O33EyAkNs9jRMR8BS=2E=
+=22 target=3D=22_blank=22><span class=3D=22image-100-percent=22 style=3D=22=
+line-height:0px;=22><img src=3D=22https://static=2Ecdn=2Eresponsys=2Enet/i5=
+/responsysimages/rosettastone/contentlibrary/us_ab_tests/images/rsdiff=2Ejp=
+g=22 width=3D=22600=22 alt=3D=22The Rosetta Stone difference=22 border=3D=
+=220=22 style=3D=22display: block;=22 /></span></a></td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+   </tbody>
+   <tbody>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 height=3D=2211=22 cellspacing=3D=220=22 cellp=
+adding=3D=220=22 border=3D=220=22 align=3D=22center=22 class=3D=22full-widt=
+h=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22 height=3D=2211=22 class=3D=22image-100-perce=
+nt=22 style=3D=22line-height: 0px; text-align: center;=22>&nbsp;</td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 class=3D=22fix-box=22>
+     <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=22bac=
+kground-color: =23f8f6f0;=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22>
+        <table width=3D=22100%=22 cellspacing=3D=220=22 cellpadding=3D=220=
+=22 border=3D=220=22 align=3D=22center=22>
+         <tbody>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+       <tr>
+        <td height=3D=2210=22 style=3D=22text-align: center;=22></td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22>
+     <table width=3D=22100%=22 cellspacing=3D=220=22 cellpadding=3D=220=22 =
+border=3D=220=22 align=3D=22center=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22 align=3D=22center=22>
+        <table width=3D=22600=22 cellspacing=3D=220=22 cellpadding=3D=220=
+=22 border=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=
+=22background-color: =23f8f6f0;=22>
+         <tbody>
+          <tr>
+           <td valign=3D=22top=22>
+           <table width=3D=22560=22 cellspacing=3D=220=22 cellpadding=3D=22=
+0=22 border=3D=220=22 align=3D=22center=22 class=3D=22full-width=22>
+            <tbody>
+             <tr>
+              <td valign=3D=22top=22 height=3D=225=22 style=3D=22text-align=
+: center;=22></td>
+             </tr>
+             <tr>
+              <td valign=3D=22middle=22>
+              <table cellspacing=3D=220=22 cellpadding=3D=220=22 border=3D=
+=220=22 align=3D=22center=22 class=3D=22clear-align=22 style=3D=22height:10=
+0%;=22>
+               <tbody>
+                <tr align=3D=22center=22 valign=3D=22middle=22>
+                 <td style=3D=22font-size: 1em; line-height: 18px; color: r=
+gb(4, 133, 246); font-weight: 300; text-align: center; font-family: Helveti=
+ca, Arial, sans-serif;=22><a href=3D=22https://communications=2Erosettaston=
+e=2Ecom/pub/optout?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTv=
+zgDY79ukXh4WGBYH3HNazeDEkIC5juDl&_ei_=3DEolaGGF4SNMvxFF7KucKuWOq1xslChIo8ox=
+QwJLGBjuIJiS9dwN-H54=22 style=3D=22text-decoration: none; color: rgb(4, 133=
+, 246);=22> Unsubscribe </a>&nbsp;=7C&nbsp;                      <a href=3D=
+=22https://communications=2Erosettastone=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3DYQpg=
+lLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNazeDEkIC5juDlVXtpKX%3=
+DWRRUYRY&_ei_=3DErSX1kmZ-kUC0DvROR7xufyj91WgYlbSm23DNr_UALBz__KoVIYfPiJ9gDv=
+RaqKoEQYWe9ePrgj-uM=2E=22 style=3D=22text-decoration: none; color: rgb(4, 1=
+33, 246);=22> Privacy Policy</a> &nbsp;=7C&nbsp;                      <a hr=
+ef=3D=22https://communications=2Erosettastone=2Ecom/pub/cc?_ri_=3DX0Gzc2X%3=
+DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNazeDEkIC5juDlVXt=
+pKX%3DWRRUYTY&_ei_=3DErSX1kmZ-kUC0DvROR7xufxjsr5U8lAV0zGViCiv6pjObcaVWb2zH2=
+7DYmJkFhJNXwS6mxuVOwx8sg=2E=22 style=3D=22text-decoration: none; color: rgb=
+(4, 133, 246);=22>Web Version</a></td>
+                </tr>
+               </tbody>
+               <tbody>
+               </tbody>
+              </table>
+              </td>
+             </tr>
+             <tr>
+              <td valign=3D=22top=22 height=3D=2220=22 style=3D=22text-alig=
+n: center;=22></td>
+             </tr>
+            </tbody>
+           </table>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td valign=3D=22top=22 align=3D=22center=22 style=3D=22=22>
+     <table width=3D=22600=22 cellspacing=3D=225=22 cellpadding=3D=220=22 b=
+order=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=22bac=
+kground-color: =23f8f6f0;=22>
+      <tbody>
+       <tr>
+        <td valign=3D=22top=22>
+        <table width=3D=22560=22 cellspacing=3D=220=22 cellpadding=3D=225=
+=22 border=3D=220=22 align=3D=22center=22 class=3D=22container=22 style=3D=
+=22background-color: =23f8f6f0;=22>
+         <tbody>
+          <tr>
+           <td valign=3D=22top=22 style=3D=22font-size: 1em; line-height: 2=
+2px; font-family: Helvetica, sans-serif; color: rgb(113, 113, 113); font-we=
+ight: 300; text-align: center;=22>
+           <p>*This offer is for a free additional 6 month subscription wit=
+h the purchase of a 6 month subscription=2E At the end of the first 12 mont=
+hs, your plan will automatically renew as a 6-month subscription=2E Offer l=
+imited to purchases made directly from Rosetta Stone and cannot be combined=
+ with any other offer=2E Offer valid through 06/12/2018 while quantities la=
+st=2E Online services must be activated within 6 months of purchase or are =
+subject to forfeiture=2E</p>
+           <p>&copy; 2018 Rosetta Stone Ltd=2E All Rights Reserved=2E 135 W=
+est Market Street, Harrisonburg, VA 22801</p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p style=3D=22text-align: center;=22></p><br><table cellpadding=3D=220=22=
+ cellspacing=3D=220=22 style=3D=22border: 0px; padding: 0px; margin: 0px; p=
+osition: absolute; display: none; float: left=22>
+<tr>
+<td height=3D=221=22 style=3D=22font-size: 1px; line-height: 1px; padding: =
+0px;=22>
+<br><img src=3D=22https://communications=2Erosettastone=2Ecom/pub/as?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlYQGozazgizczeJa59I6psPzcbAcTvzgDY79ukXh4WGBYH3HNazeD=
+EkIC5juDlVXHkMX%3Dw&_ei_=3DEolaGGF4SNMvxFF7KucKuWOq1xslChIo8oxQwJLGBjuIJiS9=
+dwN-H54=2E=22></img>
+<br><=21--Start BK pixel--><IMG SRC=3D=22https://tags=2Ebluekai=2Ecom/site/=
+43624?e_id_s43624=3D4d5c11c03a68ff24a356dc6c011b6f7d8be2822547f78602cde09ae=
+602cd7081&e_id_m43624=3D45e96afba0814964d7eccb2bf6fe1ede=22 HEIGHT=3D=221=
+=22 WIDTH=3D=221=22><br/><br/><=21--End BK pixel-->
+<br><img border=3D=220=22 width=3D=221=22 height=3D=221=22 src=3D=22https:/=
+/ib=2Eadnxs=2Ecom/getuid?https://a=2Eadrsp=2Enet/dsp/ci/2/E3o6NnkAAN6CI_YB9=
+QzhoUdDUI9QEprTm5chvOyFLha88pdt-jL-Q6G7AHON0ryPVyxuXT1ogZ9h6iuzFFLa/%24UID=
+=22></img>
+</td>
+</tr>
+</table>
+ </body>
+</html>
+
+

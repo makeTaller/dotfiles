@@ -2,7 +2,11 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/david/.oh-my-zsh
+  export ZSH=/home/kbriki/.oh-my-zsh
+
+# Path to npm installed with nvm
+  export PATH=$PATH:/home/kbriki/.nvm/versions/node/v10.9.0/bin/npm
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -62,6 +66,8 @@ plugins=(
   git
 )
 
+plugins+=(zsh-nvm)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -92,7 +98,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-set -o vi 
+#
+alias w3m="w3m duckduckgo.com"
 screenfetch
-alias w3m='w3m duckduckgo.com'
-#[ -z "$TMUX" ] && command -v tmux > /dev/null && TERM=xterm-256color && exec tmux
+set -o vi 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+

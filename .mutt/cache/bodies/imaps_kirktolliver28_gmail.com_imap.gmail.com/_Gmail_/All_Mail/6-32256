@@ -1,0 +1,2015 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 2002:a17:90a:3450:0:0:0:0 with SMTP id o74-v6csp4209221pjb;
+        Mon, 11 Jun 2018 08:13:17 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLK/FmVKHXFpw8h30KNIG41mF5hp14+U4FbmEZVzGBgCs3whyynsXfb6stCu726A0kD2vXS
+X-Received: by 2002:aca:be86:: with SMTP id o128-v6mr8938084oif.301.1528729997084;
+        Mon, 11 Jun 2018 08:13:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528729997; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CrQ0RxhGsQBd9RnUPIXWD0yJc6WQ7Sf5JEDPZPKweLz7eY+y33jouGhqsZp9Ia+xCV
+         +y/V6xkRlc38Q6hf5Nzq5TRVR79sXwVhvKlrtTE+UfFzvIhpxTAaubVfgPhdgUplWEOn
+         hQCg55t2G2LT192GqBvLj2BJB4Url8xpoMA/LmNoyik2mbv93KX7/2y2mnXxqNmuFx6d
+         rx6hW/r3Uh8DymEEiWT8u91vQuvsC6VTyF+EL4knwJyNRNmgkELdG4d7/dz+Rb2n5KYT
+         cNm9Ab2gVbr2AKGHy8amZe47ez+ZSiUe45txXLOabFKuRDy6/GkRLOrjXQwuAxf3xqZu
+         M57g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:feedback-id:list-unsubscribe:mime-version:subject:message-id
+         :to:reply-to:from:dkim-signature:arc-authentication-results;
+        bh=Nmk/wtMw32gAHBfbNyAeXvMjMOakyJUAREEUyd2UM8w=;
+        b=o0/vs7BP9VukJpIF7Hp0ckJM5yZxiBh4j11WBUtXb4WDo6ohOzpnUA853psnRD/um5
+         96Cfc9fEEwiCck7jDNWMeScrvp9GxSDJlQ14+oyIX72mGgY3OCWFMin6ACtnZFTf6ltB
+         xlfCdrFbFebzjL1jzrpPj/1+yYzqLGuBJW07cCFqOUkb55A7vHcyULMzRUQVZSJl92Ap
+         oHH4GPqN4LQ3YxuWPza16T0tPd/x8l2tQ/FgrfSU7HiuBijoHSWOhp5r3e4sNwaFpaoR
+         urXfhZgi5FvGpvzCW7JFIZMVqHjbHGcKTfVPuk65Sqb+4l2mxIUEulyO7Nh4CJax9+64
+         GM/g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@indeed.com header.s=default header.b=siscWlxI;
+       spf=pass (google.com: domain of alert@indeed.com designates 198.58.75.82 as permitted sender) smtp.mailfrom=alert@indeed.com;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=indeed.com
+Return-Path: <alert@indeed.com>
+Received: from mail82.indeed.com (mail82.indeed.com. [198.58.75.82])
+        by mx.google.com with ESMTPS id r49-v6si9829336ota.27.2018.06.11.08.13.16
+        for <kirktolliver28@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 11 Jun 2018 08:13:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alert@indeed.com designates 198.58.75.82 as permitted sender) client-ip=198.58.75.82;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@indeed.com header.s=default header.b=siscWlxI;
+       spf=pass (google.com: domain of alert@indeed.com designates 198.58.75.82 as permitted sender) smtp.mailfrom=alert@indeed.com;
+       dmarc=pass (p=QUARANTINE sp=NONE dis=NONE) header.from=indeed.com
+Received: from aus-mexec62.indeed.net (aus-mexec62.indeed.net [10.1.2.59])
+	by mail82.indeed.com (Postfix) with ESMTP id 414Gjm4gNHzGtpBk
+	for <kirktolliver28@gmail.com>; Mon, 11 Jun 2018 10:13:16 -0500 (CDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=indeed.com;
+	s=default; t=1528729996;
+	bh=Nmk/wtMw32gAHBfbNyAeXvMjMOakyJUAREEUyd2UM8w=;
+	h=From:Reply-To:To:Subject:List-Unsubscribe:Date;
+	b=siscWlxI5E/jLqkD+bEAUtySvudqSdD2rU5O24utb1AlzP6I5kaiPAGYhqwivsKHV
+	 sHShXh2PizeQWY4aVz1Wknjf9QFlBT8cNeStzJ5tE1bQGn7rEHCcZ8SBuPT7Q4iPov
+	 iVg1dFFrYB3fXBygLAnGyJwxohfNcM/lgG/2cWp0=
+From: Indeed <alert@indeed.com>
+Reply-To: Indeed <do-not-reply@indeed.com>
+To: kirktolliver28@gmail.com
+Message-ID: <1cfnmetr12tube39.1528729996638.Railgunner@aus-mexec20.indeed.net>
+Subject: 30+ new Technical Support jobs in Chicago, IL
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_74448605_8711094.1528729996648"
+List-Unsubscribe: <https://subscriptions.indeed.com/alerts/cancel?token=CkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=US&hl=en&tmtk=1cfnmetr12tube39&subId=5a2ab9ebe4b03e6921bab107&rgtk=1cfnmh32p2glbblv&from=listunsub>
+Feedback-ID: JOBALERT:RailgunnerDaemon:Indeed
+X-Indeed-FBL: 5a2ab9ebe4b03e6921bab107:2:aa6d2e93088ee3c245c05e908cd40900fef273f8102dc84b0cace3277f6b99df
+X-Indeed-Client-App: RailgunnerDaemon
+X-Indeed-Content-Type: JOBALERT
+X-Indeed-TK: 1cfnmh3av2glbbb9
+Date: Mon, 11 Jun 2018 10:13:16 -0500 (CDT)
+
+------=_Part_74448605_8711094.1528729996648
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Indeed Job Alert
+Technical Support jobs in Chicago, IL
+
+Jobs 1-30 of 175 new jobs
+See matching results on Indeed: https://www.indeed.com/jobs?q=3DTechnical+S=
+upport&hl=3Den&from=3Dja&l=3DChicago%2C+IL&radius=3D25&alid=3D5a2ab9ebe4b03=
+e6921bab107&tmtk=3D1cfnmetr12tube39&utm_source=3Djobseeker_emails&utm_mediu=
+m=3Demail&utm_campaign=3Djob_alerts&of=3D1&fr=3Dt
+
+
+Technical Support Analyst
+Medulla - Oak Brook, IL
+Medulla LLC is seeking a Technical Support Analyst to work in Information T=
+echnology Department. Update documentation describing support processes and=
+...
+Medulla - Jun 9
+https://www.indeed.com/rc/clk/dl?jk=3D4f10e9394042410e&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DRVdIwvIOgGRyQATjCUOwhdPu-0bJyOrVXPgWOW9J5h=
+0&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Network Administrator - Network Support
+Access Broadband - Oak Brook, IL
+We do a wide array of technical related work, both indoors and out, so no t=
+wo days are ever alike. Responsibilities will include the support of corpor=
+ate...
+Access Broadband - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3Da163f01280f7cb73&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DbKNAUAgBZTnEZxFIcuujzl_MKnaSAFGAsD6kfERFt3=
+g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Platform Technical Support - Level 1
+Crowe - Oak Brook, IL
+Technical understanding of ServiceNow. Responsible for providing 1st level =
+end user and technical support for the Crowe business delivery platforms...=
+.
+Crowe - Jun 8
+https://www.indeed.com/rc/clk/dl?jk=3Dc9143f888b26abf2&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DWPdCTYq1ZBHM1poxVAfv11_MKnaSAFGAsD6kfERFt3=
+g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Sr. Technical Support Engineer
+Enghouse - Oak Brook, IL
+2+ years technical customer support and troubleshooting experience; The Sen=
+ior Technical Support Engineer will provide application and configuration s=
+upport of...
+Enghouse - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3Daf495c7eb72c2ee8&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DXz_BPd8uwD7p5SZJpoZayl_MKnaSAFGAsD6kfERFt3=
+g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Spec Infra Support Srvcs II
+Quest Diagnostics - Wood Dale, IL
+Assure the provision of superior technical support to customers by seeking =
+regular. Provided by Field IT Support....
+Quest Diagnostics - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3D5105a661321239e1&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DeavxBocA1KKXTkYJKc4ML8_GpDQUpdPT4XwZZ0YIiX=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+End User Support Specialist
+Navistar, Inc. - Lisle, IL
+Functional / Technical Skills. At least 4 years of experience providing IT =
+technical services and support using network remote access....
+Navistar, Inc. - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3D1a3c880703203d9d&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DImGoVo9ulPBproJP8FA10npHiNhXzRhj_cnpiDh5UR=
+U&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Services technology specialist
+Ulta Beauty - Bolingbrook, IL
+Support to Field Team via Ulta Support Tickets JOB REQUIREMENTS. In additio=
+n, the role is responsible for general department support when it comes to =
+training...
+Ulta Beauty - Jun 8
+https://www.indeed.com/rc/clk/dl?jk=3D929c5232bfc738f4&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DmlcWWhoEB84Ug9aTgB647tPu-0bJyOrVXPgWOW9J5h=
+0&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Network Support Analyst
+Republic Bank of Chicago - Oak Brook, IL
+The analyst will do so by handling help desk tickets, ensuring they are ent=
+ered into the system, responding to 1st level tickets and assigning 2nd and=
+ 3rd level...
+Republic Bank of Chicago - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3Dcba90a9d6bc86a73&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DGxRrtYVpv3SWf84CvIKim3pHiNhXzRhj_cnpiDh5UR=
+U&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+IT Help Desk Technician
+Gulshan Management Services - Downers Grove, IL
+The Help Desk Technician provides first level technical phone and remote su=
+pport for incidents and requests reported to the IT Help Desk....
+Indeed - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3D58caf45d0656b9fa&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DY9tUdkd5kw9dqOv55wcEg1_MKnaSAFGAsD6kfERFt3=
+g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Help Desk - IT Support Specialist
+Dynamic Solutions Group - Chicago, IL
+HELP DESK IT SUPPORT SPECIALIST*. Provide technical remote and/or on-site s=
+upport for clients. Dynamic Solutions Group is currently seeking an experie=
+nced and...
+Indeed - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3Df40e3b33d7ab3dcf&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DeaQM0fp2WkUD8vZWxQ2SQdPu-0bJyOrVXPgWOW9J5h=
+0&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Senior Desktop Support Technician
+Federal Signal Corporation - Oak Brook, IL
+The Senior Desktop Support Technician serves as a single point of contact f=
+or end-users to receive support and maintenance within the organization=E2=
+=80=99s desktop...
+Federal Signal Corporation - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3D5e58f476e8f02421&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DyON7vZ4td41GGpAPelGL6RaoqJKgOUUWvTBl_hebvu=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Aircraft Technical Representative
+Gogo Commercial Aviation - Bensenville, IL
+The primary function of the Technical Representative is to support Gogo=E2=
+=80=99s customers in Chicago while performing maintenance, repair, troubles=
+hooting and return...
+Gogo Commercial Aviation - Jun 9
+https://www.indeed.com/rc/clk/dl?jk=3Dda39bcbd6b9df70f&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D_vrfN62LJy1LYVtwu7-B0AbXCHXgJEVMrHKBS2mW9r=
+M&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Technical Support Analyst (m/w)
+MPDV Mikrolab GmbH - Chicago, IL
+Are interested in establishing our local US support organization and become=
+ a part of our global support service team....
+MPDV Mikrolab GmbH - Jun 11
+https://www.indeed.com/rc/clk/dl?jk=3D1fea5ad30aa1081f&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DGGJojhUryd6ZkiohIwIyugbXCHXgJEVMrHKBS2mW9r=
+M&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Azure Operations Lead
+Nexgen Packaging LLC - Westmont, IL
+Experience with the design, deployment, and support of large, complex syste=
+ms and orchestration to deploy cloud solutions....
+Indeed - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3D4d05c5c35c77aef3&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D3Lu-7D07jPEfEfsKCxJ_hAbXCHXgJEVMrHKBS2mW9r=
+M&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+WMRA Customer Service Supervisor
+Waste Management - Lombard, IL
+Technical assistance to customer service staff, and supports programs that.=
+ Address and support client. Support on planning and coordinating of intern=
+ational...
+Waste Management - Jun 8
+https://www.indeed.com/rc/clk/dl?jk=3D93c5204aec97745f&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3Dz_pigxacSyXtLoGE6jY0mwsnOLhQXJeGPvQQwS5osg=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Analyst, Technical Support
+Rio Tinto - Chicago, IL
+Analyst, Technical Support. Background in compliance, legal, technical pref=
+erred. Support the organization of commercial events with customers....
+Rio Tinto - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3D3752cf1a41143d86&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DoxzfBJg7v5bH-lEX1a3a79sOwAAefBnS4uT4BNwtXi=
+I&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Business Intelligence Analyst
+Ulta Beauty - Bolingbrook, IL
+Analyzes systems to support desired needs. Synthesizes current business int=
+elligence or trend data to support recommendations for action....
+Ulta Beauty - Jun 10
+https://www.indeed.com/rc/clk/dl?jk=3D8204ab06c66809b4&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DPHewGpBsnC2hNEVS_u8nVgsnOLhQXJeGPvQQwS5osg=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+ETL/ELT Engineer (Chicagoland or Remote)
+LaunchPoint - Itasca, IL
+Responsible for maintaining technical documentation to support new and exis=
+ting solutions. Assist technical and business analyst in the preparation of=
+ the data...
+LaunchPoint - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3D097a4dbabd3a46de&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D-cTin6oZIIgHGpyXX-fFNhaoqJKgOUUWvTBl_hebvu=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Database Administrator (Postgres, SQL, Hive, Hardoop- Chicagoland or Remote=
+)
+LaunchPoint - Itasca, IL
+Core responsibilities include, but are not limited to implementation, perfo=
+rmance tuning, ongoing maintenance, backup/ recovery, security, auditing, p=
+roduction...
+LaunchPoint - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3Dd7444ab60c442744&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DGXHy4HjX-z1dtl4E5XIL2BaoqJKgOUUWvTBl_hebvu=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Technical Training Instructor
+Navistar, Inc. - Woodridge, IL
+Technical Training Instructor:. Works with engineering, technical support a=
+nd manufacturing to ensure that course material reflects current product fe=
+atures....
+Navistar, Inc. - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3D60ae872ab7c11d5f&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DfsuKavnOwmPSZFU29ixUUWW4xXBGTIWlVfOl08776O=
+E&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Archery Associate
+Bass Pro Shops - Bolingbrook, IL
+Continues technical training to improve proficiency, quality of work and to=
+ achieve higher levels of product knowledge....
+Bass Pro Shops - Jun 10
+https://www.indeed.com/rc/clk/dl?jk=3Dc10084225fa3a8e3&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DZwhSdEcVBMuVg3-ULQMg5h1nad7mHeJIvvNS1DT4gj=
+Q&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Call Center Supervisor
+Blue Dot Safes - Hammond, IN
+Billing, Call Center, Independent Contractor=E2=80=99s, and Technical Suppo=
+rt Dispatch. To support business needs....
+Indeed - Jun 8
+https://www.indeed.com/rc/clk/dl?jk=3Ddf5609db9bb1204e&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DJBRYL2jVxRi1nHWfVxNHhx1nad7mHeJIvvNS1DT4gj=
+Q&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+End User Site Sppt
+Franciscan Health - Hammond, IN
+Pleasant &amp; efficient tech support. End user site support teams help kee=
+p our people up and running. Provide technical advice, guidance and informa=
+l training to...
+Franciscan Health - Jun 8
+https://www.indeed.com/rc/clk/dl?jk=3Db66e383a535210ab&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D1DFSrVsPQm6kM-u7-efhMwsnOLhQXJeGPvQQwS5osg=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Monoline Umbrella Underwriting Technician
+CNA Insurance - Lisle, IL
+Insurance regulatory and technical knowledge. Provides administrative suppo=
+rt and participates in ad-hoc activities as needed....
+CNA Insurance - Jun 11
+https://www.indeed.com/rc/clk/dl?jk=3D8215e2a5e7a916ce&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D9V6MLNdAL5bC0yWFxLizWx1nad7mHeJIvvNS1DT4gj=
+Q&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Sr. Voice / Data Network Consultant
+UnitedHealth Group - Downers Grove, IL
+Provide 3rd level support for data center network infrastructure as require=
+d. Positions in this function involve analysis, design, testing, documentat=
+ion,...
+UnitedHealth Group - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3Dc611f4f145d953bd&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D-OsTL9g_fpmTsPjNlhLZ8WW4xXBGTIWlVfOl08776O=
+E&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Customer Service Representative
+Molex - Lisle, IL
+Supports department by seeking opportunities to streamline or automate depa=
+rtmental procedures. We work together with the world=E2=80=99s innovators t=
+o design and...
+Molex - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3D2ab53338619983df&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DEnTsfIs0oJWtvZdnyVPdWNsOwAAefBnS4uT4BNwtXi=
+I&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Public Safety Telecommunicator
+Edward-Elmhurst Health - Elmhurst, IL
+Must be able to communicate effectively and efficiently in a variety of tec=
+hnical or professional languages, including legal and medical terminology, =
+and...
+Edward-Elmhurst Health - Jun 10
+https://www.indeed.com/rc/clk/dl?jk=3Ddf454f62fea8c7d5&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D7rCVDF2WeAkq6_krDUchuQbXCHXgJEVMrHKBS2mW9r=
+M&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Customer Care Representative
+Internet Brands - Downers Grove, IL
+Support requests include:. Handle inbound calls and provide web knowledge a=
+nd technical support to clients. Telephone based client support or customer=
+ service...
+Internet Brands - Jun 6
+https://www.indeed.com/rc/clk/dl?jk=3Dc1cf6a042fe5f887&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DVSpZECLk038T0zw6jSvwwAbXCHXgJEVMrHKBS2mW9r=
+M&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Tech Course Developer
+Navistar, Inc. - Woodridge, IL
+The Technical Course Developer is responsible for creating curriculum, both=
+ web based and instructor led, that engages, educates, and supports service=
+...
+Navistar, Inc. - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3D037e89ff85a3a4a5&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DC5SRsEPOeHs7jhH_5w0L0WW4xXBGTIWlVfOl08776O=
+E&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+Director, Customer Engagement-Midwest (Utilities)
+Nexant, Inc. - Hinsdale, IL
+Nexant supports clients through four distinct business units:. Provide need=
+-based support to a few named accounts in Northeast as directed by the SVP,=
+ East....
+Nexant, Inc. - Jun 7
+https://www.indeed.com/rc/clk/dl?jk=3D5ce987bf018c62d5&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3Dd31RpuZ_GYw5MrOQ1rZMORaoqJKgOUUWvTBl_hebvu=
+c&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107
+
+
+Cancel this Job Alert: https://subscriptions.indeed.com/alerts/cancel?token=
+=3DCkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgtt=
+xj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7=
+oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tube39&subId=3D5a2ab9ebe=
+4b03e6921bab107&rgtk=3D1cfnmh32p2glbblv&from=3Dja
+
+Indeed - one search. all jobs. | 6433 Champion Grandview Way, Building 1, A=
+ustin, TX 78750
+
+------=_Part_74448605_8711094.1528729996648
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html> <html xmlns=3D"http://www.w3.org/1999/xhtml"> <head> <title=
+>IndeedJobAlert_email</title> <meta http-equiv=3D"Content-Type" content=3D"=
+text/html; charset=3Dutf-8" /> <meta name=3D"viewport" content=3D"width=3Dd=
+evice-width, initial-scale=3D1.0" /> <style type=3D"text/css"> a{ outline:n=
+one; color:#00c; text-decoration:none; } a:hover{text-decoration:none !impo=
+rtant;} a[x-apple-data-detectors]{color:inherit !important; text-decoration=
+:none !important;} .active:hover{opacity:0.8;} .active{ -webkit-transition:=
+all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease;=
+ transition:all 0.3s ease; } .link a:hover{text-decoration: underline !impo=
+rtant;} .no-adr span{ border: none !important; color: #000 !important; } a =
+img{border:none;} table td{mso-line-height-rule:exactly;} .ExternalClass, .=
+ExternalClass a, .ExternalClass span, .ExternalClass b, .ExternalClass br, =
+.ExternalClass p, .ExternalClass div{line-height:inherit;} @media only scre=
+en and (max-width:500px) { /* default style */ table.flexible {width:100% !=
+important;} table.table-center {float:none !important; margin:0 auto !impor=
+tant; width:auto !important;} .hide {display:none !important; width:0 !impo=
+rtant; height:0 !important; padding:0 !important; font-size:0 !important; l=
+ine-height:0 !important;} td.img-flex img{width:100% !important; height:aut=
+o !important;} td.aligncenter {text-align:center !important;} tr.table-hold=
+er {display:table !important; width:100% !important;} th.tcap {display:tabl=
+e-caption !important; width:100% !important;} th.thead {display:table-heade=
+r-group !important; width:100% !important;} th.trow {display:table-row !imp=
+ortant; width:100% !important;} th.tfoot {display:table-footer-group !impor=
+tant; width:100% !important;} th.flex {display:block !important; width:100%=
+ !important;} /* custom style */ td.content {padding: 25px 15px !important;=
+} td#related_alerts, #follow_companies {padding: 25px 15px 0px !important;}=
+ td.nps-button {padding:0 !important;} td.nps-button td {border-radius:0 !i=
+mportant;} td.nps-2 td, td.nps-3 td, td.nps-4 td, td.nps-5 td {border-left:=
+0 !important;} td.nps-1 td{border-top-left-radius:4px !important; border-bo=
+ttom-left-radius:4px !important;} td.nps-5 td{border-top-right-radius:4px !=
+important; border-bottom-right-radius:4px !important;} .image_ad_wrapper {w=
+idth:auto !important;} } @media only screen and (max-width: 800px) { .show-=
+when-mobile { display: block!important; max-height: none!important; } .hide=
+-when-mobile { display: none!important; } /* Hide job description if screen=
+ width smaller than 800px */ .job-info-snippet { display: none!important; }=
+ #responsive_css_ping { background-image: url(https://www.indeed.com/ja/jra=
+ilrespcss.png?rgtk=3D1cfnmetr12tube39); } } @media only screen and (min-wid=
+th: 801px) { #outer-table { min-width: 510px; } .job-info-snippet { display=
+: block!important; } } .image_ad_desktop { max-width: 464px; height: auto; =
+} </style> </head> <body style=3D"margin:0; padding:0; -webkit-text-size-ad=
+just:100%; -ms-text-size-adjust:100%;" bgcolor=3D"#f2f2f2"> <span class=3D"=
+preheader" style=3D"color:transparent; display:none !important; height:0; o=
+pacity:0; mso-hide:all; visibility:hidden; width:0"> UnitedHealth Group, Qu=
+est Diagnostics, and Ulta Beauty have opportunities for you! </span> <div i=
+d=3D"responsive_css_ping"> <div style=3D"font-family:Arial,sans-serif;direc=
+tion:ltr"> <img src=3D"https://www.indeed.com/imgping?type=3Dja&tk=3D1cfnme=
+tr12tube39&aluidhash=3D5a2ab9ebe4b03e6921bab107" height=3D"1" width=3D"1"> =
+<table style=3D"min-width:320px;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0"> <tr> <td style=3D"padding: 0 10px;" bgcolor=3D"#f2f2f2"> <!--[if=
+ (gte mso 9)|(IE)]> <table style=3D"width: 100%;"> <tr> <td> <center> <tabl=
+e style=3D"width: 510px; margin: 0 auto; text-align: left;"> <tr> <td> <![e=
+ndif]--> <table id=3D"outer-table" class=3D"flexible" align=3D"center" styl=
+e=3D"margin:0 auto 12px; width:100%; max-width:510px;" cellpadding=3D"0" ce=
+llspacing=3D"0"> <!-- header --> <tr> <td align=3D"center" style=3D"padding=
+: 25px 0;"> <a href=3Dhttps://www.indeed.com/?utm_source=3Djobseeker_emails=
+&utm_medium=3Demail&utm_campaign=3Djob_alerts target=3D"_blank" style=3D"te=
+xt-decoration:none;"><img src=3D"https://subscriptions.indeed.com/static/im=
+ages/logos/indeed_retina@2x.png" style=3D"vertical-align:top; width: 137px;=
+font:bold 36px/36px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#21=
+64f3;" alt=3D"indeed" width=3D"137" /></a> </td> </tr> <!-- content --> <tr=
+> <td class=3D"content" bgcolor=3D"#ffffff" style=3D"padding: 25px 19px;"> =
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td style=
+=3D"padding: 0 0 18px; border-bottom: 1px solid #d9d9d9;"> <table width=3D"=
+100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading2" a=
+lign=3D"center" style=3D"font:23px/28px HelveticaNeue, Helvetica, Arial, sa=
+ns-serif;; color:#f60; padding:0 0 6px;"> 30+ new Technical Support jobs in=
+ Chicago, IL </td> </tr> </table> </td> </tr> <!-- block --> <tr> <td style=
+=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a styl=
+e=3D"text-decoration:none;" target=3D"_blank" href=3D"https://www.indeed.co=
+m/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0D7Ru_VXHGrJmXUTAMfiaiKICo8oevGbSikAk_=
+2oaOPHfKusY4yiiw-YklH8UsL1gdEinQFjulzU_iXxa8pCMmKJ6tIwWUjzeU8kqZ_J_1oAm2ErG=
+-QX7IqMV6RTeM_HR9xaulN2YrNyl8STHcddAayraCsiX5fLYl8Z7Z7wkR9MewYCqNtRK4uhftuu=
+EDTHkV7VJ8fmtUEznr-49EM6d_hzBo7b2Kv2tOQfAG5nB-L2vTxEXlx78OzmYnuQsKKF5oGgse7=
+mrGWeTomQrOhiKJMEjlPKwUv0oA1F1x1F_O-RIGlWxfkHQkoCiQgKkNcX-rKu09BSMlFooL_Kgl=
+iUMUpb_yPw4j0NcLhscwUZyl1pjlOEnl6Jbkl-tcFCKwbJmm0POA9JfphtxHi-8x80lvWK7eAj9=
+-IRRwuzTmXHR27RWycbpYv1gc87CsAR-ilW2mVKgGV6X30DAaQZQXC1_8koZPT1_Uyf1rXtum1V=
+cJRwA%3D%3D&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9e=
+be4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://ww=
+w.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0D7Ru_VXHGrJmXUTAMfiaiKICo8=
+oevGbSikAk_2oaOPHfKusY4yiiw-YklH8UsL1gdEinQFjulzU_iXxa8pCMmKJ6tIwWUjzeU8kqZ=
+_J_1oAm2ErG-QX7IqMV6RTeM_HR9xaulN2YrNyl8STHcddAayraCsiX5fLYl8Z7Z7wkR9MewYCq=
+NtRK4uhftuuEDTHkV7VJ8fmtUEznr-49EM6d_hzBo7b2Kv2tOQfAG5nB-L2vTxEXlx78OzmYnuQ=
+sKKF5oGgse7mrGWeTomQrOhiKJMEjlPKwUv0oA1F1x1F_O-RIGlWxfkHQkoCiQgKkNcX-rKu09B=
+SMlFooL_KgliUMUpb_yPw4j0NcLhscwUZyl1pjlOEnl6Jbkl-tcFCKwbJmm0POA9JfphtxHi-8x=
+80lvWK7eAj9-IRRwuzTmXHR27RWycbpYv1gc87CsAR-ilW2mVKgGV6X30DAaQZQXC1_8koZPT1_=
+Uyf1rXtum1VcJRwA%3D%3D&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&ali=
+d=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px=
+/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Technical=
+ Sales, Cutting Tool Specialist</a> </td> </tr> <tr> <td style=3D"font:15px=
+/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span =
+class=3D"sg-paragraph-large" style=3D"color: #000;" > Schwanog, LLC </span>=
+ <span class=3D"sg-paragraph-large db"> - Elgin, IL </span> </td> </tr> <tr=
+> <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, Hel=
+vetica, Arial, sans-serif; color:#000;"> <b>Technical</b> education or expe=
+rience as a cutting tool machinist / technician,. Handle daily <b>technical=
+</b> phone inquiries from customers and having fun doing so.... </td> </tr>=
+ <tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px HelveticaNeue=
+, Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> <tr>=
+ <td class =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue=
+, Helvetica, Arial, sans-serif;; color:#808080;" > Sponsored </td> </tr> </=
+table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; borde=
+r-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D=
+"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D4f10e9394042410e&fro=
+m=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJ=
+OddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DRVdIwvIOgGRyQATjCUOwhdPu-=
+0bJyOrVXPgWOW9J5h0&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> =
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=
+=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/cl=
+k/dl?jk=3D4f10e9394042410e&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm=
+6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&=
+rd=3DRVdIwvIOgGRyQATjCUOwhdPu-0bJyOrVXPgWOW9J5h0&tk=3D1cfnmetr12tube39&alid=
+=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/=
+20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Technical =
+Support Analyst</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaN=
+eue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-para=
+graph-large" style=3D"color: #000;" > Medulla </span> <span style=3D"displa=
+y: -moz-inline-box; display:inline-block; height: 11px; line-height: 11px; =
+background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); bac=
+kground-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D"dis=
+play: -moz-inline-box; display:inline-block; height: 11px; line-height: 11p=
+x; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); =
+background-size: 12px 22px; width:30.0px; background-position: 0 11px;"></s=
+pan></span> <span style=3D"display:inline-block;font-size:13px;"> <a href=
+=3D"https://www.indeed.com/cmp/Medulla/reviews?utm_source=3Djobseeker_email=
+s&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-decoration:no=
+ne; white-space:nowrap; color:#77c" target=3D"_blank"> 16 reviews </a> </sp=
+an> <span class=3D"sg-paragraph-large db"> - Oak Brook, IL </span> </td> </=
+tr> <tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNe=
+ue, Helvetica, Arial, sans-serif; color:#000;"> Medulla LLC is seeking a <b=
+>Technical</b> <b>Support</b> Analyst to work in Information Technology Dep=
+artment. Update documentation describing <b>support</b> processes and... </=
+td> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13px/18px Helve=
+ticaNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 9 </td> </tr> <t=
+r> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNe=
+ue, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> <=
+/a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom=
+: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank"=
+ href=3D"https://www.indeed.com/rc/clk/dl?jk=3Da163f01280f7cb73&from=3Dja&q=
+d=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo5=
+8gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DbKNAUAgBZTnEZxFIcuujzl_MKnaSAFGAs=
+D6kfERFt3g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table w=
+idth=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-hea=
+ding4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D=
+a163f01280f7cb73&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE=
+53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DbKNAU=
+AgBZTnEZxFIcuujzl_MKnaSAFGAsD6kfERFt3g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9e=
+be4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/20px Helve=
+ticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Network Administrato=
+r - Network Support</a> </td> </tr> <tr> <td style=3D"font:15px/18px Helvet=
+icaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-=
+paragraph-large" style=3D"color: #000;" > Access Broadband </span> <span cl=
+ass=3D"sg-paragraph-large db"> - Oak Brook, IL </span> </td> </tr> <tr> <td=
+ style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color=
+:#000;"> <nobr>$40,000 - $55,000 a year</nobr> </td> </tr> <tr> <td class=
+=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Ari=
+al, sans-serif; color:#000;"> We do a wide array of <b>technical</b> relate=
+d work, both indoors and out, so no two days are ever alike. Responsibiliti=
+es will include the <b>support</b> of corporate... </td> </tr> <tr> <td cla=
+ss=3D"easy-apply-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, =
+Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> <tr> <td class=3D=
+"post-date-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial,=
+ sans-serif; color:#999;" > Jun 6 </td> </tr> <tr> <td class =3D"sponsored-=
+text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-=
+serif;; color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td st=
+yle=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a s=
+tyle=3D"text-decoration:none;" target=3D"_blank" href=3D"https://www.indeed=
+.com/rc/clk/dl?jk=3Dc9143f888b26abf2&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQW=
+Te4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b=
+5Zilrbiy0&rd=3DWPdCTYq1ZBHM1poxVAfv11_MKnaSAFGAsD6kfERFt3g&tk=3D1cfnmetr12t=
+ube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_bla=
+nk" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Dc9143f888b26abf2&from=3Dj=
+a&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZG=
+Ho58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DWPdCTYq1ZBHM1poxVAfv11_MKnaSAF=
+GAsD6kfERFt3g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=
+=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Ari=
+al, sans-serif;; color:#00c;" >Platform Technical Support - Level 1</a> </t=
+d> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, =
+sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"c=
+olor: #000;" > Crowe </span> <span style=3D"display: -moz-inline-box; displ=
+ay:inline-block; height: 11px; line-height: 11px; background-image: url(htt=
+ps://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; =
+width: 60px; margin: 0 0.25em;"><span style=3D"display: -moz-inline-box; di=
+splay:inline-block; height: 11px; line-height: 11px; background-image: url(=
+https://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22p=
+x; width:48.0px; background-position: 0 11px;"></span></span> <span style=
+=3D"display:inline-block;font-size:13px;"> <a href=3D"https://www.indeed.co=
+m/cmp/Crowe-Chizek-and-Company-LLC/reviews?utm_source=3Djobseeker_emails&ut=
+m_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-decoration:none; =
+white-space:nowrap; color:#77c" target=3D"_blank"> 6 reviews </a> </span> <=
+span class=3D"sg-paragraph-large db"> - Oak Brook, IL </span> </td> </tr> <=
+tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, H=
+elvetica, Arial, sans-serif; color:#000;"> <b>Technical</b> understanding o=
+f ServiceNow. Responsible for providing 1st level end user and <b>technical=
+</b> <b>support</b> for the Crowe business delivery platforms.... </td> </t=
+r> <tr> <td class=3D"post-date-footer" style=3D"font:13px/18px HelveticaNeu=
+e, Helvetica, Arial, sans-serif; color:#999;" > Jun 8 </td> </tr> <tr> <td =
+class =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Hel=
+vetica, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> </a> </t=
+d> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px s=
+olid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" href=
+=3D"https://www.indeed.com/rc/clk/dl?jk=3Daf495c7eb72c2ee8&from=3Dja&qd=3DR=
+nZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6J=
+aV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DXz_BPd8uwD7p5SZJpoZayl_MKnaSAFGAsD6kfE=
+RFt3g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading=
+4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Daf49=
+5c7eb72c2ee8&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0=
+vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DXz_BPd8uw=
+D7p5SZJpoZayl_MKnaSAFGAsD6kfERFt3g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b=
+03e6921bab107" style=3D"text-decoration:none; font:bold 16px/20px Helvetica=
+Neue, Helvetica, Arial, sans-serif;; color:#00c;" >Sr. Technical Support En=
+gineer</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helv=
+etica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-lar=
+ge" style=3D"color: #000;" > Enghouse </span> <span class=3D"sg-paragraph-l=
+arge db"> - Oak Brook, IL </span> </td> </tr> <tr> <td class=3D"job-info-sn=
+ippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;=
+ color:#000;"> 2+ years <b>technical</b> customer <b>support</b> and troubl=
+eshooting experience; The Senior <b>Technical</b> <b>Support</b> Engineer w=
+ill provide application and configuration <b>support</b> of... </td> </tr> =
+<tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px HelveticaNeue,=
+ Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> <tr> =
+<td class=3D"post-date-footer" style=3D"font:13px/18px HelveticaNeue, Helve=
+tica, Arial, sans-serif; color:#999;" > Jun 7 </td> </tr> <tr> <td class =
+=3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica=
+, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> </a> </td> </t=
+r> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #=
+d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" href=3D"http=
+s://www.indeed.com/rc/clk/dl?jk=3D5105a661321239e1&from=3Dja&qd=3DRnZhMybXS=
+k4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT=
+5O_m8-35UH-R1b5Zilrbiy0&rd=3DeavxBocA1KKXTkYJKc4ML8_GpDQUpdPT4XwZZ0YIiXc&tk=
+=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%"=
+ cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a ta=
+rget=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D5105a66132123=
+9e1&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4=
+DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DeavxBocA1KKXTkYJKc=
+4ML8_GpDQUpdPT4XwZZ0YIiXc&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921ba=
+b107" style=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Hel=
+vetica, Arial, sans-serif;; color:#00c;" >Spec Infra Support Srvcs II</a> <=
+/td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial=
+, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D=
+"color: #000;" > Quest Diagnostics </span> <span style=3D"display: -moz-inl=
+ine-box; display:inline-block; height: 11px; line-height: 11px; background-=
+image: url(https://www.indeed.com/images/cmp/star_2_sm.png); background-siz=
+e: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D"display: -moz-=
+inline-box; display:inline-block; height: 11px; line-height: 11px; backgrou=
+nd-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); background-=
+size: 12px 22px; width:45.6px; background-position: 0 11px;"></span></span>=
+ <span style=3D"display:inline-block;font-size:13px;"> <a href=3D"https://w=
+ww.indeed.com/cmp/Quest-Diagnostics/reviews?utm_source=3Djobseeker_emails&u=
+tm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-decoration:none;=
+ white-space:nowrap; color:#77c" target=3D"_blank"> 3,441 reviews </a> </sp=
+an> <span class=3D"sg-paragraph-large db"> - Wood Dale, IL </span> </td> </=
+tr> <tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNe=
+ue, Helvetica, Arial, sans-serif; color:#000;"> Assure the provision of sup=
+erior <b>technical</b> <b>support</b> to customers by seeking regular. Prov=
+ided by Field IT <b>Support</b>.... </td> </tr> <tr> <td class=3D"post-date=
+-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-seri=
+f; color:#999;" > Jun 6 </td> </tr> <tr> <td class =3D"sponsored-text-foote=
+r" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; co=
+lor:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"pad=
+ding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"te=
+xt-decoration:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/cl=
+k/dl?jk=3D1a3c880703203d9d&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm=
+6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&=
+rd=3DImGoVo9ulPBproJP8FA10npHiNhXzRhj_cnpiDh5URU&tk=3D1cfnmetr12tube39&alid=
+=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cells=
+pacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"=
+https://www.indeed.com/rc/clk/dl?jk=3D1a3c880703203d9d&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DImGoVo9ulPBproJP8FA10npHiNhXzRhj_cnpiDh5UR=
+U&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-deco=
+ration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-seri=
+f;; color:#00c;" >End User Support Specialist</a> </td> </tr> <tr> <td styl=
+e=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6=
+f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Navista=
+r, Inc. </span> <span style=3D"display: -moz-inline-box; display:inline-blo=
+ck; height: 11px; line-height: 11px; background-image: url(https://www.inde=
+ed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; =
+margin: 0 0.25em;"><span style=3D"display: -moz-inline-box; display:inline-=
+block; height: 11px; line-height: 11px; background-image: url(https://www.i=
+ndeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:43.1=
+99997px; background-position: 0 11px;"></span></span> <span style=3D"displa=
+y:inline-block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Navi=
+star,-Inc./reviews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_cam=
+paign=3Djob_alerts" style=3D"text-decoration:none; white-space:nowrap; colo=
+r:#77c" target=3D"_blank"> 584 reviews </a> </span> <span class=3D"sg-parag=
+raph-large db"> - Lisle, IL </span> </td> </tr> <tr> <td class=3D"job-info-=
+snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-seri=
+f; color:#000;"> Functional / <b>Technical</b> Skills. At least 4 years of =
+experience providing IT <b>technical</b> services and <b>support</b> using =
+network remote access.... </td> </tr> <tr> <td class=3D"post-date-footer" s=
+tyle=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#=
+999;" > Jun 7 </td> </tr> <tr> <td class =3D"sponsored-text-footer" style=
+=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808=
+080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20=
+px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decor=
+ation:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=
+=3D929c5232bfc738f4&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6Ag=
+bDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3Dml=
+cWWhoEB84Ug9aTgB647tPu-0bJyOrVXPgWOW9J5h0&tk=3D1cfnmetr12tube39&alid=3D5a2a=
+b9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https:=
+//www.indeed.com/rc/clk/dl?jk=3D929c5232bfc738f4&from=3Dja&qd=3DRnZhMybXSk4=
+M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O=
+_m8-35UH-R1b5Zilrbiy0&rd=3DmlcWWhoEB84Ug9aTgB647tPu-0bJyOrVXPgWOW9J5h0&tk=
+=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decorati=
+on:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; =
+color:#00c;" >Services technology specialist</a> </td> </tr> <tr> <td style=
+=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f=
+6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Ulta Bea=
+uty </span> <span style=3D"display: -moz-inline-box; display:inline-block; =
+height: 11px; line-height: 11px; background-image: url(https://www.indeed.c=
+om/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; marg=
+in: 0 0.25em;"><span style=3D"display: -moz-inline-box; display:inline-bloc=
+k; height: 11px; line-height: 11px; background-image: url(https://www.indee=
+d.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:42.0px; =
+background-position: 0 11px;"></span></span> <span style=3D"display:inline-=
+block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Ulta/reviews?=
+utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts"=
+ style=3D"text-decoration:none; white-space:nowrap; color:#77c" target=3D"_=
+blank"> 3,271 reviews </a> </span> <span class=3D"sg-paragraph-large db"> -=
+ Bolingbrook, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" st=
+yle=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#0=
+00;"> <b>Support</b> to Field Team via Ulta <b>Support</b> Tickets JOB REQU=
+IREMENTS. In addition, the role is responsible for general department <b>su=
+pport</b> when it comes to training... </td> </tr> <tr> <td class=3D"post-d=
+ate-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-s=
+erif; color:#999;" > Jun 8 </td> </tr> <tr> <td class =3D"sponsored-text-fo=
+oter" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;;=
+ color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"=
+padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D=
+"text-decoration:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc=
+/clk/dl?jk=3Dcba90a9d6bc86a73&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5Bz=
+wYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbi=
+y0&rd=3DGxRrtYVpv3SWf84CvIKim3pHiNhXzRhj_cnpiDh5URU&tk=3D1cfnmetr12tube39&a=
+lid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" ce=
+llspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=
+=3D"https://www.indeed.com/rc/clk/dl?jk=3Dcba90a9d6bc86a73&from=3Dja&qd=3DR=
+nZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6J=
+aV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DGxRrtYVpv3SWf84CvIKim3pHiNhXzRhj_cnpiD=
+h5URU&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-=
+decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-=
+serif;; color:#00c;" >Network Support Analyst</a> </td> </tr> <tr> <td styl=
+e=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6=
+f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Republi=
+c Bank of Chicago </span> <span style=3D"display: -moz-inline-box; display:=
+inline-block; height: 11px; line-height: 11px; background-image: url(https:=
+//www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; wid=
+th: 60px; margin: 0 0.25em;"><span style=3D"display: -moz-inline-box; displ=
+ay:inline-block; height: 11px; line-height: 11px; background-image: url(htt=
+ps://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; =
+width:43.199997px; background-position: 0 11px;"></span></span> <span style=
+=3D"display:inline-block;font-size:13px;"> <a href=3D"https://www.indeed.co=
+m/cmp/Republic-Bank-of-Chicago/reviews?utm_source=3Djobseeker_emails&utm_me=
+dium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-decoration:none; whit=
+e-space:nowrap; color:#77c" target=3D"_blank"> 15 reviews </a> </span> <spa=
+n class=3D"sg-paragraph-large db"> - Oak Brook, IL </span> </td> </tr> <tr>=
+ <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helv=
+etica, Arial, sans-serif; color:#000;"> The analyst will do so by handling =
+help desk tickets, ensuring they are entered into the system, responding to=
+ 1st level tickets and assigning 2nd and 3rd level... </td> </tr> <tr> <td =
+class=3D"easy-apply-footer" style=3D"font:13px/18px HelveticaNeue, Helvetic=
+a, Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> <tr> <td class=
+=3D"post-date-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Ari=
+al, sans-serif; color:#999;" > Jun 6 </td> </tr> <tr> <td class =3D"sponsor=
+ed-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sa=
+ns-serif;; color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td=
+ style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <=
+a style=3D"text-decoration:none;" target=3D"_blank" href=3D"https://www.ind=
+eed.com/rc/clk/dl?jk=3D58caf45d0656b9fa&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXW=
+oQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-=
+R1b5Zilrbiy0&rd=3DY9tUdkd5kw9dqOv55wcEg1_MKnaSAFGAsD6kfERFt3g&tk=3D1cfnmetr=
+12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_bl=
+ank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D58caf45d0656b9fa&from=3D=
+ja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZ=
+GHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DY9tUdkd5kw9dqOv55wcEg1_MKnaSA=
+FGAsD6kfERFt3g&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=
+=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Ari=
+al, sans-serif;; color:#00c;" >IT Help Desk Technician</a> </td> </tr> <tr>=
+ <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; c=
+olor:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" =
+> Gulshan Management Services </span> <span class=3D"sg-paragraph-large db"=
+> - Downers Grove, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippe=
+t" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; col=
+or:#000;"> The Help Desk Technician provides first level <b>technical</b> p=
+hone and remote <b>support</b> for incidents and requests reported to the I=
+T Help Desk.... </td> </tr> <tr> <td class=3D"easy-apply-footer" style=3D"f=
+ont:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;"> Ea=
+sily apply </td> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13=
+px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 7 <=
+/td> </tr> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18p=
+x HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </t=
+r> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; =
+border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" targ=
+et=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Df40e3b33d7ab3dc=
+f&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4Ds=
+DcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DeaQM0fp2WkUD8vZWxQ2S=
+QdPu-0bJyOrVXPgWOW9J5h0&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab1=
+07"> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td cl=
+ass=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc=
+/clk/dl?jk=3Df40e3b33d7ab3dcf&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5Bz=
+wYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbi=
+y0&rd=3DeaQM0fp2WkUD8vZWxQ2SQdPu-0bJyOrVXPgWOW9J5h0&tk=3D1cfnmetr12tube39&a=
+lid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16=
+px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Help De=
+sk - IT Support Specialist</a> </td> </tr> <tr> <td style=3D"font:15px/18px=
+ HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=
+=3D"sg-paragraph-large" style=3D"color: #000;" > Dynamic Solutions Group </=
+span> <span class=3D"sg-paragraph-large db"> - Chicago, IL </span> </td> </=
+tr> <tr> <td style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-=
+serif; color:#000;"> <nobr>$38,000 - $50,000 a year</nobr> </td> </tr> <tr>=
+ <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helv=
+etica, Arial, sans-serif; color:#000;"> HELP DESK IT <b>SUPPORT</b> SPECIAL=
+IST*. Provide <b>technical</b> remote and/or on-site <b>support</b> for cli=
+ents. Dynamic Solutions Group is currently seeking an experienced and... </=
+td> </tr> <tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px Helv=
+eticaNeue, Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </td> <=
+/tr> <tr> <td class=3D"post-date-footer" style=3D"font:13px/18px HelveticaN=
+eue, Helvetica, Arial, sans-serif; color:#999;" > Jun 7 </td> </tr> <tr> <t=
+d class =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, H=
+elvetica, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> </a> <=
+/td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px=
+ solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" href=
+=3D"https://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0CMknLBzL7r2T=
+1y7gMrj2gkoAgox4iEbyvw3GPQD57cTLMgh5-3pXMka-rgBV4QnQGGYrJUITkQgTOFpL2QMVoQe=
+Cq0VpQ6w5V3elJlM80mSTor9m7GIz33YKiIBLTQUXyCC3BM4YYN3XIDOkQAZOCUReBdziMj0Bn1=
+vDrRpPUkDmsiJA6US019EE5OBr05dHgcIxrxyaV1rZIlGWZy4e_yUpfp3mrLBqjqEvrgABytOIg=
+iwWhPF95tJUUA1rM060qvyj3ieB89pPYcrr9wsb4dx1U-Ng8m8Pi4eDu5W-NoPKzHuanFQnn-zs=
+B877bA2viLWNRFIFXifC_hsH4DKLGYZKf2g_nxTXsnd0SDvUCV8SUHElwKDnAq_kKRaAFvTbjxF=
+QNo_5J49IVd-4ZDNE9-6GaRcF8_kzfpwVKVnlsP_R58eteafLFJc8SQlZRyhcpwAL09rOCHmGHa=
+XFOngl9_haWgsxEDOnlgaidP-OLhBS5hc881GqdcBO0RN4KAcsni6w8MeeaTYg%3D%3D&p=3D0&=
+jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"=
+> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=
+=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/pagea=
+d/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0CMknLBzL7r2T1y7gMrj2gkoAgox4iEbyvw3GPQD57cTL=
+Mgh5-3pXMka-rgBV4QnQGGYrJUITkQgTOFpL2QMVoQeCq0VpQ6w5V3elJlM80mSTor9m7GIz33Y=
+KiIBLTQUXyCC3BM4YYN3XIDOkQAZOCUReBdziMj0Bn1vDrRpPUkDmsiJA6US019EE5OBr05dHgc=
+IxrxyaV1rZIlGWZy4e_yUpfp3mrLBqjqEvrgABytOIgiwWhPF95tJUUA1rM060qvyj3ieB89pPY=
+crr9wsb4dx1U-Ng8m8Pi4eDu5W-NoPKzHuanFQnn-zsB877bA2viLWNRFIFXifC_hsH4DKLGYZK=
+f2g_nxTXsnd0SDvUCV8SUHElwKDnAq_kKRaAFvTbjxFQNo_5J49IVd-4ZDNE9-6GaRcF8_kzfpw=
+VKVnlsP_R58eteafLFJc8SQlZRyhcpwAL09rOCHmGHaXFOngl9_haWgsxEDOnlgaidP-OLhBS5h=
+c881GqdcBO0RN4KAcsni6w8MeeaTYg%3D%3D&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnme=
+tr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; =
+font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00=
+c;" >Technical Support Specialist I - Science Degrees Wanted!</a> </td> </t=
+r> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-s=
+erif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: =
+#000;" > Cole-Parmer Instrument Company </span> <span style=3D"display: -mo=
+z-inline-box; display:inline-block; height: 11px; line-height: 11px; backgr=
+ound-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); backgroun=
+d-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D"display: =
+-moz-inline-box; display:inline-block; height: 11px; line-height: 11px; bac=
+kground-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); backgr=
+ound-size: 12px 22px; width:44.4px; background-position: 0 11px;"></span></=
+span> <span style=3D"display:inline-block;font-size:13px;"> <a href=3D"http=
+s://www.indeed.com/cmp/Cole--parmer-Instrument-Company/reviews?utm_source=
+=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"=
+text-decoration:none; white-space:nowrap; color:#77c" target=3D"_blank"> 17=
+ reviews </a> </span> <span class=3D"sg-paragraph-large db"> - Vernon Hills=
+, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" style=3D"font:=
+13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> Our cu=
+stomers will primarily contact you by phone, email and live chat for <b>sup=
+port</b>. <b>Supports</b> Channel Partner Sales manager and customer networ=
+ks with... </td> </tr> <tr> <td class =3D"sponsored-text-footer" style=3D"f=
+ont:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808080;"=
+ > Sponsored </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"paddin=
+g: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-=
+decoration:none;" target=3D"_blank" href=3D"https://www.indeed.com/pagead/c=
+lk/dl?mo=3Dr&ad=3D-6NYlbfkN0Ci4RKChwPyG56ddfYB-BJIfJaXjfU1gLRJZbwSa3KiTmP8k=
+fRplofHJr2i-BNRatzVaLuWQ7S_HZn0GshhF7eLmHAvH193GybIzr8WdLW5YiSxXhImPw2teaCj=
+HDekWJMgiDnqstRxSRTO4hrHrBjrY80rWEZ8QoCBCNyRm2b7fL7-zvJwHHpCON56YSDuUzeUBZ-=
+MP269uxkKuvfenqO1oSd5dy0sZm9IS6Z0iDVj9pOptyf_F_C5nhdRA8AvXjaoXqfVusDtKcEBn3=
+qzMZ2uU_xKHTVIiouX7Rs1NG97SoRKUqk73GuGwUaMUTPeq0MWzoaz4bC_ph4OtHfiyQMCLX_Zh=
+fb_q9LR5u9EBn4v7ekdK6_1QKEYOA0_Xl-mTbildMFJNhCVyimcMG3ixIyhzjgfLj4Cim8FHdeR=
+3EDJakUAfFkuWQmXSv-wyhwO5xUmOIGgY-bzjSMUp1S0a-xZfh0TbjN-0Kg%3D&p=3D0&jsa=3D=
+6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <tab=
+le width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg=
+-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/pagead/clk/=
+dl?mo=3Dr&ad=3D-6NYlbfkN0Ci4RKChwPyG56ddfYB-BJIfJaXjfU1gLRJZbwSa3KiTmP8kfRp=
+lofHJr2i-BNRatzVaLuWQ7S_HZn0GshhF7eLmHAvH193GybIzr8WdLW5YiSxXhImPw2teaCjHDe=
+kWJMgiDnqstRxSRTO4hrHrBjrY80rWEZ8QoCBCNyRm2b7fL7-zvJwHHpCON56YSDuUzeUBZ-MP2=
+69uxkKuvfenqO1oSd5dy0sZm9IS6Z0iDVj9pOptyf_F_C5nhdRA8AvXjaoXqfVusDtKcEBn3qzM=
+Z2uU_xKHTVIiouX7Rs1NG97SoRKUqk73GuGwUaMUTPeq0MWzoaz4bC_ph4OtHfiyQMCLX_Zhfb_=
+q9LR5u9EBn4v7ekdK6_1QKEYOA0_Xl-mTbildMFJNhCVyimcMG3ixIyhzjgfLj4Cim8FHdeR3ED=
+JakUAfFkuWQmXSv-wyhwO5xUmOIGgY-bzjSMUp1S0a-xZfh0TbjN-0Kg%3D&p=3D0&jsa=3D647=
+7&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D=
+"text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial,=
+ sans-serif;; color:#00c;" >Application Support Analyst</a> </td> </tr> <tr=
+> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; =
+color:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;"=
+ > Command Alkon </span> <span style=3D"display: -moz-inline-box; display:i=
+nline-block; height: 11px; line-height: 11px; background-image: url(https:/=
+/www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; widt=
+h: 60px; margin: 0 0.25em;"><span style=3D"display: -moz-inline-box; displa=
+y:inline-block; height: 11px; line-height: 11px; background-image: url(http=
+s://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; w=
+idth:48.0px; background-position: 0 11px;"></span></span> <span style=3D"di=
+splay:inline-block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/=
+Command-Alkon/reviews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_=
+campaign=3Djob_alerts" style=3D"text-decoration:none; white-space:nowrap; c=
+olor:#77c" target=3D"_blank"> 16 reviews </a> </span> <span class=3D"sg-par=
+agraph-large db"> - Oak Brook, IL </span> </td> </tr> <tr> <td class=3D"job=
+-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, san=
+s-serif; color:#000;"> The Application <b>Support</b> Analyst will provide =
+front-line primary <b>technical</b> <b>support</b> to end users on various =
+<b>technical</b> issues and problems relating to hardware,... </td> </tr> <=
+tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px HelveticaNeue, =
+Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> <tr> <=
+td class =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, =
+Helvetica, Arial, sans-serif;; color:#808080;" > Sponsored </td> </tr> </ta=
+ble> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-=
+bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_=
+blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D5e58f476e8f02421&from=
+=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJO=
+ddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DyON7vZ4td41GGpAPelGL6RaoqJ=
+KgOUUWvTBl_hebvuc&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <=
+table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D=
+"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/d=
+l?jk=3D5e58f476e8f02421&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iM=
+e6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=
+=3DyON7vZ4td41GGpAPelGL6RaoqJKgOUUWvTBl_hebvuc&tk=3D1cfnmetr12tube39&alid=
+=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/=
+20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Senior Des=
+ktop Support Technician</a> </td> </tr> <tr> <td style=3D"font:15px/18px He=
+lveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D=
+"sg-paragraph-large" style=3D"color: #000;" > Federal Signal Corporation </=
+span> <span style=3D"display: -moz-inline-box; display:inline-block; height=
+: 11px; line-height: 11px; background-image: url(https://www.indeed.com/ima=
+ges/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 =
+0.25em;"><span style=3D"display: -moz-inline-box; display:inline-block; hei=
+ght: 11px; line-height: 11px; background-image: url(https://www.indeed.com/=
+images/cmp/star_2_sm.png); background-size: 12px 22px; width:40.800003px; b=
+ackground-position: 0 11px;"></span></span> <span style=3D"display:inline-b=
+lock;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Federal-Signal=
+-Corporation/reviews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_c=
+ampaign=3Djob_alerts" style=3D"text-decoration:none; white-space:nowrap; co=
+lor:#77c" target=3D"_blank"> 29 reviews </a> </span> <span class=3D"sg-para=
+graph-large db"> - Oak Brook, IL </span> </td> </tr> <tr> <td class=3D"job-=
+info-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans=
+-serif; color:#000;"> The Senior Desktop <b>Support</b> Technician serves a=
+s a single point of contact for end-users to receive <b>support</b> and mai=
+ntenance within the organization=E2=80=99s desktop... </td> </tr> <tr> <td =
+class=3D"post-date-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica=
+, Arial, sans-serif; color:#999;" > Jun 7 </td> </tr> <tr> <td class =3D"sp=
+onsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Aria=
+l, sans-serif;; color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr=
+> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9=
+;"> <a style=3D"text-decoration:none;" target=3D"_blank" href=3D"https://ww=
+w.indeed.com/rc/clk/dl?jk=3Dda39bcbd6b9df70f&from=3Dja&qd=3DRnZhMybXSk4M3Qt=
+TVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-=
+35UH-R1b5Zilrbiy0&rd=3D_vrfN62LJy1LYVtwu7-B0AbXCHXgJEVMrHKBS2mW9rM&tk=3D1cf=
+nmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellp=
+adding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=
+=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Dda39bcbd6b9df70f&=
+from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDc=
+IKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D_vrfN62LJy1LYVtwu7-B0A=
+bXCHXgJEVMrHKBS2mW9rM&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107=
+" style=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Helveti=
+ca, Arial, sans-serif;; color:#00c;" >Aircraft Technical Representative</a>=
+ </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Ari=
+al, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=
+=3D"color: #000;" > Gogo Commercial Aviation </span> <span class=3D"sg-para=
+graph-large db"> - Bensenville, IL </span> </td> </tr> <tr> <td class=3D"jo=
+b-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sa=
+ns-serif; color:#000;"> The primary function of the <b>Technical</b> Repres=
+entative is to <b>support</b> Gogo=E2=80=99s customers in Chicago while per=
+forming maintenance, repair, troubleshooting and return... </td> </tr> <tr>=
+ <td class=3D"post-date-footer" style=3D"font:13px/18px HelveticaNeue, Helv=
+etica, Arial, sans-serif; color:#999;" > Jun 9 </td> </tr> <tr> <td class =
+=3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica=
+, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> </a> </td> </t=
+r> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #=
+d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" href=3D"http=
+s://www.indeed.com/rc/clk/dl?jk=3D1fea5ad30aa1081f&from=3Dja&qd=3DRnZhMybXS=
+k4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT=
+5O_m8-35UH-R1b5Zilrbiy0&rd=3DGGJojhUryd6ZkiohIwIyugbXCHXgJEVMrHKBS2mW9rM&tk=
+=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%"=
+ cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a ta=
+rget=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D1fea5ad30aa10=
+81f&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4=
+DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DGGJojhUryd6ZkiohIw=
+IyugbXCHXgJEVMrHKBS2mW9rM&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921ba=
+b107" style=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Hel=
+vetica, Arial, sans-serif;; color:#00c;" >Technical Support Analyst (m/w)</=
+a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, A=
+rial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" styl=
+e=3D"color: #000;" > MPDV Mikrolab GmbH </span> <span class=3D"sg-paragraph=
+-large db"> - Chicago, IL </span> </td> </tr> <tr> <td class=3D"job-info-sn=
+ippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;=
+ color:#000;"> Are interested in establishing our local US <b>support</b> o=
+rganization and become a part of our global <b>support</b> service team....=
+ </td> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13px/18px He=
+lveticaNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 11 </td> </tr=
+> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px Helveti=
+caNeue, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </tr> </tabl=
+e> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bo=
+ttom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_bl=
+ank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D4d05c5c35c77aef3&from=3D=
+ja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZ=
+GHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D3Lu-7D07jPEfEfsKCxJ_hAbXCHXgJ=
+EVMrHKBS2mW9rM&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <tab=
+le width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg=
+-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?j=
+k=3D4d05c5c35c77aef3&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6A=
+gbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D3=
+Lu-7D07jPEfEfsKCxJ_hAbXCHXgJEVMrHKBS2mW9rM&tk=3D1cfnmetr12tube39&alid=3D5a2=
+ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/20px H=
+elveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Azure Operations=
+ Lead</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helve=
+tica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-larg=
+e" style=3D"color: #000;" > Nexgen Packaging LLC </span> <span class=3D"sg-=
+paragraph-large db"> - Westmont, IL </span> </td> </tr> <tr> <td style=3D"f=
+ont:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> <n=
+obr>$90,000 - $120,000 a year</nobr> </td> </tr> <tr> <td class=3D"job-info=
+-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-ser=
+if; color:#000;"> Experience with the design, deployment, and <b>support</b=
+> of large, complex systems and orchestration to deploy cloud solutions....=
+ </td> </tr> <tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px H=
+elveticaNeue, Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </td=
+> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13px/18px Helveti=
+caNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 7 </td> </tr> <tr>=
+ <td class =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue=
+, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> </a=
+> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: =
+1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" h=
+ref=3D"https://www.indeed.com/rc/clk/dl?jk=3D93c5204aec97745f&from=3Dja&qd=
+=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58=
+gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3Dz_pigxacSyXtLoGE6jY0mwsnOLhQXJeGPv=
+QQwS5osgc&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table wi=
+dth=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-head=
+ing4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D9=
+3c5204aec97745f&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE5=
+3X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3Dz_pigx=
+acSyXtLoGE6jY0mwsnOLhQXJeGPvQQwS5osgc&tk=3D1cfnmetr12tube39&alid=3D5a2ab9eb=
+e4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/20px Helvet=
+icaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >WMRA Customer Service=
+ Supervisor</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue,=
+ Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragrap=
+h-large" style=3D"color: #000;" > Waste Management </span> <span style=3D"d=
+isplay: -moz-inline-box; display:inline-block; height: 11px; line-height: 1=
+1px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png)=
+; background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=
+=3D"display: -moz-inline-box; display:inline-block; height: 11px; line-heig=
+ht: 11px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm=
+.png); background-size: 12px 22px; width:42.0px; background-position: 0 11p=
+x;"></span></span> <span style=3D"display:inline-block;font-size:13px;"> <a=
+ href=3D"https://www.indeed.com/cmp/Waste-Management/reviews?utm_source=3Dj=
+obseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text=
+-decoration:none; white-space:nowrap; color:#77c" target=3D"_blank"> 3,113 =
+reviews </a> </span> <span class=3D"sg-paragraph-large db"> - Lombard, IL <=
+/span> </td> </tr> <tr> <td class=3D"job-info-snippet" style=3D"font:13px/1=
+8px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> <b>Technical=
+</b> assistance to customer service staff, and <b>supports</b> programs tha=
+t. Address and <b>support</b> client. <b>Support</b> on planning and coordi=
+nating of international... </td> </tr> <tr> <td class=3D"post-date-footer" =
+style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:=
+#999;" > Jun 8 </td> </tr> <tr> <td class =3D"sponsored-text-footer" style=
+=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808=
+080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20=
+px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decor=
+ation:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=
+=3D3752cf1a41143d86&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6Ag=
+bDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3Dox=
+zfBJg7v5bH-lEX1a3a79sOwAAefBnS4uT4BNwtXiI&tk=3D1cfnmetr12tube39&alid=3D5a2a=
+b9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https:=
+//www.indeed.com/rc/clk/dl?jk=3D3752cf1a41143d86&from=3Dja&qd=3DRnZhMybXSk4=
+M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O=
+_m8-35UH-R1b5Zilrbiy0&rd=3DoxzfBJg7v5bH-lEX1a3a79sOwAAefBnS4uT4BNwtXiI&tk=
+=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decorati=
+on:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; =
+color:#00c;" >Analyst, Technical Support</a> </td> </tr> <tr> <td style=3D"=
+font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f;"=
+ > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Rio Tinto </=
+span> <span style=3D"display: -moz-inline-box; display:inline-block; height=
+: 11px; line-height: 11px; background-image: url(https://www.indeed.com/ima=
+ges/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 =
+0.25em;"><span style=3D"display: -moz-inline-box; display:inline-block; hei=
+ght: 11px; line-height: 11px; background-image: url(https://www.indeed.com/=
+images/cmp/star_2_sm.png); background-size: 12px 22px; width:46.800003px; b=
+ackground-position: 0 11px;"></span></span> <span style=3D"display:inline-b=
+lock;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Rio-Tinto/revi=
+ews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_ale=
+rts" style=3D"text-decoration:none; white-space:nowrap; color:#77c" target=
+=3D"_blank"> 605 reviews </a> </span> <span class=3D"sg-paragraph-large db"=
+> - Chicago, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" sty=
+le=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#00=
+0;"> Analyst, <b>Technical</b> <b>Support</b>. Background in compliance, le=
+gal, <b>technical</b> preferred. <b>Support</b> the organization of commerc=
+ial events with customers.... </td> </tr> <tr> <td class=3D"post-date-foote=
+r" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; col=
+or:#999;" > Jun 6 </td> </tr> <tr> <td class =3D"sponsored-text-footer" sty=
+le=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#8=
+08080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: =
+20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-dec=
+oration:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?j=
+k=3D8204ab06c66809b4&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6A=
+gbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DP=
+HewGpBsnC2hNEVS_u8nVgsnOLhQXJeGPvQQwS5osgc&tk=3D1cfnmetr12tube39&alid=3D5a2=
+ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https:=
+//www.indeed.com/rc/clk/dl?jk=3D8204ab06c66809b4&from=3Dja&qd=3DRnZhMybXSk4=
+M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O=
+_m8-35UH-R1b5Zilrbiy0&rd=3DPHewGpBsnC2hNEVS_u8nVgsnOLhQXJeGPvQQwS5osgc&tk=
+=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decorati=
+on:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; =
+color:#00c;" >Business Intelligence Analyst</a> </td> </tr> <tr> <td style=
+=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f=
+6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Ulta Bea=
+uty </span> <span style=3D"display: -moz-inline-box; display:inline-block; =
+height: 11px; line-height: 11px; background-image: url(https://www.indeed.c=
+om/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; marg=
+in: 0 0.25em;"><span style=3D"display: -moz-inline-box; display:inline-bloc=
+k; height: 11px; line-height: 11px; background-image: url(https://www.indee=
+d.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:42.0px; =
+background-position: 0 11px;"></span></span> <span style=3D"display:inline-=
+block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Ulta/reviews?=
+utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts"=
+ style=3D"text-decoration:none; white-space:nowrap; color:#77c" target=3D"_=
+blank"> 3,271 reviews </a> </span> <span class=3D"sg-paragraph-large db"> -=
+ Bolingbrook, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" st=
+yle=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#0=
+00;"> Analyzes systems to <b>support</b> desired needs. Synthesizes current=
+ business intelligence or trend data to <b>support</b> recommendations for =
+action.... </td> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13=
+px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 10 =
+</td> </tr> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18=
+px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </=
+tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px;=
+ border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" tar=
+get=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D097a4dbabd3a46=
+de&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4D=
+sDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D-cTin6oZIIgHGpyXX-f=
+FNhaoqJKgOUUWvTBl_hebvuc&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab=
+107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td c=
+lass=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/r=
+c/clk/dl?jk=3D097a4dbabd3a46de&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5B=
+zwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrb=
+iy0&rd=3D-cTin6oZIIgHGpyXX-fFNhaoqJKgOUUWvTBl_hebvuc&tk=3D1cfnmetr12tube39&=
+alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 1=
+6px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >ETL/EL=
+T Engineer (Chicagoland or Remote)</a> </td> </tr> <tr> <td style=3D"font:1=
+5px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <sp=
+an class=3D"sg-paragraph-large" style=3D"color: #000;" > LaunchPoint </span=
+> <span style=3D"display: -moz-inline-box; display:inline-block; height: 11=
+px; line-height: 11px; background-image: url(https://www.indeed.com/images/=
+cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25=
+em;"><span style=3D"display: -moz-inline-box; display:inline-block; height:=
+ 11px; line-height: 11px; background-image: url(https://www.indeed.com/imag=
+es/cmp/star_2_sm.png); background-size: 12px 22px; width:40.800003px; backg=
+round-position: 0 11px;"></span></span> <span style=3D"display:inline-block=
+;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Launchpoint/review=
+s?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alert=
+s" style=3D"text-decoration:none; white-space:nowrap; color:#77c" target=3D=
+"_blank"> 8 reviews </a> </span> <span class=3D"sg-paragraph-large db"> - I=
+tasca, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" style=3D"=
+font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> R=
+esponsible for maintaining <b>technical</b> documentation to <b>support</b>=
+ new and existing solutions. Assist <b>technical</b> and business analyst i=
+n the preparation of the data... </td> </tr> <tr> <td class=3D"easy-apply-f=
+ooter" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;=
+ color:#f60;"> Easily apply </td> </tr> <tr> <td class=3D"post-date-footer"=
+ style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color=
+:#999;" > Jun 6 </td> </tr> <tr> <td class =3D"sponsored-text-footer" style=
+=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808=
+080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20=
+px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decor=
+ation:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=
+=3Dd7444ab60c442744&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6Ag=
+bDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DGX=
+Hy4HjX-z1dtl4E5XIL2BaoqJKgOUUWvTBl_hebvuc&tk=3D1cfnmetr12tube39&alid=3D5a2a=
+b9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https:=
+//www.indeed.com/rc/clk/dl?jk=3Dd7444ab60c442744&from=3Dja&qd=3DRnZhMybXSk4=
+M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O=
+_m8-35UH-R1b5Zilrbiy0&rd=3DGXHy4HjX-z1dtl4E5XIL2BaoqJKgOUUWvTBl_hebvuc&tk=
+=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decorati=
+on:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; =
+color:#00c;" >Database Administrator (Postgres, SQL, Hive, Hardoop- Chicago=
+land or Remote)</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaN=
+eue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-para=
+graph-large" style=3D"color: #000;" > LaunchPoint </span> <span style=3D"di=
+splay: -moz-inline-box; display:inline-block; height: 11px; line-height: 11=
+px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png);=
+ background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D=
+"display: -moz-inline-box; display:inline-block; height: 11px; line-height:=
+ 11px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.pn=
+g); background-size: 12px 22px; width:40.800003px; background-position: 0 1=
+1px;"></span></span> <span style=3D"display:inline-block;font-size:13px;"> =
+<a href=3D"https://www.indeed.com/cmp/Launchpoint/reviews?utm_source=3Djobs=
+eeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-de=
+coration:none; white-space:nowrap; color:#77c" target=3D"_blank"> 8 reviews=
+ </a> </span> <span class=3D"sg-paragraph-large db"> - Itasca, IL </span> <=
+/td> </tr> <tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px Helv=
+eticaNeue, Helvetica, Arial, sans-serif; color:#000;"> Core responsibilitie=
+s include, but are not limited to implementation, performance tuning, ongoi=
+ng maintenance, backup/ recovery, security, auditing, production... </td> <=
+/tr> <tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px Helvetica=
+Neue, Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> =
+<tr> <td class=3D"post-date-footer" style=3D"font:13px/18px HelveticaNeue, =
+Helvetica, Arial, sans-serif; color:#999;" > Jun 6 </td> </tr> <tr> <td cla=
+ss =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvet=
+ica, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> </a> </td> =
+</tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px soli=
+d #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" href=3D"h=
+ttps://www.indeed.com/rc/clk/dl?jk=3D60ae872ab7c11d5f&from=3Dja&qd=3DRnZhMy=
+bXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_=
+UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DfsuKavnOwmPSZFU29ixUUWW4xXBGTIWlVfOl08776OE=
+&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a=
+ target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D60ae872ab7=
+c11d5f&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9A=
+tj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DfsuKavnOwmPSZFU=
+29ixUUWW4xXBGTIWlVfOl08776OE&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e692=
+1bab107" style=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, =
+Helvetica, Arial, sans-serif;; color:#00c;" >Technical Training Instructor<=
+/a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, =
+Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" sty=
+le=3D"color: #000;" > Navistar, Inc. </span> <span style=3D"display: -moz-i=
+nline-box; display:inline-block; height: 11px; line-height: 11px; backgroun=
+d-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); background-s=
+ize: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D"display: -mo=
+z-inline-box; display:inline-block; height: 11px; line-height: 11px; backgr=
+ound-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); backgroun=
+d-size: 12px 22px; width:43.199997px; background-position: 0 11px;"></span>=
+</span> <span style=3D"display:inline-block;font-size:13px;"> <a href=3D"ht=
+tps://www.indeed.com/cmp/Navistar,-Inc./reviews?utm_source=3Djobseeker_emai=
+ls&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-decoration:n=
+one; white-space:nowrap; color:#77c" target=3D"_blank"> 584 reviews </a> </=
+span> <span class=3D"sg-paragraph-large db"> - Woodridge, IL </span> </td> =
+</tr> <tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px Helvetica=
+Neue, Helvetica, Arial, sans-serif; color:#000;"> <b>Technical</b> Training=
+ Instructor:. Works with engineering, <b>technical</b> <b>support</b> and m=
+anufacturing to ensure that course material reflects current product featur=
+es.... </td> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13px/1=
+8px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 7 </td>=
+ </tr> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px He=
+lveticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </tr> <=
+/table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; bord=
+er-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=
+=3D"_blank" href=3D"https://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlb=
+fkN0CJV2B1YS0fYbC2dqPuviyRPbLnBcPmDderOoTgJfKEup8xim4DhaiGUmN0AbQ6weLPC3TOB=
+PSauGcCaHoduxgudWEeCl3VTbtmI0qW2ZsBiSbuchTLpGw88Ree9dttFRSH18cXetRsuaeOm8kK=
+PoupWeRXjWIAslrt_Ibm1eNxgBxKc84r0YEIC3FAo0_LBUUKmLljOEfn5dg2X3E-0BIIJLwFM1U=
+xYdp7fqrvwO2RAM8XBFzLfASTnwafE5Ozw4zw3Lr40SbPA5GV7Ls27FIBdb2fjk7RCLHPDccMi7=
+ysNYIAJMSuikEp_UiOxFExW8d8B-ZC_Bj1G1Jlli4UtZQ6RUi74vMppPPI8eCRzTL0xyBNAeZdc=
+Rz569Vef4wu-3jWQywYcCKrz25lNxvEkQnwoyGij9ElyfCjyui0liFYwq_Jf-Uonb5u8WTBsno6=
+l8QwigwnSWaE-rEN2DWnM8v1&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&a=
+lid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" ce=
+llspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=
+=3D"https://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0CJV2B1YS0fYb=
+C2dqPuviyRPbLnBcPmDderOoTgJfKEup8xim4DhaiGUmN0AbQ6weLPC3TOBPSauGcCaHoduxgud=
+WEeCl3VTbtmI0qW2ZsBiSbuchTLpGw88Ree9dttFRSH18cXetRsuaeOm8kKPoupWeRXjWIAslrt=
+_Ibm1eNxgBxKc84r0YEIC3FAo0_LBUUKmLljOEfn5dg2X3E-0BIIJLwFM1UxYdp7fqrvwO2RAM8=
+XBFzLfASTnwafE5Ozw4zw3Lr40SbPA5GV7Ls27FIBdb2fjk7RCLHPDccMi7ysNYIAJMSuikEp_U=
+iOxFExW8d8B-ZC_Bj1G1Jlli4UtZQ6RUi74vMppPPI8eCRzTL0xyBNAeZdcRz569Vef4wu-3jWQ=
+ywYcCKrz25lNxvEkQnwoyGij9ElyfCjyui0liFYwq_Jf-Uonb5u8WTBsno6l8QwigwnSWaE-rEN=
+2DWnM8v1&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4=
+b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/20px Helvetic=
+aNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Technical Inside Sales =
+Associate</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, H=
+elvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-=
+large" style=3D"color: #000;" > United Flexible - U.S. Hose Corp </span> <s=
+pan class=3D"sg-paragraph-large db"> - Romeoville, IL </span> </td> </tr> <=
+tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, H=
+elvetica, Arial, sans-serif; color:#000;"> <b>Technical</b> inside sales:. =
+Experience with <b>technical</b> solution based selling. Please provide exa=
+mples of <b>technical</b> sales work that you have been involved with and..=
+. </td> </tr> <tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px =
+HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </t=
+d> </tr> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px =
+HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > Sponsored <=
+/td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20=
+px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:non=
+e;" target=3D"_blank" href=3D"https://www.indeed.com/pagead/clk/dl?mo=3Dr&a=
+d=3D-6NYlbfkN0CnAUIA0OVKrI5--6KBLrLfx6B93lXIkP5h64fqU2nbncZi1T_81gmbGD8HHmY=
+kJPhtQYMzBRrsbj_vUmtgCVJ5arrdst4nZOabKI3Vo5GQfWfbQDCiPWRMjkS1yn-w-QjaDGobgt=
+y40SRUmXqKwLrqFLOxRI-05BVNf61K6b04iN2Zuxtg0qvgMzetpICXd-QtdLUEvSo7XPjJAK4Ly=
+aBo6tv4EbjNqggOqTYRgAb1nTw4gCy8T-RMHJTBS0zyHVesyYkvWvAEuqHgPsH_rmbE8Y1OZH24=
+azeSyYbjH3siwhGR2VUKCVZW3pk8xa7h_zzDpNYJ8xL1jcHB9F02FYYBxGDzA0zOryDvDicJs2O=
+eCJwcNto-TUzs7JMr7C6VxtvCIlYOiMT7r3G-ENOu1PiN03YnooRrHnVrlesbYlNrJTq_hePOuz=
+wLewNZkFQcx83wOoq4hpBexz-nbQp7Csh6UCAqGlcGz16ryQKSlDkoaKKamya6d_Mh76CvrQWsA=
+tUnfF8oZ855gu65ZZGz0KJaapokz-6QqGsghE8SrACa9jfd5ZrgzcuufuOckl2Rll_HW0WyhU6q=
+5cZfi-rlukwlqITUD7mfpPYpZ1Dg-BWnndHGrcy5o4nUpZxUVaRNCuFMo0etUMxorfBUYxfQY5O=
+ZCZ_YrJtZufX9JrivtW0bNBT0K_CEA8vmX1E8fNYdh1LFw3-dgZxOCwYGX-0l4388S-O7jKmLUe=
+9B24lp0l_rTjazM82vVWw_&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&ali=
+d=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cell=
+spacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D=
+"https://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0CnAUIA0OVKrI5--=
+6KBLrLfx6B93lXIkP5h64fqU2nbncZi1T_81gmbGD8HHmYkJPhtQYMzBRrsbj_vUmtgCVJ5arrd=
+st4nZOabKI3Vo5GQfWfbQDCiPWRMjkS1yn-w-QjaDGobgty40SRUmXqKwLrqFLOxRI-05BVNf61=
+K6b04iN2Zuxtg0qvgMzetpICXd-QtdLUEvSo7XPjJAK4LyaBo6tv4EbjNqggOqTYRgAb1nTw4gC=
+y8T-RMHJTBS0zyHVesyYkvWvAEuqHgPsH_rmbE8Y1OZH24azeSyYbjH3siwhGR2VUKCVZW3pk8x=
+a7h_zzDpNYJ8xL1jcHB9F02FYYBxGDzA0zOryDvDicJs2OeCJwcNto-TUzs7JMr7C6VxtvCIlYO=
+iMT7r3G-ENOu1PiN03YnooRrHnVrlesbYlNrJTq_hePOuzwLewNZkFQcx83wOoq4hpBexz-nbQp=
+7Csh6UCAqGlcGz16ryQKSlDkoaKKamya6d_Mh76CvrQWsAtUnfF8oZ855gu65ZZGz0KJaapokz-=
+6QqGsghE8SrACa9jfd5ZrgzcuufuOckl2Rll_HW0WyhU6q5cZfi-rlukwlqITUD7mfpPYpZ1Dg-=
+BWnndHGrcy5o4nUpZxUVaRNCuFMo0etUMxorfBUYxfQY5OZCZ_YrJtZufX9JrivtW0bNBT0K_CE=
+A8vmX1E8fNYdh1LFw3-dgZxOCwYGX-0l4388S-O7jKmLUe9B24lp0l_rTjazM82vVWw_&p=3D0&=
+jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"=
+ style=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetic=
+a, Arial, sans-serif;; color:#00c;" >Manager, Collections Systems Support</=
+a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, A=
+rial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" styl=
+e=3D"color: #000;" > Discover Financial Services </span> <span style=3D"dis=
+play: -moz-inline-box; display:inline-block; height: 11px; line-height: 11p=
+x; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); =
+background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D"=
+display: -moz-inline-box; display:inline-block; height: 11px; line-height: =
+11px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png=
+); background-size: 12px 22px; width:48.0px; background-position: 0 11px;">=
+</span></span> <span style=3D"display:inline-block;font-size:13px;"> <a hre=
+f=3D"https://www.indeed.com/cmp/Discover-Financial-Services/reviews?utm_sou=
+rce=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=
+=3D"text-decoration:none; white-space:nowrap; color:#77c" target=3D"_blank"=
+> 1,693 reviews </a> </span> <span class=3D"sg-paragraph-large db"> - River=
+woods, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" style=3D"=
+font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> T=
+he Manager of System <b>Support</b> uses operational and <b>technical</b> s=
+kills to <b>support</b> the life cycle of CMA back-end systems.... </td> </=
+tr> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px Helve=
+ticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > Sponsored </td> =
+</tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5p=
+x; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" t=
+arget=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Dc10084225fa3=
+a8e3&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj=
+4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DZwhSdEcVBMuVg3-UL=
+QMg5h1nad7mHeJIvvNS1DT4gjQ&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921b=
+ab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td=
+ class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com=
+/rc/clk/dl?jk=3Dc10084225fa3a8e3&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A=
+5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zil=
+rbiy0&rd=3DZwhSdEcVBMuVg3-ULQMg5h1nad7mHeJIvvNS1DT4gjQ&tk=3D1cfnmetr12tube3=
+9&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold=
+ 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Arch=
+ery Associate</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeu=
+e, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragr=
+aph-large" style=3D"color: #000;" > Bass Pro Shops </span> <span style=3D"d=
+isplay: -moz-inline-box; display:inline-block; height: 11px; line-height: 1=
+1px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png)=
+; background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=
+=3D"display: -moz-inline-box; display:inline-block; height: 11px; line-heig=
+ht: 11px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm=
+.png); background-size: 12px 22px; width:44.4px; background-position: 0 11p=
+x;"></span></span> <span style=3D"display:inline-block;font-size:13px;"> <a=
+ href=3D"https://www.indeed.com/cmp/Bass-Pro-Shops/reviews?utm_source=3Djob=
+seeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-d=
+ecoration:none; white-space:nowrap; color:#77c" target=3D"_blank"> 1,262 re=
+views </a> </span> <span class=3D"sg-paragraph-large db"> - Bolingbrook, IL=
+ </span> </td> </tr> <tr> <td class=3D"job-info-snippet" style=3D"font:13px=
+/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> Continues =
+<b>technical</b> training to improve proficiency, quality of work and to ac=
+hieve higher levels of product knowledge.... </td> </tr> <tr> <td class=3D"=
+post-date-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, =
+sans-serif; color:#999;" > Jun 10 </td> </tr> <tr> <td class =3D"sponsored-=
+text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-=
+serif;; color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td st=
+yle=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a s=
+tyle=3D"text-decoration:none;" target=3D"_blank" href=3D"https://www.indeed=
+.com/rc/clk/dl?jk=3Ddf5609db9bb1204e&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQW=
+Te4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b=
+5Zilrbiy0&rd=3DJBRYL2jVxRi1nHWfVxNHhx1nad7mHeJIvvNS1DT4gjQ&tk=3D1cfnmetr12t=
+ube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_bla=
+nk" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Ddf5609db9bb1204e&from=3Dj=
+a&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZG=
+Ho58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DJBRYL2jVxRi1nHWfVxNHhx1nad7mHe=
+JIvvNS1DT4gjQ&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=
+=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Ari=
+al, sans-serif;; color:#00c;" >Call Center Supervisor</a> </td> </tr> <tr> =
+<td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; co=
+lor:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" >=
+ Blue Dot Safes </span> <span style=3D"display: -moz-inline-box; display:in=
+line-block; height: 11px; line-height: 11px; background-image: url(https://=
+www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width=
+: 60px; margin: 0 0.25em;"><span style=3D"display: -moz-inline-box; display=
+:inline-block; height: 11px; line-height: 11px; background-image: url(https=
+://www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; wi=
+dth:44.4px; background-position: 0 11px;"></span></span> <span style=3D"dis=
+play:inline-block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/B=
+lue-Dot-Safes/reviews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_=
+campaign=3Djob_alerts" style=3D"text-decoration:none; white-space:nowrap; c=
+olor:#77c" target=3D"_blank"> 3 reviews </a> </span> <span class=3D"sg-para=
+graph-large db"> - Hammond, IN </span> </td> </tr> <tr> <td class=3D"job-in=
+fo-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-s=
+erif; color:#000;"> Billing, Call Center, Independent Contractor=E2=80=99s,=
+ and <b>Technical</b> <b>Support</b> Dispatch. To <b>support</b> business n=
+eeds.... </td> </tr> <tr> <td class=3D"easy-apply-footer" style=3D"font:13p=
+x/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#f60;"> Easily ap=
+ply </td> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13px/18px=
+ HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 8 </td> </=
+tr> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px Helve=
+ticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </tr> </ta=
+ble> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-=
+bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_=
+blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Db66e383a535210ab&from=
+=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJO=
+ddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D1DFSrVsPQm6kM-u7-efhMwsnOL=
+hQXJeGPvQQwS5osgc&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <=
+table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D=
+"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/d=
+l?jk=3Db66e383a535210ab&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iM=
+e6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=
+=3D1DFSrVsPQm6kM-u7-efhMwsnOLhQXJeGPvQQwS5osgc&tk=3D1cfnmetr12tube39&alid=
+=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/=
+20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >End User S=
+ite Sppt</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, He=
+lvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-l=
+arge" style=3D"color: #000;" > Franciscan Health </span> <span style=3D"dis=
+play: -moz-inline-box; display:inline-block; height: 11px; line-height: 11p=
+x; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); =
+background-size: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D"=
+display: -moz-inline-box; display:inline-block; height: 11px; line-height: =
+11px; background-image: url(https://www.indeed.com/images/cmp/star_2_sm.png=
+); background-size: 12px 22px; width:42.0px; background-position: 0 11px;">=
+</span></span> <span style=3D"display:inline-block;font-size:13px;"> <a hre=
+f=3D"https://www.indeed.com/cmp/Franciscan-Health/reviews?utm_source=3Djobs=
+eeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-de=
+coration:none; white-space:nowrap; color:#77c" target=3D"_blank"> 299 revie=
+ws </a> </span> <span class=3D"sg-paragraph-large db"> - Hammond, IN </span=
+> </td> </tr> <tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px H=
+elveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> Pleasant &amp; ef=
+ficient tech <b>support</b>. End user site <b>support</b> teams help keep o=
+ur people up and running. Provide <b>technical</b> advice, guidance and inf=
+ormal training to... </td> </tr> <tr> <td class=3D"post-date-footer" style=
+=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;=
+" > Jun 8 </td> </tr> <tr> <td class =3D"sponsored-text-footer" style=3D"fo=
+nt:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" =
+> </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px=
+ 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:=
+none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3D8215=
+e2a5e7a916ce&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0=
+vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D9V6MLNdAL=
+5bC0yWFxLizWx1nad7mHeJIvvNS1DT4gjQ&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b=
+03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> =
+<tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://www.in=
+deed.com/rc/clk/dl?jk=3D8215e2a5e7a916ce&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGX=
+WoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH=
+-R1b5Zilrbiy0&rd=3D9V6MLNdAL5bC0yWFxLizWx1nad7mHeJIvvNS1DT4gjQ&tk=3D1cfnmet=
+r12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; f=
+ont:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c=
+;" >Monoline Umbrella Underwriting Technician</a> </td> </tr> <tr> <td styl=
+e=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6=
+f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > CNA Ins=
+urance </span> <span style=3D"display: -moz-inline-box; display:inline-bloc=
+k; height: 11px; line-height: 11px; background-image: url(https://www.indee=
+d.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; m=
+argin: 0 0.25em;"><span style=3D"display: -moz-inline-box; display:inline-b=
+lock; height: 11px; line-height: 11px; background-image: url(https://www.in=
+deed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:44.4p=
+x; background-position: 0 11px;"></span></span> <span style=3D"display:inli=
+ne-block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/CNA-Insura=
+nce/reviews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=
+=3Djob_alerts" style=3D"text-decoration:none; white-space:nowrap; color:#77=
+c" target=3D"_blank"> 331 reviews </a> </span> <span class=3D"sg-paragraph-=
+large db"> - Lisle, IL </span> </td> </tr> <tr> <td class=3D"job-info-snipp=
+et" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; co=
+lor:#000;"> Insurance regulatory and <b>technical</b> knowledge. Provides a=
+dministrative <b>support</b> and participates in ad-hoc activities as neede=
+d.... </td> </tr> <tr> <td class=3D"post-date-footer" style=3D"font:13px/18=
+px HelveticaNeue, Helvetica, Arial, sans-serif; color:#999;" > Jun 11 </td>=
+ </tr> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px He=
+lveticaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > </td> </tr> <=
+/table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; bord=
+er-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=
+=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Dc611f4f145d953bd&=
+from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDc=
+IKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D-OsTL9g_fpmTsPjNlhLZ8W=
+W4xXBGTIWlVfOl08776OE&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107=
+"> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td clas=
+s=3D"sg-heading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/rc/c=
+lk/dl?jk=3Dc611f4f145d953bd&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwY=
+m6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0=
+&rd=3D-OsTL9g_fpmTsPjNlhLZ8WW4xXBGTIWlVfOl08776OE&tk=3D1cfnmetr12tube39&ali=
+d=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px=
+/20px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >Sr. Voice=
+ / Data Network Consultant</a> </td> </tr> <tr> <td style=3D"font:15px/18px=
+ HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=
+=3D"sg-paragraph-large" style=3D"color: #000;" > UnitedHealth Group </span>=
+ <span style=3D"display: -moz-inline-box; display:inline-block; height: 11p=
+x; line-height: 11px; background-image: url(https://www.indeed.com/images/c=
+mp/star_2_sm.png); background-size: 12px 22px; width: 60px; margin: 0 0.25e=
+m;"><span style=3D"display: -moz-inline-box; display:inline-block; height: =
+11px; line-height: 11px; background-image: url(https://www.indeed.com/image=
+s/cmp/star_2_sm.png); background-size: 12px 22px; width:43.199997px; backgr=
+ound-position: 0 11px;"></span></span> <span style=3D"display:inline-block;=
+font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/UnitedHealth-Group/=
+reviews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob=
+_alerts" style=3D"text-decoration:none; white-space:nowrap; color:#77c" tar=
+get=3D"_blank"> 11,633 reviews </a> </span> <span class=3D"sg-paragraph-lar=
+ge db"> - Downers Grove, IL </span> </td> </tr> <tr> <td class=3D"job-info-=
+snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-seri=
+f; color:#000;"> Provide 3rd level <b>support</b> for data center network i=
+nfrastructure as required. Positions in this function involve analysis, des=
+ign, testing, documentation,... </td> </tr> <tr> <td class=3D"post-date-foo=
+ter" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; c=
+olor:#999;" > Jun 7 </td> </tr> <tr> <td class =3D"sponsored-text-footer" s=
+tyle=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:=
+#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding=
+: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-d=
+ecoration:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl=
+?jk=3D2ab53338619983df&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe=
+6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=
+=3DEnTsfIs0oJWtvZdnyVPdWNsOwAAefBnS4uT4BNwtXiI&tk=3D1cfnmetr12tube39&alid=
+=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cells=
+pacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"=
+https://www.indeed.com/rc/clk/dl?jk=3D2ab53338619983df&from=3Dja&qd=3DRnZhM=
+ybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A=
+_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DEnTsfIs0oJWtvZdnyVPdWNsOwAAefBnS4uT4BNwtXi=
+I&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-deco=
+ration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-seri=
+f;; color:#00c;" >Customer Service Representative</a> </td> </tr> <tr> <td =
+style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:=
+#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Mol=
+ex </span> <span style=3D"display: -moz-inline-box; display:inline-block; h=
+eight: 11px; line-height: 11px; background-image: url(https://www.indeed.co=
+m/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px; margi=
+n: 0 0.25em;"><span style=3D"display: -moz-inline-box; display:inline-block=
+; height: 11px; line-height: 11px; background-image: url(https://www.indeed=
+.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:46.800003=
+px; background-position: 0 11px;"></span></span> <span style=3D"display:inl=
+ine-block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Molex/rev=
+iews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_al=
+erts" style=3D"text-decoration:none; white-space:nowrap; color:#77c" target=
+=3D"_blank"> 367 reviews </a> </span> <span class=3D"sg-paragraph-large db"=
+> - Lisle, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" style=
+=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;=
+"> <b>Supports</b> department by seeking opportunities to streamline or aut=
+omate departmental procedures. We work together with the world=E2=80=99s in=
+novators to design and... </td> </tr> <tr> <td class=3D"post-date-footer" s=
+tyle=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#=
+999;" > Jun 6 </td> </tr> <tr> <td class =3D"sponsored-text-footer" style=
+=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#808=
+080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20=
+px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decor=
+ation:none;" target=3D"_blank" href=3D"https://www.indeed.com/rc/clk/dl?jk=
+=3Ddf454f62fea8c7d5&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6Ag=
+bDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3D7r=
+CVDF2WeAkq6_krDUchuQbXCHXgJEVMrHKBS2mW9rM&tk=3D1cfnmetr12tube39&alid=3D5a2a=
+b9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"https:=
+//www.indeed.com/rc/clk/dl?jk=3Ddf454f62fea8c7d5&from=3Dja&qd=3DRnZhMybXSk4=
+M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O=
+_m8-35UH-R1b5Zilrbiy0&rd=3D7rCVDF2WeAkq6_krDUchuQbXCHXgJEVMrHKBS2mW9rM&tk=
+=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-decorati=
+on:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-serif;; =
+color:#00c;" >Public Safety Telecommunicator</a> </td> </tr> <tr> <td style=
+=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6f6f=
+6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Edward-E=
+lmhurst Health </span> <span style=3D"display: -moz-inline-box; display:inl=
+ine-block; height: 11px; line-height: 11px; background-image: url(https://w=
+ww.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:=
+ 60px; margin: 0 0.25em;"><span style=3D"display: -moz-inline-box; display:=
+inline-block; height: 11px; line-height: 11px; background-image: url(https:=
+//www.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; wid=
+th:48.0px; background-position: 0 11px;"></span></span> <span style=3D"disp=
+lay:inline-block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Ed=
+ward--elmhurst-Health/reviews?utm_source=3Djobseeker_emails&utm_medium=3Dem=
+ail&utm_campaign=3Djob_alerts" style=3D"text-decoration:none; white-space:n=
+owrap; color:#77c" target=3D"_blank"> 239 reviews </a> </span> <span class=
+=3D"sg-paragraph-large db"> - Elmhurst, IL </span> </td> </tr> <tr> <td cla=
+ss=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, A=
+rial, sans-serif; color:#000;"> Must be able to communicate effectively and=
+ efficiently in a variety of <b>technical</b> or professional languages, in=
+cluding legal and medical terminology, and... </td> </tr> <tr> <td class=3D=
+"post-date-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial,=
+ sans-serif; color:#999;" > Jun 10 </td> </tr> <tr> <td class =3D"sponsored=
+-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans=
+-serif;; color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td s=
+tyle=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a =
+style=3D"text-decoration:none;" target=3D"_blank" href=3D"https://www.indee=
+d.com/rc/clk/dl?jk=3Dc1cf6a042fe5f887&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQ=
+WTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1=
+b5Zilrbiy0&rd=3DVSpZECLk038T0zw6jSvwwAbXCHXgJEVMrHKBS2mW9rM&tk=3D1cfnmetr12=
+tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_bla=
+nk" href=3D"https://www.indeed.com/rc/clk/dl?jk=3Dc1cf6a042fe5f887&from=3Dj=
+a&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZG=
+Ho58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DVSpZECLk038T0zw6jSvwwAbXCHXgJE=
+VMrHKBS2mW9rM&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=
+=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Ari=
+al, sans-serif;; color:#00c;" >Customer Care Representative</a> </td> </tr>=
+ <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-ser=
+if; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #0=
+00;" > Internet Brands </span> <span class=3D"sg-paragraph-large db"> - Dow=
+ners Grove, IL </span> </td> </tr> <tr> <td class=3D"job-info-snippet" styl=
+e=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000=
+;"> <b>Support</b> requests include:. Handle inbound calls and provide web =
+knowledge and <b>technical</b> <b>support</b> to clients. Telephone based c=
+lient <b>support</b> or customer service... </td> </tr> <tr> <td class=3D"p=
+ost-date-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, s=
+ans-serif; color:#999;" > Jun 6 </td> </tr> <tr> <td class =3D"sponsored-te=
+xt-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-se=
+rif;; color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td styl=
+e=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a sty=
+le=3D"text-decoration:none;" target=3D"_blank" href=3D"https://www.indeed.c=
+om/rc/clk/dl?jk=3D037e89ff85a3a4a5&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe=
+4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Z=
+ilrbiy0&rd=3DC5SRsEPOeHs7jhH_5w0L0WW4xXBGTIWlVfOl08776OE&tk=3D1cfnmetr12tub=
+e39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"=
+0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" =
+href=3D"https://www.indeed.com/rc/clk/dl?jk=3D037e89ff85a3a4a5&from=3Dja&qd=
+=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58=
+gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3DC5SRsEPOeHs7jhH_5w0L0WW4xXBGTIWlVf=
+Ol08776OE&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"t=
+ext-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, s=
+ans-serif;; color:#00c;" >Tech Course Developer</a> </td> </tr> <tr> <td st=
+yle=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#6=
+f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #000;" > Navis=
+tar, Inc. </span> <span style=3D"display: -moz-inline-box; display:inline-b=
+lock; height: 11px; line-height: 11px; background-image: url(https://www.in=
+deed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width: 60px=
+; margin: 0 0.25em;"><span style=3D"display: -moz-inline-box; display:inlin=
+e-block; height: 11px; line-height: 11px; background-image: url(https://www=
+.indeed.com/images/cmp/star_2_sm.png); background-size: 12px 22px; width:43=
+.199997px; background-position: 0 11px;"></span></span> <span style=3D"disp=
+lay:inline-block;font-size:13px;"> <a href=3D"https://www.indeed.com/cmp/Na=
+vistar,-Inc./reviews?utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_c=
+ampaign=3Djob_alerts" style=3D"text-decoration:none; white-space:nowrap; co=
+lor:#77c" target=3D"_blank"> 584 reviews </a> </span> <span class=3D"sg-par=
+agraph-large db"> - Woodridge, IL </span> </td> </tr> <tr> <td class=3D"job=
+-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, san=
+s-serif; color:#000;"> The <b>Technical</b> Course Developer is responsible=
+ for creating curriculum, both web based and instructor led, that engages, =
+educates, and <b>supports</b> service... </td> </tr> <tr> <td class=3D"post=
+-date-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans=
+-serif; color:#999;" > Jun 7 </td> </tr> <tr> <td class =3D"sponsored-text-=
+footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif=
+;; color:#808080;" > </td> </tr> </table> </a> </td> </tr> <tr> <td style=
+=3D"padding: 20px 5px 20px 5px; border-bottom: 1px solid #d9d9d9;"> <a styl=
+e=3D"text-decoration:none;" target=3D"_blank" href=3D"https://www.indeed.co=
+m/rc/clk/dl?jk=3D5ce987bf018c62d5&from=3Dja&qd=3DRnZhMybXSk4M3QtTVGXWoQWTe4=
+A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58gJ6JaV9A_UrT5O_m8-35UH-R1b5Zi=
+lrbiy0&rd=3Dd31RpuZ_GYw5MrOQ1rZMORaoqJKgOUUWvTBl_hebvuc&tk=3D1cfnmetr12tube=
+39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0=
+" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" h=
+ref=3D"https://www.indeed.com/rc/clk/dl?jk=3D5ce987bf018c62d5&from=3Dja&qd=
+=3DRnZhMybXSk4M3QtTVGXWoQWTe4A5BzwYm6iMe6AgbDE53X0vV_b9Atj4DsDcIKJOddZGHo58=
+gJ6JaV9A_UrT5O_m8-35UH-R1b5Zilrbiy0&rd=3Dd31RpuZ_GYw5MrOQ1rZMORaoqJKgOUUWvT=
+Bl_hebvuc&tk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"t=
+ext-decoration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, s=
+ans-serif;; color:#00c;" >Director, Customer Engagement-Midwest (Utilities)=
+</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica,=
+ Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" st=
+yle=3D"color: #000;" > Nexant, Inc. </span> <span style=3D"display: -moz-in=
+line-box; display:inline-block; height: 11px; line-height: 11px; background=
+-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); background-si=
+ze: 12px 22px; width: 60px; margin: 0 0.25em;"><span style=3D"display: -moz=
+-inline-box; display:inline-block; height: 11px; line-height: 11px; backgro=
+und-image: url(https://www.indeed.com/images/cmp/star_2_sm.png); background=
+-size: 12px 22px; width:40.800003px; background-position: 0 11px;"></span><=
+/span> <span style=3D"display:inline-block;font-size:13px;"> <a href=3D"htt=
+ps://www.indeed.com/cmp/Nexant/reviews?utm_source=3Djobseeker_emails&utm_me=
+dium=3Demail&utm_campaign=3Djob_alerts" style=3D"text-decoration:none; whit=
+e-space:nowrap; color:#77c" target=3D"_blank"> 31 reviews </a> </span> <spa=
+n class=3D"sg-paragraph-large db"> - Hinsdale, IL </span> </td> </tr> <tr> =
+<td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue, Helve=
+tica, Arial, sans-serif; color:#000;"> Nexant <b>supports</b> clients throu=
+gh four distinct business units:. Provide need-based <b>support</b> to a fe=
+w named accounts in Northeast as directed by the SVP, East.... </td> </tr> =
+<tr> <td class=3D"post-date-footer" style=3D"font:13px/18px HelveticaNeue, =
+Helvetica, Arial, sans-serif; color:#999;" > Jun 7 </td> </tr> <tr> <td cla=
+ss =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvet=
+ica, Arial, sans-serif;; color:#808080;" > </td> </tr> </table> </a> </td> =
+</tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1px soli=
+d #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" href=3D"h=
+ttps://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0Bxn78cCobmJe-U5r6=
+XF2JJ9KOM2ptl3JzhVqr3fkQV92SY7Q3u3ANqk3GeLELOH8KiqqeQ54ypzdVE9Z3HmYdCwxgErN=
+RcqgtJMSOlhuoeaHkIOX4kjsqfKisu8Odj_vvtaZ4YyYMskrIl3wxtTkfy7ylGT-8nMTX7fBqRu=
+2cj0wN-_N9r-mj1jlvdKUxQOBexZFXBxxPGl9kjYMBGBQ4I9D4czvRhZCZCjyyZjwq3MMfyXwwN=
+ndshsCMVl2Pi6SBAPrv3ZJJ7rgJhJIkTfyRzbwa7gIV0ZJKz6NhngjelTifG4qWHf0Lkh7eYH90=
+8FS146hTQgoSPmMa5iBIWENv1y7WiClJdxJGEMjs8fPh8UYfvEgdALvcUMhNvPVXfboPK_HidC2=
+bGgWkaLTD2_kEnu_X8B9PHGdeg2HJiqKbCr3G5iF1NPY89Se9c_kroA8GpzZqCgvVL8NTS8ZkMU=
+uF-DjnLD57qfPg%3D&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5=
+a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpadding=3D"0" cellspaci=
+ng=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D"_blank" href=3D"http=
+s://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0Bxn78cCobmJe-U5r6XF2=
+JJ9KOM2ptl3JzhVqr3fkQV92SY7Q3u3ANqk3GeLELOH8KiqqeQ54ypzdVE9Z3HmYdCwxgErNRcq=
+gtJMSOlhuoeaHkIOX4kjsqfKisu8Odj_vvtaZ4YyYMskrIl3wxtTkfy7ylGT-8nMTX7fBqRu2cj=
+0wN-_N9r-mj1jlvdKUxQOBexZFXBxxPGl9kjYMBGBQ4I9D4czvRhZCZCjyyZjwq3MMfyXwwNnds=
+hsCMVl2Pi6SBAPrv3ZJJ7rgJhJIkTfyRzbwa7gIV0ZJKz6NhngjelTifG4qWHf0Lkh7eYH908FS=
+146hTQgoSPmMa5iBIWENv1y7WiClJdxJGEMjs8fPh8UYfvEgdALvcUMhNvPVXfboPK_HidC2bGg=
+WkaLTD2_kEnu_X8B9PHGdeg2HJiqKbCr3G5iF1NPY89Se9c_kroA8GpzZqCgvVL8NTS8ZkMUuF-=
+DjnLD57qfPg%3D&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2a=
+b9ebe4b03e6921bab107" style=3D"text-decoration:none; font:bold 16px/20px He=
+lveticaNeue, Helvetica, Arial, sans-serif;; color:#00c;" >IT Support Techni=
+cian II</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, Hel=
+vetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph-la=
+rge" style=3D"color: #000;" > HTML Global </span> <span class=3D"sg-paragra=
+ph-large db"> - North Chicago, IL </span> </td> </tr> <tr> <td style=3D"fon=
+t:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> <nob=
+r>$42,000 - $47,000 a year</nobr> </td> </tr> <tr> <td class=3D"job-info-sn=
+ippet" style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;=
+ color:#000;"> In general, the Level 2 IT <b>Support</b> Services Technicia=
+n=E2=80=99s work involves a help desk <b>support</b> and project-based task=
+s in which the IT team work together to provide... </td> </tr> <tr> <td cla=
+ss=3D"easy-apply-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica, =
+Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> <tr> <td class =
+=3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Helvetica=
+, Arial, sans-serif;; color:#808080;" > Sponsored </td> </tr> </table> </a>=
+ </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px; border-bottom: 1=
+px solid #d9d9d9;"> <a style=3D"text-decoration:none;" target=3D"_blank" hr=
+ef=3D"https://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN0AUBun2ceaN=
+3vp0eRYiQJvJHfQXT-h7oINJepKHLtPGo9Pd1ntLJWzdurPnHZzteHRo8usOKIFY9d5HrWpf2U7=
+jjVxpPfoySl8OeLTZvXWH7sk6eXVa4xr2m6KDBVM9mWKrtTCYWbKmhAswQ29HuOEZ2e4Wl9KgA5=
+fm6uEdvSbsrZY_cldmmouog2HYB_aXbyLnhy4-n-NXKO-v5rKf6pF-Y3FOKYnwxsr5WQOIiV4Wp=
+mo70gOe63GTfuo9NsO1zN10i6mfH_dDpIpiJ4dl0O_C6zvS-agInK4Wff3tSSylqX2MqD32iSt1=
+BjEGyRbXBUZPQol3icFQWTWWPzHn6WDpFlfrI83L2JHRSEPaqBUolMDCIE3LOZNYzXeWsXkvla1=
+68eRDCUboW1nXFGMYGUaR877oMUJjbjLYTg-x9NWyKytWUtaIt8Tp_p9QCSv7ihbu64xuh9ZqDb=
+QmJjC_vAjZ00D2qzR3CACxiLV9Vs65Yw%3D%3D&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfn=
+metr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table width=3D"100%" cellpa=
+dding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-heading4"> <a target=3D=
+"_blank" href=3D"https://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6NYlbfkN=
+0AUBun2ceaN3vp0eRYiQJvJHfQXT-h7oINJepKHLtPGo9Pd1ntLJWzdurPnHZzteHRo8usOKIFY=
+9d5HrWpf2U7jjVxpPfoySl8OeLTZvXWH7sk6eXVa4xr2m6KDBVM9mWKrtTCYWbKmhAswQ29HuOE=
+Z2e4Wl9KgA5fm6uEdvSbsrZY_cldmmouog2HYB_aXbyLnhy4-n-NXKO-v5rKf6pF-Y3FOKYnwxs=
+r5WQOIiV4Wpmo70gOe63GTfuo9NsO1zN10i6mfH_dDpIpiJ4dl0O_C6zvS-agInK4Wff3tSSylq=
+X2MqD32iSt1BjEGyRbXBUZPQol3icFQWTWWPzHn6WDpFlfrI83L2JHRSEPaqBUolMDCIE3LOZNY=
+zXeWsXkvla168eRDCUboW1nXFGMYGUaR877oMUJjbjLYTg-x9NWyKytWUtaIt8Tp_p9QCSv7ihb=
+u64xuh9ZqDbQmJjC_vAjZ00D2qzR3CACxiLV9Vs65Yw%3D%3D&p=3D0&jsa=3D6477&rjs=3D1&=
+tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107" style=3D"text-deco=
+ration:none; font:bold 16px/20px HelveticaNeue, Helvetica, Arial, sans-seri=
+f;; color:#00c;" >Technical Customer Service Representative</a> </td> </tr>=
+ <tr> <td style=3D"font:15px/18px HelveticaNeue, Helvetica, Arial, sans-ser=
+if; color:#6f6f6f;" > <span class=3D"sg-paragraph-large" style=3D"color: #0=
+00;" > Mogo Inc </span> <span class=3D"sg-paragraph-large db"> - Westmont, =
+IL </span> </td> </tr> <tr> <td style=3D"font:13px/18px HelveticaNeue, Helv=
+etica, Arial, sans-serif; color:#000;"> <nobr>$12 an hour</nobr> </td> </tr=
+> <tr> <td class=3D"job-info-snippet" style=3D"font:13px/18px HelveticaNeue=
+, Helvetica, Arial, sans-serif; color:#000;"> We are looking for <b>Technic=
+al</b> Customer/Service Representatives to add to our team. Provide assista=
+nce via phone and internet to clients for <b>technical</b>/training... </td=
+> </tr> <tr> <td class=3D"easy-apply-footer" style=3D"font:13px/18px Helvet=
+icaNeue, Helvetica, Arial, sans-serif; color:#f60;"> Easily apply </td> </t=
+r> <tr> <td class =3D"sponsored-text-footer" style=3D"font:13px/18px Helvet=
+icaNeue, Helvetica, Arial, sans-serif;; color:#808080;" > Sponsored </td> <=
+/tr> </table> </a> </td> </tr> <tr> <td style=3D"padding: 20px 5px 20px 5px=
+; border-bottom: 1px solid #d9d9d9;"> <a style=3D"text-decoration:none;" ta=
+rget=3D"_blank" href=3D"https://www.indeed.com/pagead/clk/dl?mo=3Dr&ad=3D-6=
+NYlbfkN0BntedOoSYjnNDNg_FMy0rEjxu1kebpCbgWLg_Y8h8jX35hraG_bSlF2JwpVG4hZurXE=
+244S-H_ZqscD-Z_w7343wdrCGroFGyl8jC9uXxMONJShBwY8DdmjdmmmWd9ERqiZZNTgxuVZFLh=
+DDIkd22FyETq0j_rRuq0Xw_Gkof5xj9NI2eHOTjfIQFWsu8-WjOOJM78AGM3VKZHwtK43a4iDi1=
+O0DRCgPJOOHIaZYrCKlq2BrRuiWE0tfLc4Vw6Jjf8KBKZaKgTBNQLaJi16FwMXbs-Y07YDZ02UO=
+GtNWEzC_WHitiWm4CE1HcDUDYxdEfmqVSVVWYIYzuQWQ-ViUFMhWoNVLFIIESX3GM5bM_Ps74Mr=
+PnLw1e7UGIUfAyGpN8wZF9qqVnNX5s5bFIm9Sb-0MixNvb-GuhH4-Xy70uvBRiL21oOD0nW5pjQ=
+IeFZM2LAvbpP-8ZPC7fWojlLYwhuuIqfS1sdoX7CfE-cPtVRiRZVBdmShWH4&p=3D0&jsa=3D64=
+77&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921bab107"> <table=
+ width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"sg-h=
+eading4"> <a target=3D"_blank" href=3D"https://www.indeed.com/pagead/clk/dl=
+?mo=3Dr&ad=3D-6NYlbfkN0BntedOoSYjnNDNg_FMy0rEjxu1kebpCbgWLg_Y8h8jX35hraG_bS=
+lF2JwpVG4hZurXE244S-H_ZqscD-Z_w7343wdrCGroFGyl8jC9uXxMONJShBwY8DdmjdmmmWd9E=
+RqiZZNTgxuVZFLhDDIkd22FyETq0j_rRuq0Xw_Gkof5xj9NI2eHOTjfIQFWsu8-WjOOJM78AGM3=
+VKZHwtK43a4iDi1O0DRCgPJOOHIaZYrCKlq2BrRuiWE0tfLc4Vw6Jjf8KBKZaKgTBNQLaJi16Fw=
+MXbs-Y07YDZ02UOGtNWEzC_WHitiWm4CE1HcDUDYxdEfmqVSVVWYIYzuQWQ-ViUFMhWoNVLFIIE=
+SX3GM5bM_Ps74MrPnLw1e7UGIUfAyGpN8wZF9qqVnNX5s5bFIm9Sb-0MixNvb-GuhH4-Xy70uvB=
+RiL21oOD0nW5pjQIeFZM2LAvbpP-8ZPC7fWojlLYwhuuIqfS1sdoX7CfE-cPtVRiRZVBdmShWH4=
+&p=3D0&jsa=3D6477&rjs=3D1&tmtk=3D1cfnmetr12tube39&alid=3D5a2ab9ebe4b03e6921=
+bab107" style=3D"text-decoration:none; font:bold 16px/20px HelveticaNeue, H=
+elvetica, Arial, sans-serif;; color:#00c;" >IT Support Helpdesk and CRM Adm=
+inistrator</a> </td> </tr> <tr> <td style=3D"font:15px/18px HelveticaNeue, =
+Helvetica, Arial, sans-serif; color:#6f6f6f;" > <span class=3D"sg-paragraph=
+-large" style=3D"color: #000;" > Restore Hair </span> <span class=3D"sg-par=
+agraph-large db"> - Oak Brook, IL </span> </td> </tr> <tr> <td style=3D"fon=
+t:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000;"> <nob=
+r>$40,000 a year</nobr> </td> </tr> <tr> <td class=3D"job-info-snippet" sty=
+le=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif; color:#00=
+0;"> Communicate with tech service providers for <b>support</b>. Assist sta=
+ff with difficulties in any <b>technical</b> aspects.... </td> </tr> <tr> <=
+td class=3D"easy-apply-footer" style=3D"font:13px/18px HelveticaNeue, Helve=
+tica, Arial, sans-serif; color:#f60;"> Easily apply </td> </tr> <tr> <td cl=
+ass =3D"sponsored-text-footer" style=3D"font:13px/18px HelveticaNeue, Helve=
+tica, Arial, sans-serif;; color:#808080;" > Sponsored </td> </tr> </table> =
+</a> </td> </tr> <!-- block-btn --> <tr> <td style=3D"padding: 24px 0 0;"> =
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td align=
+=3D"center" class=3D"sg-paragraph-normal" style=3D"font:bold 13px/18px Helv=
+eticaNeue, Helvetica, Arial, sans-serif;; color:#000; padding: 0 0 8px;"> 1=
+75 new jobs found </td> </tr> <tr> <td style=3D"padding: 0 0 15px;"> <table=
+ class=3D"flexible" width=3D"351" align=3D"center" style=3D"margin: 0 auto;=
+ max-width: 351px;" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td class=3D"=
+active" bgcolor=3D"#2f5cd8" align=3D"center" style=3D"font:bold 15px/16px H=
+elveticaNeue, Helvetica, Arial, sans-serif;; color:#fff; border: 1px solid =
+#1642bb; background: #2f5cd8 url(https://subscriptions.indeed.com/static/im=
+ages/ja/btn-bg.png) repeat-x; border-radius:4px; text-shadow: 0 -1px 0 #0f2=
+299; -webkit-box-shadow: 0 0 4px 1px rgba(204,204,204,1); box-shadow: 0 0 4=
+px 1px rgba(204,204,204,1); mso-padding-alt: 12px 10px;"> <a href=3D"https:=
+//www.indeed.com/jobs?q=3DTechnical+Support&hl=3Den&from=3Dja&l=3DChicago%2=
+C+IL&radius=3D25&alid=3D5a2ab9ebe4b03e6921bab107&tmtk=3D1cfnmetr12tube39&ut=
+m_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts&of=
+=3D1&fr=3Dt" target=3D"_blank" style=3D"text-decoration:none; color: #fff; =
+display: block; padding: 14px 10px;" >View All Jobs</a> </td> </tr> </table=
+> </td> </tr> <tr> <td align=3D"center" class=3D"sg-paragraph-normal link" =
+style=3D"font:13px/18px HelveticaNeue, Helvetica, Arial, sans-serif;; color=
+:#000; "> View jobs: <a href=3D"https://www.indeed.com/jobs?q=3DTechnical+S=
+upport&hl=3Den&from=3Dja&l=3DChicago%2C+IL&radius=3D25&alid=3D5a2ab9ebe4b03=
+e6921bab107&tmtk=3D1cfnmetr12tube39&utm_source=3Djobseeker_emails&utm_mediu=
+m=3Demail&utm_campaign=3Djob_alerts&of=3D1&fr=3Db&fromage=3D1" target=3D"_b=
+lank" style=3D"text-decoration:none; color: #00c;" >since yesterday</a> <sp=
+an class=3D"desktop"> - </span> <a href=3D"https://www.indeed.com/jobs?q=3D=
+Technical+Support&hl=3Den&from=3Dja&l=3DChicago%2C+IL&radius=3D25&alid=3D5a=
+2ab9ebe4b03e6921bab107&tmtk=3D1cfnmetr12tube39&utm_source=3Djobseeker_email=
+s&utm_medium=3Demail&utm_campaign=3Djob_alerts&of=3D1&fr=3Db&fromage=3D7" t=
+arget=3D"_blank" style=3D"text-decoration:none; color: #00c;" >for last 7 d=
+ays</a> </td> </tr> </table> </td> </tr> </table> </td> </tr> <!-- related =
+alerts --> </table> <!-- follow company --> <table align=3D"center" style=
+=3D"margin:0 auto; width:100%; max-width:510px;" cellpadding=3D"0" cellspac=
+ing=3D"0" bgcolor=3D"#f2f2f2"> <tr> <td class=3D"content" id=3D"follow_comp=
+anies" bgcolor=3D"#ffffff" style=3D"padding: 20px 19px 5px 19px;"> <table w=
+idth=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td style=3D"font:2=
+0px/28px HelveticaNeue, Helvetica, Arial, sans-serif; color:#ff6600; text-a=
+lign: center; padding: 0 0 20px;"> Get job updates from these companies </t=
+d> </tr> <tr> <td> <tr> <td style=3D"border-top: 1px solid #c9c9c9;"> <div =
+style=3D"width=3D100%; max-width:460px; margin:auto"> <table class=3D"flexi=
+ble" width=3D300px align=3D"center" style=3D"margin: 10px auto; max-width: =
+300px; padding: 5px 5px 15px 5px;" cellpadding=3D"0" cellspacing=3D"0"> <tr=
+> <td style=3D"font:16px/22px HelveticaNeue, Helvetica, Arial, sans-serif; =
+color:#000000; text-align: center; padding-bottom:8px"> UnitedHealth Group =
+</td> </tr> <tr> <td class=3D"active" bgcolor=3D"#2f5cd8" align=3D"center" =
+style=3D"margin-top: 10px; font:bold 15px/16px HelveticaNeue, Helvetica, Ar=
+ial, sans-serif;; color:#fff; border: 1px solid #1642bb; background: #2f5cd=
+8 url(https://subscriptions.indeed.com/static/images/ja/btn-bg.png) repeat-=
+x; border-radius:4px; text-shadow: 0 -1px 0 #0f2299; -webkit-box-shadow: 0 =
+0 4px 1px rgba(204,204,204,1); box-shadow: 0 0 4px 1px rgba(204,204,204,1);=
+ mso-padding-alt: 12px 10px;"> <a href=3D"https://www.indeed.com/cmp/United=
+Health-Group?msg=3Da%3DfolCmp%26email%3Dkirktolliver28%2540gmail.com%26sig%=
+3Da9322fec3ba299cc255d0e0df4dca08a%26followCompany%3Ddffe3742b8f927df&11,30=
+3&from=3Dja&alid=3D5a2ab9ebe4b03e6921bab107&jaclick=3Dfolbtnc&tk=3D1cfnmetr=
+12tube39&utm_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djo=
+b_alerts" target=3D"_blank" style=3D"text-decoration:none; color: #fff; dis=
+play: block; padding: 12px 10px;" >Follow</a> </td> </tr> </table> </div> <=
+/td> </tr> <tr> <td style=3D"border-top: 1px solid #c9c9c9;"> <div style=3D=
+"width=3D100%; max-width:460px; margin:auto"> <table class=3D"flexible" wid=
+th=3D300px align=3D"center" style=3D"margin: 10px auto; max-width: 300px; p=
+adding: 5px 5px 15px 5px;" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td st=
+yle=3D"font:16px/22px HelveticaNeue, Helvetica, Arial, sans-serif; color:#0=
+00000; text-align: center; padding-bottom:8px"> Quest Diagnostics </td> </t=
+r> <tr> <td class=3D"active" bgcolor=3D"#2f5cd8" align=3D"center" style=3D"=
+margin-top: 10px; font:bold 15px/16px HelveticaNeue, Helvetica, Arial, sans=
+-serif;; color:#fff; border: 1px solid #1642bb; background: #2f5cd8 url(htt=
+ps://subscriptions.indeed.com/static/images/ja/btn-bg.png) repeat-x; border=
+-radius:4px; text-shadow: 0 -1px 0 #0f2299; -webkit-box-shadow: 0 0 4px 1px=
+ rgba(204,204,204,1); box-shadow: 0 0 4px 1px rgba(204,204,204,1); mso-padd=
+ing-alt: 12px 10px;"> <a href=3D"https://www.indeed.com/cmp/Quest-Diagnosti=
+cs?msg=3Da%3DfolCmp%26email%3Dkirktolliver28%2540gmail.com%26sig%3Daab747d2=
+384f17ee0ac6fc866d012c43%26followCompany%3Df93d1a382f785207&3,573&from=3Dja=
+&alid=3D5a2ab9ebe4b03e6921bab107&jaclick=3Dfolbtnc&tk=3D1cfnmetr12tube39&ut=
+m_source=3Djobseeker_emails&utm_medium=3Demail&utm_campaign=3Djob_alerts" t=
+arget=3D"_blank" style=3D"text-decoration:none; color: #fff; display: block=
+; padding: 12px 10px;" >Follow</a> </td> </tr> </table> </div> </td> </tr> =
+<tr> <td style=3D"border-top: 1px solid #c9c9c9;"> <div style=3D"width=3D10=
+0%; max-width:460px; margin:auto"> <table class=3D"flexible" width=3D300px =
+align=3D"center" style=3D"margin: 10px auto; max-width: 300px; padding: 5px=
+ 5px 15px 5px;" cellpadding=3D"0" cellspacing=3D"0"> <tr> <td style=3D"font=
+:16px/22px HelveticaNeue, Helvetica, Arial, sans-serif; color:#000000; text=
+-align: center; padding-bottom:8px"> Ulta </td> </tr> <tr> <td class=3D"act=
+ive" bgcolor=3D"#2f5cd8" align=3D"center" style=3D"margin-top: 10px; font:b=
+old 15px/16px HelveticaNeue, Helvetica, Arial, sans-serif;; color:#fff; bor=
+der: 1px solid #1642bb; background: #2f5cd8 url(https://subscriptions.indee=
+d.com/static/images/ja/btn-bg.png) repeat-x; border-radius:4px; text-shadow=
+: 0 -1px 0 #0f2299; -webkit-box-shadow: 0 0 4px 1px rgba(204,204,204,1); bo=
+x-shadow: 0 0 4px 1px rgba(204,204,204,1); mso-padding-alt: 12px 10px;"> <a=
+ href=3D"https://www.indeed.com/cmp/Ulta?msg=3Da%3DfolCmp%26email%3Dkirktol=
+liver28%2540gmail.com%26sig%3D7b7ee97e92fdc7f96fe87fb1c521ecb3%26followComp=
+any%3D3ef69d65963d1087&112,848&from=3Dja&alid=3D5a2ab9ebe4b03e6921bab107&ja=
+click=3Dfolbtnc&tk=3D1cfnmetr12tube39&utm_source=3Djobseeker_emails&utm_med=
+ium=3Demail&utm_campaign=3Djob_alerts" target=3D"_blank" style=3D"text-deco=
+ration:none; color: #fff; display: block; padding: 12px 10px;" >Follow</a> =
+</td> </tr> </table> </div> </td> </tr> </td> </tr> </table> </td> </tr> </=
+table> <!-- NPS Survey --> <table align=3D"center" style=3D"margin:12px aut=
+o; width:100%; max-width:510px;" cellpadding=3D"0" cellspacing=3D"0" bgcolo=
+r=3D"#ffffff"> <tr> <td class=3D"content" bgcolor=3D"#ffffff" style=3D"padd=
+ing: 23px 20px 27px 20px;"> <table width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"border-collapse: collapse;"> <tr> <td style=3D"font:20p=
+x/28px HelveticaNeue, Helvetica, Arial, sans-serif; color:#ff6600; line-hei=
+ght: 1.22; text-align: center; padding: 0 0 10px;"> How are we doing? </td>=
+ </tr> <tr> <td class=3D"pb30" align=3D"center" style=3D"font:16px/22px Hel=
+veticaNeue, Helvetica, Arial, sans-serif; color:#000000; line-height: 1.22;=
+ padding: 0 0 10px;"> How likely are you to recommend using Indeed Job Aler=
+t emails to a friend or colleague? </td> </tr> <tr> <table width=3D"100%" c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0" bgcolor=3D"#FFFFFF" style=
+=3D"margin: 15px 0 0 0;"> <tr> <td align=3D"center"> <!--[if (gte mso 9)|(I=
+E)]> <table width=3D"300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+ <tr> <td> <![endif]--> <table width=3D"100%" style=3D"max-width:300px;marg=
+in: 0 0 15px 0;" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"> <tr> <td=
+ align=3D"center" style=3D"width:27px;"> <a href=3D"https://subscriptions.i=
+ndeed.com/survey/5a2ab9ebe4b03e6921bab107?token=3DCkBAXJtgF_G4N9K46U5VHiqnH=
+xNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO-KixB=
+oUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=
+=3Den&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&s=3D0"><img src=3D"https://subsc=
+riptions.indeed.com/static/images/ja/nps-0.png" width=3D"27" alt=3D"0" styl=
+e=3D"font-family:'Helvetica Neue', Roboto, Arial, sans-serif;color:#000000;=
+font-size:10px;font-weight:bold;"/></a> </td> <td align=3D"center" style=3D=
+"width:27px;"> <a href=3D"https://subscriptions.indeed.com/survey/5a2ab9ebe=
+4b03e6921bab107?token=3DCkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ=
+071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2a=
+oFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tub=
+e39&firstQ=3Dnps&s=3D1"><img src=3D"https://subscriptions.indeed.com/static=
+/images/ja/nps-1.png" width=3D"27" alt=3D"1" style=3D"font-family:'Helvetic=
+a Neue', Roboto, Arial, sans-serif;color:#000000;font-size:10px;font-weight=
+:bold;"/></a> </td> <td align=3D"center" style=3D"width:27px;"> <a href=3D"=
+https://subscriptions.indeed.com/survey/5a2ab9ebe4b03e6921bab107?token=3DCk=
+BAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgttxj0Vf=
+iT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcj=
+feLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&s=3D2"><i=
+mg src=3D"https://subscriptions.indeed.com/static/images/ja/nps-2.png" widt=
+h=3D"27" alt=3D"2" style=3D"font-family:'Helvetica Neue', Roboto, Arial, sa=
+ns-serif;color:#000000;font-size:10px;font-weight:bold;"/></a> </td> <td al=
+ign=3D"center" style=3D"width:27px;"> <a href=3D"https://subscriptions.inde=
+ed.com/survey/5a2ab9ebe4b03e6921bab107?token=3DCkBAXJtgF_G4N9K46U5VHiqnHxNe=
+kZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO-KixBoUS=
+mNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3D=
+en&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&s=3D3"><img src=3D"https://subscrip=
+tions.indeed.com/static/images/ja/nps-3.png" width=3D"27" alt=3D"3" style=
+=3D"font-family:'Helvetica Neue', Roboto, Arial, sans-serif;color:#000000;f=
+ont-size:10px;font-weight:bold;"/></a> </td> <td align=3D"center" style=3D"=
+width:27px;"> <a href=3D"https://subscriptions.indeed.com/survey/5a2ab9ebe4=
+b03e6921bab107?token=3DCkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ0=
+71d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2ao=
+Frc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tube=
+39&firstQ=3Dnps&s=3D4"><img src=3D"https://subscriptions.indeed.com/static/=
+images/ja/nps-4.png" width=3D"27" alt=3D"4" style=3D"font-family:'Helvetica=
+ Neue', Roboto, Arial, sans-serif;color:#000000;font-size:10px;font-weight:=
+bold;"/></a> </td> <td align=3D"center" style=3D"width:27px;"> <a href=3D"h=
+ttps://subscriptions.indeed.com/survey/5a2ab9ebe4b03e6921bab107?token=3DCkB=
+AXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgttxj0Vfi=
+T2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcjf=
+eLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&s=3D5"><im=
+g src=3D"https://subscriptions.indeed.com/static/images/ja/nps-5.png" width=
+=3D"27" alt=3D"5" style=3D"font-family:'Helvetica Neue', Roboto, Arial, san=
+s-serif;color:#000000;font-size:10px;font-weight:bold;"/></a> </td> </tr> <=
+/table> <!--[if (gte mso 9)|(IE)]> </td> </tr> </table> <table width=3D"260=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tr> <td> <![endif]--> =
+<table width=3D"100%" style=3D"max-width:260px;" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0"> <tr> <td align=3D"center" style=3D"width:27px;"> <a=
+ href=3D"https://subscriptions.indeed.com/survey/5a2ab9ebe4b03e6921bab107?t=
+oken=3DCkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7=
+lgttxj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3x=
+wmh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&=
+s=3D6"><img src=3D"https://subscriptions.indeed.com/static/images/ja/nps-6.=
+png" width=3D"27" alt=3D"6" style=3D"font-family:'Helvetica Neue', Roboto, =
+Arial, sans-serif;color:#000000;font-size:10px;font-weight:bold;"/></a> </t=
+d> <td align=3D"center" style=3D"width:27px;"> <a href=3D"https://subscript=
+ions.indeed.com/survey/5a2ab9ebe4b03e6921bab107?token=3DCkBAXJtgF_G4N9K46U5=
+VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynB=
+O-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=
+=3DUS&hl=3Den&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&s=3D7"><img src=3D"https=
+://subscriptions.indeed.com/static/images/ja/nps-7.png" width=3D"27" alt=3D=
+"7" style=3D"font-family:'Helvetica Neue', Roboto, Arial, sans-serif;color:=
+#000000;font-size:10px;font-weight:bold;"/></a> </td> <td align=3D"center" =
+style=3D"width:27px;"> <a href=3D"https://subscriptions.indeed.com/survey/5=
+a2ab9ebe4b03e6921bab107?token=3DCkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQ=
+YAA69gbJ071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsH=
+f8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnm=
+etr12tube39&firstQ=3Dnps&s=3D8"><img src=3D"https://subscriptions.indeed.co=
+m/static/images/ja/nps-8.png" width=3D"27" alt=3D"8" style=3D"font-family:'=
+Helvetica Neue', Roboto, Arial, sans-serif;color:#000000;font-size:10px;fon=
+t-weight:bold;"/></a> </td> <td align=3D"center" style=3D"width:27px;"> <a =
+href=3D"https://subscriptions.indeed.com/survey/5a2ab9ebe4b03e6921bab107?to=
+ken=3DCkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7l=
+gttxj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xw=
+mh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&s=
+=3D9"><img src=3D"https://subscriptions.indeed.com/static/images/ja/nps-9.p=
+ng" width=3D"27" alt=3D"9" style=3D"font-family:'Helvetica Neue', Roboto, A=
+rial, sans-serif;color:#000000;font-size:10px;font-weight:bold;"/></a> </td=
+> <td align=3D"center" style=3D"width:27px;"> <a href=3D"https://subscripti=
+ons.indeed.com/survey/5a2ab9ebe4b03e6921bab107?token=3DCkBAXJtgF_G4N9K46U5V=
+HiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO=
+-KixBoUSmNunAkBZgKkGxsHf8uZuS2aoFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=3D=
+US&hl=3Den&tmtk=3D1cfnmetr12tube39&firstQ=3Dnps&s=3D10"><img src=3D"https:/=
+/subscriptions.indeed.com/static/images/ja/nps-10.png" width=3D"27" alt=3D"=
+10" style=3D"font-family:'Helvetica Neue', Roboto, Arial, sans-serif;color:=
+#000000;font-size:10px;font-weight:bold;"/></a> </td> </tr> </table> <!--[i=
+f (gte mso 9)|(IE)]> </td> </tr> </table> <![endif]--> </td> </tr> </table>=
+ </tr> <tr> <td style=3D"font:13px/22px HelveticaNeue, Helvetica, Arial, sa=
+ns-serif; color:#666666; text-align: center; padding:0 0 20px;"> From <b>0<=
+/b> (not at all likely) to <b>10</b> (extremely likely) </td> </tr> </table=
+> </td> </tr> </table> <!-- footer --> <table align=3D"center" style=3D"mar=
+gin:0 auto; width:100%; max-width:510px;" cellpadding=3D"0" cellspacing=3D"=
+0"> <tr> <td align=3D"center" style=3D"padding:26px 20px 0;line-height:1.64=
+;font-family:HelveticaNeue,Helvetica,Arial,sans-serif;font-size:11px;"> &#1=
+69; 2018 Indeed, Inc. </td> </tr> <tr> <td align=3D"center" style=3D"paddin=
+g:0 20px;line-height:1.64;font-family:HelveticaNeue,Helvetica,Arial,sans-se=
+rif;font-size:11px;"> 6433 Champion Grandview Way, Building 1, Austin, TX 7=
+8750 </td> </tr> <tr> <td align=3D"center" style=3D"padding:11px 20px 26px;=
+line-height:1.45;font-family:HelveticaNeue,Helvetica,Arial,sans-serif;font-=
+size:11px;"> <a href=3D"https://www.indeed.com/legal#privacy" target=3D"_bl=
+ank">PRIVACY POLICY</a> | <a href=3D"https://www.indeed.com/legal" target=
+=3D"_blank">TERMS</a> | <a href=3D"https://support.indeed.com/hc/en-us" tar=
+get=3D"_blank">HELP CENTER</a> | <a href=3D"https://subscriptions.indeed.co=
+m/alerts/cancel?token=3DCkBAXJtgF_G4N9K46U5VHiqnHxNekZ8wrcs3ML2z5yQYAA69gbJ=
+071d_QSiBf_L-gqQ7lgttxj0VfiT2YFVE10cbEiCynBO-KixBoUSmNunAkBZgKkGxsHf8uZuS2a=
+oFrc1gwRoQqs6Ut3xwmh7oaAcjfeLZZQ%3D%3D&co=3DUS&hl=3Den&tmtk=3D1cfnmetr12tub=
+e39&subId=3D5a2ab9ebe4b03e6921bab107&rgtk=3D1cfnmh32p2glbblv&from=3Dja" tar=
+get=3D"_blank">UNSUBSCRIBE</a> </td> </tr> <!--[if mso]> </td> </tr> </tabl=
+e> </center> </td> </tr> </table> <![endif]--> </table> </td> </tr> </table=
+> <img src=3D"https://www.indeed.com/imgping?type=3Djafull&tk=3D1cfnmetr12t=
+ube39&aluidhash=3D5a2ab9ebe4b03e6921bab107&clipped=3Dfalse" height=3D"1" wi=
+dth=3D"1"> </div> </body> </html>
+------=_Part_74448605_8711094.1528729996648--

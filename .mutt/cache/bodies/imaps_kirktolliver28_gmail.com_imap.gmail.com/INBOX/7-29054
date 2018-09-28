@@ -1,0 +1,614 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 2002:a17:90a:3450:0:0:0:0 with SMTP id o74-v6csp4700225pjb;
+        Mon, 11 Jun 2018 17:11:02 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKJtWI0TRCu3CBvpE/T+TsoJGDUnHPtVEm8F3WBan4DBslb01xX1NN15z0jnPePrqdSWpkTc
+X-Received: by 2002:a81:ce05:: with SMTP id t5-v6mr599909ywi.122.1528762262817;
+        Mon, 11 Jun 2018 17:11:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528762262; cv=none;
+        d=google.com; s=arc-20160816;
+        b=j5RqOMT1D1AwtDW8/sxJdE1NwzwjgAbqW4Htom1sP86BySsLTXZWlMbCD6tse84gof
+         92RtBkZznp+QNOHTtvXH7Q48GSZ8dAK5wIebo9ETvduLxupL5yCucwrilpqxfWLIBEwa
+         shUL0TtlpTgSDPgLXLFR6WlOervanPNePXKYGvI8f/ahtzLGi2OWYQ0PpVjQsa9njhAz
+         9w5Hqxzks8IhTssGSfiT6QCsZzBBrJ0Vrft67bxVrq10H9ExE9Sgk/G0f1fYV72GxJxm
+         pMc0e19UX0CqkBlwnzbhDfuocRTtQTDwUjEbOkwF/d28WN1duxOLsT/AQYLh+LNQpOIU
+         KJug==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:message-id:list-id:reply-to:mime-version
+         :list-unsubscribe:date:subject:to:from:dkim-signature
+         :arc-authentication-results;
+        bh=DKHG4rA4amOWadM6xPtHjTnBfJSYtDQUaw1M9Ol0HPI=;
+        b=yCq/SoENvq/Nyp/rifPI3q21bKxQTea4NeqT6AK1uBYF1Od1wLeXxjCO6cPgw/Vgde
+         8hQdOnmE58MEh60c6Pdsf3Fj46b5tbX2z50001r95SpJcqwmmGecfROcJccnbSVtF7QW
+         wCQaiCNkxHSKHdY9L98xMvbfQnqC7+qi3Hcv2Ry69s/KYcKALxGP25IRWSh1bAfBg8Dn
+         EzpBXS4vfpPUiuyiLmxSlLMrYoYapb5ulCCPwGjI0t1xhrzBBWZ9tco6CtNKsm5alV8m
+         0kIDOZqcdDXA9+IiI6tGfRIj9akToHYZsctvxSKT2d/BgA0+TeQ2jVjOYEAych/HUVKJ
+         WQow==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@post.job-tree.com header.s=200608 header.b=vZIB7W7/;
+       spf=pass (google.com: domain of bounce-15_html-32879103-456802-7217323-35@bounce.post.job-tree.com designates 136.147.134.123 as permitted sender) smtp.mailfrom=bounce-15_HTML-32879103-456802-7217323-35@bounce.post.job-tree.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=job-tree.com
+Return-Path: <bounce-15_HTML-32879103-456802-7217323-35@bounce.post.job-tree.com>
+Received: from mta.post.job-tree.com (mta.post.job-tree.com. [136.147.134.123])
+        by mx.google.com with ESMTPS id x37-v6si14442451ybi.274.2018.06.11.17.11.02
+        for <kirktolliver28@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 11 Jun 2018 17:11:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-15_html-32879103-456802-7217323-35@bounce.post.job-tree.com designates 136.147.134.123 as permitted sender) client-ip=136.147.134.123;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@post.job-tree.com header.s=200608 header.b=vZIB7W7/;
+       spf=pass (google.com: domain of bounce-15_html-32879103-456802-7217323-35@bounce.post.job-tree.com designates 136.147.134.123 as permitted sender) smtp.mailfrom=bounce-15_HTML-32879103-456802-7217323-35@bounce.post.job-tree.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=job-tree.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=post.job-tree.com;
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:List-ID:Message-ID:Content-Type; i=info@post.job-tree.com;
+ bh=F+ToqcKPbVlLxAn+alLaAs8KVwM=;
+ b=vZIB7W7/2LJqm2/gKXjEvWGK8U+CbCeu74ppE3FtA9PTZgocEpWvTlBx2HzddXu3IkRskR17G7tX
+   ZeIcENwLkDq3qU+YogbAMddDc2D5/l/CcZol3X7/S72axXQU1fqO18tr1ebpxL741Ts7wiBaGxbL
+   Xs7QqLWvUojOnBRiMzA=
+Received: by mta.post.job-tree.com id h3s7pc163hsl for <kirktolliver28@gmail.com>; Tue, 12 Jun 2018 00:06:16 +0000 (envelope-from <bounce-15_HTML-32879103-456802-7217323-35@bounce.post.job-tree.com>)
+From: "Branch Administrator Jobs @ Job-Tree" <info@post.job-tree.com>
+To: <kirktolliver28@gmail.com>
+Subject: Kirk, Branch Administrator jobs hiring TODAY
+Date: Mon, 11 Jun 2018 18:06:16 -0600
+List-Unsubscribe: <mailto:leave-fd8515751a3c402029-fe5e17727d630d7c7517-fec61075736c047f-fe9613727463077f76-ff971775@leave.post.job-tree.com>
+MIME-Version: 1.0
+Reply-To: "Job-Tree" <reply-fec61075736c047f-15_HTML-32879103-7217323-35@post.job-tree.com>
+List-ID: <7201068.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 7217323_456802
+Message-ID: <9923ca00-45ce-4b01-a19c-b274a0efb620@xtgap4s7mta149.xt.local>
+Feedback-ID: 7217323:456802:136.147.134.123:sfmktgcld
+Content-Type: multipart/alternative;
+	boundary="GhgAF4FDW3ex=_?:"
+
+This is a multi-part message in MIME format.
+
+--GhgAF4FDW3ex=_?:
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+June 11, 2018
+New Job Listings for Kirk:
+ 
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f61ec5dfb90f8d05fdefd6b6e143fad366bc8cfe4606c204bfa50ece0625eca6dc6d7996ad9afca62ff368896a3d4fe711 
+1
+Branch Administrator
+Posted TodayVIEW
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f66dcdef3f9f9044a464bdb1d301ad7f057c26d5d0c92ee0df99f525229e0258a96f03577a4a12473c61a02e2735bdd3b3 
+2
+Dollar General
+Posted TodayVIEW
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f69b166089470e2b3de9f7ab377b0e1309ce683903fa5abbd6ecf24b91bc1a81691a3db57dc53a256abcbefddd22c00f73 
+3
+Front Office Assistant
+Posted TodayVIEW
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f69ed23f8dcd4a213380298346f07cdd4c3793107b375d34f2add8510ffec6cc38e40984a70751879dfedf2a5ca6da8264 
+4
+PrideStaff
+Posted TodayVIEW
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f62f4b65f76ea25f72e06f0c9b3cf1cb3286dac4279a862e056d722a1b8978b4f21cfa33168def75bab781ae3879861e09 
+5
+Full Time
+Posted TodayVIEW
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f6cfb6974a6afa5c84fc4a14dfcedc03687ae75ec3c5e85b155893025293ecb936661141fbfdd6a72168bb33b3f614b1ae 
+6
+Jewel-Osco
+Posted TodayVIEW
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f6c3af7b2915a764d849a8f7a2739b17ab53f593e2984e9ef5b62adebe6d21b8607e84b3ef14a0135562fcf555e48d96f4 
+
+View more jobs &rsaquo; 
+
+http://click.post.job-tree.com/?qs=be385f4708fe50f6d160efbf449ddb633fce1ec6467464d7be46482903770ccd857b3425ea0d08a5c222e4ad352ba87fa3f5a7a3980f348a 
+One-click Unsub
+
+
+
+To unsubscribe from Job-Tree, please 
+http://click.post.job-tree.com/?qs=be385f4708fe50f6d160efbf449ddb633fce1ec6467464d7be46482903770ccd857b3425ea0d08a5c222e4ad352ba87fa3f5a7a3980f348a 
+click here .
+
+This email was sent to 
+mailto:kirktolliver28@gmail.com 
+kirktolliver28@gmail.com
+(c) Percipio Holdings | 
+http://click.post.job-tree.com/?qs=be385f4708fe50f6752fb6f1f0f2c4a3f80c5d6a10f349bd0313d0414c73a402de11cd8d55acf75de41f4e05aa8c279cd537d23cee23f12e 
+Marketing Preferences
+625 Massachusetts Ave | Cambridge, MA 02139 | 
+http://click.post.job-tree.com/?qs=be385f4708fe50f6b5b05bb7e0fa0d4569a6bcf44b5cfb8596d1d2d70e90d655aae5a06d016f64790b82cfcaad35341825a5450c9243d615 
+Privacy Policy
+
+
+
+
+
+--GhgAF4FDW3ex=_?:
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+<!--  -->
+
+
+           <html>
+           <head>
+           <meta content="initial-scale=1.0" name="viewport">
+           <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+           <!--[if mso]>
+<style>
+    * {
+      font-family: sans-serif !important;
+    }
+</style>
+<![endif]-->
+           
+           <!--[if !mso]><!-->
+           <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet" type="text/css">
+           <!--<![endif]-->
+           
+           <style type="text/css">
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	width: 100% !important;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: none;
+	background-color: #ffffff;
+}
+			   
+			   
+.company-logo-img
+{
+  width : 50px;
+  padding : 4px;
+  background : #FFFFFF;
+  border-style : solid;
+  border-color : #E6E6E6;
+  border-width : 1px;
+  border-radius : 2px;
+  -moz-border-radius : 2px;
+  -webkit-border-radius : 2px;
+  box-shadow : 0px 2px 2px rgba(76, 76, 76, 0.15);
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2, Color='#4C4C4C') ;
+}
+			   
+			   
+.ReadMsgBody {
+	width: 100%;
+}
+.ExternalClass {
+	width: 100%;
+}
+.ExternalClass * {
+	line-height: 120% !important;
+}
+.appleLinksBlack a {
+	color: #ffffff !important;
+	text-decoration: none;
+}
+.applelink a, .applelink {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+@media (min-width: 634px) {
+.switch {
+	width: 600px !important;
+}
+.image1 img {
+	width: 600px;
+	height: 232px;
+}
+.height-fix {		
+	min-height: 235px !important;
+		}
+.single-spacing {		
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	padding-top: 0px !important;
+	padding-bottom: 10px !important;
+		}
+	
+	.desktop-padding {
+		
+	padding-top:40px !important;
+	padding-bottom:50px !important;
+	padding-left:67px !important;
+	padding-right:70px !important;
+		
+	}
+	
+}
+
+@media (max-width: 634px) {
+.fullwidthnon {
+	width: 100% !important;
+	max-width: 600px !important;
+}
+.image_resize {
+	width: 200px !important;
+}
+.top_pad {
+	padding-top: 0px !important;
+}
+.bottom_pad {
+	padding-bottom: 5px !important;
+}
+.fullwidth {
+	width: 100% !important;
+	max-width: 600px !important;
+	text-align: center !important;
+}
+		.mobile-padding {
+		
+		padding: 20px 20px 0 20px !important;
+		
+	}
+}
+			   
+@media (max-width: 480px) {
+	u + .body .full-wrap { 
+width:100% !important;
+width:100vw !important;
+}
+			   }
+</style>
+           <title></title>
+           </head>
+           <!--INLINE BODY STYLE-->
+           <body class="body" bgcolor="#ffffff" style="-webkit-text-size-adjust:none; width: 100% !important; margin:0; overflow-y:scroll;  padding: 0;"><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Apply today before they're gone!</div>
+           <!--THIS IS THE 100% WRAPPER TABLE-->
+           <table class="full-wrap" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; margin:0;" width="100%">
+	<tr>
+		<td align="center" style="margin:0;" valign="top" width="100%">
+			<!--THIS IS THE 620px CONTAINER TABLE-->
+
+
+			<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:1399px !important;">
+				<tr>
+					<td align="center" style="margin:0; vertical-align:top; max-width:640px !important;">
+						<!--THESE ARE THE CONTENT TABLES -THE TABLES ABOVE ARE THE CONTAINING AND WRAPPER TABLES--><!--[if (gte mso 9)|(IE)]>
+<table width="600" style="max-width:600px !important;" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+<![endif]--><!--Framing Containing Table-->
+
+
+						<table align="center" border="0" cellpadding="" cellspacing="0" style="padding-top:0px; margin:0; background-color: #FFFFFF;" width="100%">
+							<!--BEGIN CONTENT-->
+
+
+							
+								<tr>
+								<td background="http://email-assets.jobtree.com/jt/051718-transparent-bg.png" bgcolor="#F2784B" class="desktop-padding" colspan="2" style="padding:20px 10px 20px 10px; text-align: center; font-size: 0; background-size: cover; background-repeat:no-repeat;" valign="top">
+<!--[if (gte mso 9)|(IE)]>
+<table width="620" style="max-width:620px !important;" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+<![endif]-->
+
+
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:540px;" width="100%">
+													<tr>
+														<td align="left" colspan="2" style="border-top-left-radius: 10px; border-top-right-radius: 10px; padding-top:25px; padding-left:20px; padding-bottom:0px; color:#333333; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:13px; line-height:17px; font-weight:400; text-decoration:none;" valign="middle">
+															<span style="color:#ffffff; text-transform:uppercase; font-size:16px;font-weight:400; text-shadow: 0px 1px 0px rgba(100, 100, 100, 0.6); letter-spacing: .5px;">June 11, 2018</span></td>
+													</tr>
+													<tr>
+														<td align="left" colspan="2" class="headline" style="padding-top:5px; padding-right:25px; padding-left:20px; padding-bottom:15px; color:#ffffff; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:30px; line-height:32px; font-weight:700; text-decoration:none; text-shadow: 0px 2px 0px rgba(100, 100, 100, 0.3);" valign="middle">New Job Listings for Kirk:</td>
+
+													</tr>
+									</table>
+												
+												<table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; max-width:540px; border-radius: 15px; margin-bottom: 0px; box-shadow: 0px 10px 43px -6px rgba(0,0,0,0.3);" width="100%">
+												
+
+
+
+
+
+													<tr>
+														<td align="left" colspan="2" class="headline" style="padding-top:0px; padding-bottom:10px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:10px; line-height:10px; font-weight:700; text-decoration:none;" valign="middle">&nbsp;</td>
+													</tr> 
+										
+													<!-- SINGLE BLOCK START -->
+														<tr>
+															<td border="0" cellpadding="0" cellspacing="0" colspan="2" width="100%">
+																<a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6a15cddb32328e4a3beb34aed36e52c6ffa3c1b6459c3f6084e13ef1fdeb5f6d56622b0b4a0e859554e0806bddfc32c1e" style="text-decoration:none;">
+																<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																	<tr>																		<td align="left" style="padding-top:5px; padding-bottom:5px; padding-left:20px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="100">
+																			<table bgcolor="#59ABE3" border="0" cellpadding="0" cellspacing="0" height="50" width="50" style="border-radius:50%; height:50px; width:50px;">
+																				<tr>
+																					<td align="center" valign- style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:24px; line-height:16px; font-weight:700; color:#FFFFFF; text-decoration:none; text-transform:capitalize;">1</td>
+																				</tr>
+																			</table>
+																		</td>
+																		
+																		
+																		<td align="left" style="padding-top:5px; padding-right:10px; padding-left:10px; padding-bottom:5px; color:#4D4D4D; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:700; text-decoration:none;" valign="middle" width="100%">Branch Administrator<br>
+																		<span style="color:#8fa0a8; text-transform:uppercase; font-size:14px;font-weight:300;">Posted Today</span></td>
+
+																		<td align="left" style="padding-top:5px; padding-right:15px; padding-left:10px; padding-bottom:5px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="100">
+																			<table bgcolor="#179CE1" border="0" cellpadding="0" cellspacing="0" height="20" style="border-radius:20px;">
+																				<tr>
+																					<td align="center" style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; font-weight:300; color:#FFFFFF; text-decoration:none; text-transform:capitalize; padding: 5px 10px 4px 10px; letter-spacing:.5px;">VIEW</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	
+																</table>
+																	</a>
+															</td>
+														</tr>
+
+
+														<tr>
+															<td colspan="2" style="padding-right:25px; padding-left:20px; padding-bottom:2px;" width="100%">
+																<hr style="border: 0;height: 0; border-top: 1px solid rgba(0, 0, 0, 0.2);border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+															</td>
+														</tr>
+														<!-- SINGLE BLOCK END -->
+											
+													<!-- SINGLE BLOCK START -->
+														<tr>
+															<td border="0" cellpadding="0" cellspacing="0" colspan="2" width="100%">
+																<a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6ea4811667e138faf8c496bf934964faf41ebc8697ce2ca732c760ddf15730b22f79e386b5c7430b76c828d74ea1ef6a8" style="text-decoration:none;">
+																<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																	<tr>																		<td align="left" style="padding-top:5px; padding-bottom:5px; padding-left:20px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="100">
+																			<table bgcolor="#F9BF3B" border="0" cellpadding="0" cellspacing="0" height="50" width="50" style="border-radius:50%; height:50px; width:50px;">
+																				<tr>
+																					<td align="center" valign- style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:24px; line-height:16px; font-weight:700; color:#FFFFFF; text-decoration:none; text-transform:capitalize;">2</td>
+																				</tr>
+																			</table>
+																		</td>
+																		
+																		
+																		<td align="left" style="padding-top:5px; padding-right:10px; padding-left:10px; padding-bottom:5px; color:#4D4D4D; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:700; text-decoration:none;" valign="middle" width="100%">Dollar General<br>
+																		<span style="color:#8fa0a8; text-transform:uppercase; font-size:14px;font-weight:300;">Posted Today</span></td>
+
+																		<td align="left" style="padding-top:5px; padding-right:15px; padding-left:10px; padding-bottom:5px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="80">
+																			<table bgcolor="#179CE1" border="0" cellpadding="0" cellspacing="0" height="20" style="border-radius:20px;">
+																				<tr>
+																					<td align="center" style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; font-weight:300; color:#FFFFFF; text-decoration:none; text-transform:capitalize; padding: 5px 10px 4px 10px; letter-spacing:.5px;">VIEW</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																</a>
+															</td>
+														</tr>
+
+
+														<tr>
+															<td colspan="2" style="padding-right:25px; padding-left:20px; padding-bottom:2px;" width="100%">
+																<hr style="border: 0;height: 0; border-top: 1px solid rgba(0, 0, 0, 0.2);border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+															</td>
+														</tr>
+														<!-- SINGLE BLOCK END -->
+													<!-- SINGLE BLOCK START -->
+														<tr>
+															<td border="0" cellpadding="0" cellspacing="0" colspan="2" width="100%">
+															<a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6c6207fa6d7b3f1c8356fd7fdc64cf02528340fc1c169b19b3c35253058ea1a2218ebefb8982fa89dcb12b3af9b986f0c" style="text-decoration:none;">
+
+																<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																	<tr>																		<td align="left" style="padding-top:5px; padding-bottom:5px; padding-left:20px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="100">
+																			<table bgcolor="#36D7B7" border="0" cellpadding="0" cellspacing="0" height="50" width="50" style="border-radius:50%; height:50px; width:50px;">
+																				<tr>
+																					<td align="center" valign- style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:24px; line-height:16px; font-weight:700; color:#FFFFFF; text-decoration:none; text-transform:capitalize;">3</td>
+																				</tr>
+																			</table>
+																		</td>
+																		
+																		
+																		<td align="left" style="padding-top:5px; padding-right:10px; padding-left:10px; padding-bottom:5px; color:#4D4D4D; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:700; text-decoration:none;" valign="middle" width="100%">Front Office Assistant<br>
+																		<span style="color:#8fa0a8; text-transform:uppercase; font-size:14px;font-weight:300;">Posted Today</span></td>
+
+																		<td align="left" style="padding-top:5px; padding-right:15px; padding-left:10px; padding-bottom:5px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="80">
+																			<table bgcolor="#179CE1" border="0" cellpadding="0" cellspacing="0" height="20" style="border-radius:20px;">
+																				<tr>
+																					<td align="center" style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; font-weight:300; color:#FFFFFF; text-decoration:none; text-transform:capitalize; padding: 5px 10px 4px 10px; letter-spacing:.5px;">VIEW</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																</a>
+															</td>
+														</tr>
+
+
+														<tr>
+															<td colspan="2" style="padding-right:25px; padding-left:20px; padding-bottom:2px;" width="100%">
+																<hr style="border: 0;height: 0; border-top: 1px solid rgba(0, 0, 0, 0.2);border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+															</td>
+														</tr>
+														<!-- SINGLE BLOCK END -->
+
+													<!-- SINGLE BLOCK START -->
+														<tr>
+															<td border="0" cellpadding="0" cellspacing="0" colspan="2" width="100%">
+															<a href="http://click.post.job-tree.com/?qs=be385f4708fe50f657c96061d105a319f86f95d3c0798ba754c004c2303830b2338c60cafde24ad8de6879898ddd33e3198ce54bc2a383a5" style="text-decoration:none;">
+
+																<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																	<tr>																		<td align="left" style="padding-top:5px; padding-bottom:5px; padding-left:20px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="100">
+																			<table bgcolor="#F64747" border="0" cellpadding="0" cellspacing="0" height="50" width="50" style="border-radius:50%; height:50px; width:50px;">
+																				<tr>
+																					<td align="center" valign- style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:24px; line-height:16px; font-weight:700; color:#FFFFFF; text-decoration:none; text-transform:capitalize;">4</td>
+																				</tr>
+																			</table>
+																		</td>
+																		
+																		
+																		<td align="left" style="padding-top:5px; padding-right:10px; padding-left:10px; padding-bottom:5px; color:#4D4D4D; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:700; text-decoration:none;" valign="middle" width="100%">PrideStaff<br>
+																		<span style="color:#8fa0a8; text-transform:uppercase; font-size:14px;font-weight:300;">Posted Today</span></td>
+
+																		<td align="left" style="padding-top:5px; padding-right:15px; padding-left:10px; padding-bottom:5px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="80">
+																			<table bgcolor="#179CE1" border="0" cellpadding="0" cellspacing="0" height="20" style="border-radius:20px;">
+																				<tr>
+																					<td align="center" style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; font-weight:300; color:#FFFFFF; text-decoration:none; text-transform:capitalize; padding: 5px 10px 4px 10px; letter-spacing:.5px;">VIEW</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																</a>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2" style="padding-right:25px; padding-left:20px; padding-bottom:2px;" width="100%">
+																<hr style="border: 0;height: 0; border-top: 1px solid rgba(0, 0, 0, 0.2);border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+															</td>
+														</tr>
+														<!-- SINGLE BLOCK END -->	
+													<!-- SINGLE BLOCK START -->
+														<tr>
+															<td border="0" cellpadding="0" cellspacing="0" colspan="2" width="100%">
+															<a href="http://click.post.job-tree.com/?qs=be385f4708fe50f67f2b51ac121297cd26153d0788fba7bf33073d304148bb6d12cf03b939a0e1a244295fdc51a82e494778a35b74718913" style="text-decoration:none;">
+
+																<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																	<tr>																		<td align="left" style="padding-top:5px; padding-bottom:5px; padding-left:20px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="100">
+																			<table bgcolor="#87D37C" border="0" cellpadding="0" cellspacing="0" height="50" width="50" style="border-radius:50%; height:50px; width:50px;">
+																				<tr>
+																					<td align="center" valign- style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:24px; line-height:16px; font-weight:700; color:#FFFFFF; text-decoration:none; text-transform:capitalize;">5</td>
+																				</tr>
+																			</table>
+																		</td>
+																		
+																		
+																		<td align="left" style="padding-top:5px; padding-right:10px; padding-left:10px; padding-bottom:5px; color:#4D4D4D; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:700; text-decoration:none;" valign="middle" width="100%">Full Time<br>
+																		<span style="color:#8fa0a8; text-transform:uppercase; font-size:14px;font-weight:300;">Posted Today</span></td>
+
+																		<td align="left" style="padding-top:5px; padding-right:15px; padding-left:10px; padding-bottom:5px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="80">
+																			<table bgcolor="#179CE1" border="0" cellpadding="0" cellspacing="0" height="20" style="border-radius:20px;">
+																				<tr>
+																					<td align="center" style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; font-weight:300; color:#FFFFFF; text-decoration:none; text-transform:capitalize; padding: 5px 10px 4px 10px; letter-spacing:.5px;">VIEW</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																</a>
+															</td>
+														</tr>
+
+
+														<tr>
+															<td colspan="2" style="padding-right:25px; padding-left:20px; padding-bottom:2px;" width="100%">
+																<hr style="border: 0;height: 0; border-top: 1px solid rgba(0, 0, 0, 0.2);border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+															</td>
+														</tr>
+														<!-- SINGLE BLOCK END -->
+
+													<!-- SINGLE BLOCK START -->
+														<tr>
+															<td border="0" cellpadding="0" cellspacing="0" colspan="2" width="100%">
+															<a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6df3f3c025495371e77ed3f55dc22eb193609f335bf873c4b415b72021d98ff7107cfee423a4486a85342f3526ecb2518" style="text-decoration:none;">
+
+																<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																	<tr>																		<td align="left" style="padding-top:5px; padding-bottom:5px; padding-left:20px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="100">
+																			<table bgcolor="#59ABE3" border="0" cellpadding="0" cellspacing="0" height="50" width="50" style="border-radius:50%; height:50px; width:50px;">
+																				<tr>
+																					<td align="center" valign- style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:24px; line-height:16px; font-weight:700; color:#FFFFFF; text-decoration:none; text-transform:capitalize;">6</td>
+																				</tr>
+																			</table>
+																		</td>
+																		
+																		
+																		<td align="left" style="padding-top:5px; padding-right:10px; padding-left:10px; padding-bottom:5px; color:#4D4D4D; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:700; text-decoration:none;" valign="middle" width="100%">Jewel-Osco<br>
+																		<span style="color:#8fa0a8; text-transform:uppercase; font-size:14px;font-weight:300;">Posted Today</span></td>
+
+																		<td align="left" style="padding-top:5px; padding-right:15px; padding-left:10px; padding-bottom:5px; color:#4d4d4d; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; font-weight:400; text-decoration:none;" valign="middle" width="80">
+																			<table bgcolor="#179CE1" border="0" cellpadding="0" cellspacing="0" height="20" style="border-radius:20px;">
+																				<tr>
+																					<td align="center" style="font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; font-weight:300; color:#FFFFFF; text-decoration:none; text-transform:capitalize; padding: 5px 10px 4px 10px; letter-spacing:.5px;">VIEW</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																</a>
+															</td>
+														</tr>
+
+														<!-- SINGLE BLOCK END -->					
+												
+													<tr>
+														<td align="center" border="0" cellpadding="0" cellspacing="0" colspan="3" style="margin:0; padding:10px; padding-top:5px; padding-bottom:20px; color:#F27935; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:14px; text-transform: uppercase; line-height:23px; border-radius: 10px;">
+
+															<a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6fe23b83f784502221eaac6f47493cb02d42171e9e90112dfab0873e2366c489d7be9a1323e809932e8634b2b5cf4507d" style="color:#4d4d4d; font-weight: 700;  text-decoration:underline; text-transform: uppercase;">
+															View more jobs &rsaquo;</a></span>
+														</td>
+													</tr>
+												</table>
+									<!--[if (gte mso 9)|(IE)]>
+                    </td>
+                </tr>
+            </table>
+            <![endif]-->
+
+
+
+									<!--[if (gte mso 9)|(IE)]>
+            </td>
+            <td>
+            <![endif]-->
+								</td>
+							</tr>
+
+
+			   			  
+
+
+					<tr>
+                      <td colspan="2" bgcolor="#ffffff"align="center" style="font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px; line-height: 13px; padding-top:10px; padding-bottom:8px; padding-left:8px; padding-right:8px; color: #5C5C5C;">   <table width="110" height="29" bgcolor="" cellpadding="0" cellspacing="0" align="center" style="margin:0;" border="0" valign="middle">
+                    <tr>
+                      <td width="110" height="29" bgcolor="#666666" cellpadding="0" cellspacing="0" align="center" valign="middle" style="margin:0; border-top-left-radius:6px; border-top-right-radius:6px; border-bottom-right-radius:6px; border-bottom-left-radius:6px; font-size:10px; color:#5C5C5C; font-family:Helvetica, Arial, sans-serif; line-height:16px;" border="0">
+                        <span style="font-size:11px; color:#ffffff; font-family:Helvetica, Arial, sans-serif; line-height:16px;"><a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6ffd1689bdbfaa3ad98da940d909116d97a150f18409325b7f03a7bd53e8ce53b44b566628dea8e5dc083f73b28546b49" style="color:#ffffff; text-decoration:none; width:110px; padding-top:7px; padding-bottom:7px; vertical-align:middle; display:block;" target="_blank"><span style="color:#ffffff;">One-click Unsub</span></a>
+                      </span>
+                      </td>
+                    </tr>
+            </table><br />
+            
+            To unsubscribe from Job-Tree, please <a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6ffd1689bdbfaa3ad98da940d909116d97a150f18409325b7f03a7bd53e8ce53b44b566628dea8e5dc083f73b28546b49" style="color:#5C5C5C; text-decoration:underline;" target="_blank">click here</a>.<br /><br /><br />
+            
+            
+          
+            <span style="-webkit-text-size-adjust:none; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px; line-height: 17px; margin: 0 0 10px; padding: 0; color: #5C5C5C;">This email was sent to <a href="mailto:kirktolliver28@gmail.com" style="color:#5C5C5C; text-decoration:underline;"><span style="color:#5C5C5C;">kirktolliver28@gmail.com</span></a><br />&copy; <span class="appleLinksBlack"></span>Percipio Holdings | <a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6f650b1c079d850bb70352f1dd08a2d76fb8799db00de98015e2c52588f9de4e270c33a70cb12f9fadc2eeb6fd1a367cb"
+            style="color:#5C5C5C; text-decoration:underline;"><span style="color:#5C5C5C;">Marketing Preferences</span></a> <br />
+            <span class="appleLinksBlack">625 Massachusetts Ave | Cambridge, MA 02139 | <a href="http://click.post.job-tree.com/?qs=be385f4708fe50f6b09f518fca278aa106773c46fd652b122e3c7e11852a1616f33e65c5237d325b781c20faa7e2fe28d3eabd94e738dc2b" style="color:#5C5C5C; text-decoration:underline;" target="_blank">
+            <span style="color:#5C5C5C;">Privacy&nbsp;Policy</span></a></span></td>
+                    </tr>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+        </td>
+    </tr>
+</table>
+<![endif]-->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+           </body>
+           <img src="http://click.post.job-tree.com/open.aspx?ffcb10-fec61075736c047f-fe5f17777560057a7310-fe9613727463077f76-ff991575-fe5e17727d630d7c7517-ff971775" width="1" height="1">
+           </html>
+
+
+
+--GhgAF4FDW3ex=_?:--
+

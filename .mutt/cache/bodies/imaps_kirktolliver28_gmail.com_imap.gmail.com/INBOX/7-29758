@@ -1,0 +1,733 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 2002:a17:90a:3405:0:0:0:0 with SMTP id o5-v6csp2552681pjb;
+        Tue, 26 Jun 2018 02:08:11 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKJM8vys1W1rH3RVoVaYdOaL3+xF5Yafq53eD3m+2fkdD0VLmP2C0aQf5GaeA/C/AnfNNLRT
+X-Received: by 2002:a65:4a42:: with SMTP id a2-v6mr597436pgu.367.1530004091030;
+        Tue, 26 Jun 2018 02:08:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1530004090; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vox+pzwziLfsDJ15DgnEM0s6cBexgxSCaAsOB66hMirVD4rXf4pOjt6IASOTjN0Y8T
+         ozlj3VyTEUQhNWJjJIddKo4GDvBhmQ9eTc6blEHqLsPy8PVb7KTmiTfCe4ROGjgk8Swz
+         dJKxCx1XNjvGztXvSvQB1iiLAJHAUArLhlbSlvWNyCx5DcvjmnrYPmxe9pMPo08vUOOC
+         Zdl+tdLwchc12kX0vZyc1EgLVibkw1TbXLp0oZ+U2p0+7mQouZ8ltZe5HW9pwDivsrF6
+         7zbfi1uEjzgA7o5WQXhZ0IGdXQEuBKGpEFVEnG3klDUkxvlc0ivJtTxyq+OFY5c4lnFv
+         5B5w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:x_fblid:mime-version:subject:message-id:to:reply-to:from
+         :content-transfer-encoding:dkim-signature:arc-authentication-results;
+        bh=FVy7WysQgprAcNZdyykW5Csh7QkhPWNYr1B1z7zYHyE=;
+        b=Vducl2RAkw0A8fTAzoo3EqwDk2EFDvJlm0yIQsGLV+0qsba+b96wwSNGck2HqOWyiE
+         CGlfn0GlPcgPYb2J8xrObbmwItC+CjIb1Vo6+muh7WfTXbErmk6mFrr4sP52EFX3JrCT
+         HzT4YVhF51hip7ne5KOl6QvXZPxZnpnJ2s4l2tzd5xz73UnPzVhAUEIuTnktjOfWCjrK
+         v/o4meX9so3lPGiNWTNL0A9O93vVklTz5Rzu9KeLajD5AWC0REpmh4Ojqst2eOuxQsN4
+         izEJQCGiiUk/9MAjHBiBEaxx+DwsqXNfJ5YC3YQzX2EzO+wGBTCsQP2XMmhS9tScMzTu
+         Pznw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@dice.com header.s=scph0317 header.b=bugjlU1u;
+       spf=pass (google.com: domain of jobs@dice.com designates 35.167.134.40 as permitted sender) smtp.mailfrom=jobs@dice.com
+Return-Path: <jobs@dice.com>
+Received: from mta1a10-dhi.mta.e.sparkpost.com (mta1a10-dhi.mta.e.sparkpost.com. [35.167.134.40])
+        by mx.google.com with ESMTPS id a62-v6si1026064pgc.29.2018.06.26.02.08.10
+        for <kirktolliver28@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 26 Jun 2018 02:08:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jobs@dice.com designates 35.167.134.40 as permitted sender) client-ip=35.167.134.40;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dice.com header.s=scph0317 header.b=bugjlU1u;
+       spf=pass (google.com: domain of jobs@dice.com designates 35.167.134.40 as permitted sender) smtp.mailfrom=jobs@dice.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dice.com;
+	s=scph0317; t=1530004090; i=@dice.com;
+	bh=FVy7WysQgprAcNZdyykW5Csh7QkhPWNYr1B1z7zYHyE=;
+	h=From:Reply-To:To:Subject:Date;
+	b=bugjlU1uJJhJbRF0yB5CwLL+rc0oAjj6shku2ahh2ShHDILmYq+hAvqYHONTi7bvO
+	 sO7FQqguRHLG9/7CZbOP2PU+lDEEWmM8HNJaPeZc6aIBVm8Ylpo0S/Dp55kbruyij6
+	 iBLvz3BI1Zmg8iEPlF3Ie6YzXP5pNZgBF0CAAWXs=
+X-MSFBL: ACBxeH7Tw047AOQ9tO3BC6bR1j2NHCKC2L6/DYKdM1g=|eyJzdWJhY2NvdW50X2l
+	kIjoiMCIsIm1lc3NhZ2VfaWQiOiIwMDAwN2EwMjMyNWJkNDAzYzFiNiIsInIiOiJ
+	raXJrdG9sbGl2ZXIyOEBnbWFpbC5jb20iLCJjdXN0b21lcl9pZCI6IjEiLCJ0ZW5
+	hbnRfaWQiOiJkaGkifQ==
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+Authentication-Results:  b.mta2vsmtp.cc.prd.sparkpost smtp.user=<hidden>; auth=pass (LOGIN)
+Received: from [52.200.88.36] ([52.200.88.36:65429] helo=batchsvc-i-0270211fa9f835cfb-us-east-1-production-dhiaws-com.diceprod.dhiaws.com)
+	by b.mta2vsmtp.cc.prd.sparkpost (envelope-from <jobs@dice.com>)
+	(ecelerity 4.2.39.64887 r(Core:4.2.39.41-TR-311)) with ESMTPSA (cipher=ECDHE-RSA-AES256-GCM-SHA384) 
+	id 1C/6B-00980-A72023B5; Tue, 26 Jun 2018 09:08:10 +0000
+Received: from batchsvc-i-0270211fa9f835cfb-us-east-1-production-dhiaws-com (batchsvc-i-0270211fa9f835cfb-us-east-1-production-dhiaws-com [127.0.0.1])
+	by batchsvc-i-0270211fa9f835cfb-us-east-1-production-dhiaws-com.diceprod.dhiaws.com (Postfix) with ESMTP id 67C2CA277F
+	for <kirktolliver28@gmail.com>; Tue, 26 Jun 2018 04:00:53 -0500 (CDT)
+From: Dice Job Alert <jobs@dice.com>
+Reply-To: Dice Job Alert <jobs@dice.com>
+To: kirktolliver28@gmail.com
+Message-ID: <905973385.7991365.1530003653423.JavaMail.dhi@batchsvc-i-0270211fa9f835cfb-us-east-1-production-dhiaws-com>
+Subject: Dice Job Alert - Entry Level
+MIME-Version: 1.0
+X_FBLID: 10233693
+X-Binding-ID: 82
+X-Mailing-ID: Dice-JAD-D06/26/2018
+X-FBLUID: kirktolliver28@gmail.com
+Date: Tue, 26 Jun 2018 04:00:53 -0500 (CDT)
+
+<!DOCTYPE html>=0D=0A<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"=
+margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','H=
+elvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A<head style=3D"margin: 0 =
+auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica N=
+eue',Helvetica,Arial,sans-serif;">=0D=0A    <meta http-equiv=3D"Content-Typ=
+e" content=3D"text/html; charset=3Dutf-8" style=3D"margin: 0 auto;font-fami=
+ly: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica=
+,Arial,sans-serif;">=0D=0A    <meta name=3D"viewport" content=3D"width=3Dde=
+vice-width, initial-scale=3D1.0" style=3D"margin: 0 auto;font-family: 'Helv=
+eticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sa=
+ns-serif;">=0D=0A    <style type=3D"text/css" style=3D"margin: 0 auto;font-=
+family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helve=
+tica,Arial,sans-serif;">=0D=0A        * {margin:0 auto;font-family: 'Helvet=
+icaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans=
+-serif;}=0D=0A        body {background-color:#f5f5f5;-webkit-text-size-adju=
+st:100%;-ms-text-size-adjust: 100%;}=0D=0A        .job-alert-card {backgrou=
+nd-color:#ffffff;}=0D=0A        .header-section {width:100%;height:75px;bac=
+kground-color:#333333;}=0D=0A        .header-section img {-ms-interpolation=
+-mode: bicubic; display: block; height: 40px; outline: none; text-decoratio=
+n: none; width: 75px;float:left;}=0D=0A        .header-section span {color:=
+ #959595; font-size: 90%; font-weight: 300;display: block;}=0D=0A        .f=
+eatured-job-banner {background: #6CF;color: #fff;padding: 5px 10px;position=
+: relative;top: -15px;}=0D=0A        .jobs-header h3 {color:#cc0000;font-si=
+ze: 32px;font-weight:200;}=0D=0A        .jobs-header span {font-size: 17px;=
+font-weight:600;}=0D=0A        .jobs-header a {color: #069;padding-left: 15=
+px;text-decoration: none;font-size: 15px;white-space: nowrap;font-weight:60=
+0;}=0D=0A        table.jobs-table {text-decoration:none;list-style:none;pad=
+ding:20px 30px;border-top:1px solid #dddddd;}=0D=0A        .job-title {disp=
+lay: block;font-size: 20px;text-decoration: none;color:#006699;padding-bott=
+om:10px;}=0D=0A        .location-company {color:#959595;font-size:14px;}=0D=
+=0A        .view-more-table {border-bottom:1px solid #dddddd;}=0D=0A       =
+ .view-more-section a {display: block;padding: 6px 12px;font-size: 14px;fon=
+t-weight: 400;line-height: 1.42857143;text-align: center;white-space: nowra=
+p;vertical-align: middle;background-image: none;border: 1px solid transpare=
+nt;border-radius: 4px;color: #fff;background-color: #337ab7;border-color: #=
+2e6da4;text-decoration: none;margin: 0 auto;}=0D=0A        .alert-criteria-=
+section {padding:20px 30px;}=0D=0A        .alert-criteria-section h3 {font-=
+weight:200;margin-bottom:20px;}=0D=0A        #criteria-list {list-style:non=
+e; padding-left:20px;}=0D=0A        #criteria-list {font-size: 17px;}=0D=0A=
+        .criteria-label {font-weight:bold;font-size: 17px;}=0D=0A        .a=
+lert-criteria-section a {color: #069;padding:20px;text-decoration: none;fon=
+t-size: 17px;display:block;}=0D=0A        .mobile-social-links {text-align:=
+center;padding: 25px 25px 5px 25px;}=0D=0A        .mobile-social-list {text=
+-decoration:none;list-style:none;display:inline-block;}=0D=0A        .messa=
+ge-section {padding: 20px 30px 5px;font-size: 13px;color:#959595;}=0D=0A   =
+     .message-section:last-child {padding-bottom:50px;}=0D=0A        .caree=
+r-hub {font-size: 17px;}=0D=0A        table {width:100%;padding:20px 30px;}=
+=0D=0A        table.container-table {max-width: 580px;width:580px;padding:0=
+px !important;margin: 0 auto;}=0D=0A        table.criteria-section {padding=
+-bottom:5px !important;}=0D=0A        table.view-more-table {padding-top: 5=
+px !important;}=0D=0A        table.criteria-section td {display:block;}=0D=
+=0A        table.criteria-section p {font-size:17px;}=0D=0A        table.so=
+cial-table, table.app-table, table.bot-msg, table.manage-table {padding-bot=
+tom: 5px !important;padding-top: 10px !important;}=0D=0A        .icons, .ap=
+p-icons {text-align: center !important;}=0D=0A    </style>=0D=0A</head>=0D=
+=0A<body style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvet=
+ica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;background-colo=
+r: #f5f5f5;-webkit-text-size-adjust:100%;-ms-text-size-adjust: 100%;text-al=
+ign: left;" bgcolor=3D"#f5f5f5">=0D=0A<div style=3D"color:transparent;visib=
+ility:hidden;opacity:0;font-size:0px;border:0;max-height:1px;width:1px;marg=
+in:0px;padding:0px;border-width:0px!important;display:none!important;line-h=
+eight:0px!important;"><img border=3D"0" width=3D"1" height=3D"1" src=3D"htt=
+p://dhi.et.e.sparkpost.com/q/1D08epNuuImw6qxE5eGHYQ~~/AAAAAQA~/RgRdEzX6PVcD=
+ZGhpWAQAAAAAQgoAAHoCMlvUA8G2UhhraXJrdG9sbGl2ZXIyOEBnbWFpbC5jb20~"/></div>=
+=0D=0A=0D=0A    <table class=3D"container-table" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" bgcolor=3D"#f5f5f5" width=3D"100%" style=3D"margin=
+: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helveti=
+ca Neue',Helvetica,Arial,sans-serif;width:100% !important;padding: 20px 30p=
+x;padding: 0px !important;margin: 0 auto;background-color: #f5f5f5;text-ali=
+gn: left;max-width: 580px;">=0D=0A        <tr style=3D"margin: 0 auto;font-=
+family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helve=
+tica,Arial,sans-serif; text-align: left; vertical-align: top;width:100%;max=
+-width: 580px;" align=3D"left">=0D=0A            <td style=3D"margin: 0 aut=
+o;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue=
+',Helvetica,Arial,sans-serif;width:100%;" align=3D"center" valign=3D"top" w=
+idth=3D"100%">=0D=0A                <center style=3D"width: 100%;max-width:=
+580px;">=0D=0A                    <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"580" align=3D"center">=0D=0A                       =
+ <tr style=3D"padding: 0; text-align: left; vertical-align: top" align=3D"l=
+eft">=0D=0A                            <td width=3D"580">=0D=0A            =
+                    <div class=3D"job-alert-card" style=3D"margin: 0 auto;f=
+ont-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',H=
+elvetica,Arial,sans-serif;background-color: #ffffff;">=0D=0A               =
+                     <div class=3D"header-section" style=3D"margin: 0 auto;=
+font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',=
+Helvetica,Arial,sans-serif;width: 100%;height: 75px;background-color: #3333=
+33;">=0D=0A                                        <table class=3D"heading-=
+section" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: =
+0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica=
+ Neue',Helvetica,Arial,sans-serif;width: 100%;padding: 20px 30px;background=
+-color: #333333;">=0D=0A                                            <tr sty=
+le=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Lig=
+ht','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A                   =
+                             <td style=3D"width: 17%;margin: 0 auto;font-fa=
+mily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helveti=
+ca,Arial,sans-serif;">=0D=0A                                               =
+     <img src=3D"http://assets.dice.com/techpro/img/dice-logo.png" alt=3D"D=
+ice Logo" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helve=
+tica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;-ms-interpolat=
+ion-mode: bicubic;display: block;height: 40px;outline: none;text-decoration=
+: none;width: 75px;float: left;">=0D=0A                                    =
+            </td>=0D=0A                                                <td =
+style=3D"width: 83%;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helv=
+etica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A     =
+                                               <span class=3D"career-hub" s=
+tyle=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue L=
+ight','Helvetica Neue',Helvetica,Arial,sans-serif;font-size: 90%;color: #95=
+9595;font-weight: 300;display: block;">The career hub for tech</span>=0D=0A=
+                                                </td>=0D=0A                =
+                            </tr>=0D=0A                                    =
+    </table>=0D=0A                                    </div>=0D=0A         =
+                           <img src=3D"http://diceemailprod.112.2o7.net/b/s=
+s/diceemailprod/1/H.10--NS/s96005397352341=3F&pageName=3DJobAlertEmail&v0=
+=3D[Jun 25, 2018]J&v5=3D[10233693]&v25=3D[Keyphrase]" height=3D"1" width=3D=
+"1" border=3D"0" alt=3D"" />=0D=0A                                    <div =
+class=3D"jobs-header" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-L=
+ight','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=
+=0D=0A                                        <table class=3D"title-table" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;fo=
+nt-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',He=
+lvetica,Arial,sans-serif;width: 100%;padding: 20px 30px;background-color:#f=
+ff;">=0D=0A                                            <tr style=3D"margin:=
+ 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetic=
+a Neue',Helvetica,Arial,sans-serif;">=0D=0A                                =
+                <td style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Lig=
+ht','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=
+=0D=0A                                                    <h3 style=3D"marg=
+in: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helve=
+tica Neue',Helvetica,Arial,sans-serif;color: #cc0000;font-size: 32px;font-w=
+eight: 200;">Dice Job Alert</h3>=0D=0A                                     =
+               <span style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Li=
+ght','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;fon=
+t-size: 17px;font-weight: 600;">Here are the latest jobs matching your Entr=
+y Level criteria.</span>&nbsp;<a href=3D"http://www.dice.com/dashboard/aler=
+ts=3F&CMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_CRITERIA_HEAD&utm_source=3DServer&u=
+tm_medium=3DEmail&utm_content=3D&utm_campaign=3DJob%2BAlerts&u=3Dkirktolliv=
+er28@gmail.com" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light',=
+'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;color: #=
+069;padding-left: 15px;text-decoration: none;font-size: 15px;white-space: n=
+owrap;font-weight: 600;">Adjust alert settings</a>=0D=0A                   =
+                             </td>=0D=0A                                   =
+         </tr>=0D=0A                                        </table>=0D=0A =
+                                   </div>=0D=0A                            =
+        <div class=3D"jobs-section" style=3D"margin: 0 auto;font-family: 'H=
+elveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial=
+,sans-serif;">=0D=0A                                                <table =
+class=3D"jobs-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light=
+','Helvetica Neue',Helvetica,Arial,sans-serif;width: 100%;padding: 20px 30p=
+x;text-decoration: none;list-style: none;border-top: 1px solid #dddddd;back=
+ground-color:#fff;">=0D=0A                                                 =
+   <tr style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetic=
+a Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A         =
+                                               <td style=3D"margin: 0 auto;=
+font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',=
+Helvetica,Arial,sans-serif;">=0D=0A                                        =
+                    <a class=3D"job-title" href=3D"http://www.dice.com/jobs=
+/detail/Entry-Level-Software-Engineer/cxjudgpa/572273=3FCMPID=3DEM_SP_UP_JS=
+_US_AV_JA_JADR_1&utm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm_=
+campaign=3DJob%2BAlerts" style=3D"margin: 0 auto;font-family: 'HelveticaNeu=
+e-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif=
+;display: block;font-size: 20px;text-decoration: none;color: #006699;paddin=
+g-bottom: 10px;">Entry Level Software Engineer</a>=0D=0A                   =
+                                         <div class=3D"location-company" st=
+yle=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Li=
+ght','Helvetica Neue',Helvetica,Arial,sans-serif;color: #959595;font-size: =
+14px;">=0D=0A                                                              =
+  <span style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helveti=
+ca Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">The Judge Grou=
+p | Chicago, IL</span>=0D=0A                                               =
+             </div>=0D=0A                                                  =
+      </td>=0D=0A                                                    </tr>=
+=0D=0A                                                </table>=0D=0A       =
+                                         <table class=3D"jobs-table" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-fam=
+ily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetic=
+a,Arial,sans-serif;width: 100%;padding: 20px 30px;text-decoration: none;lis=
+t-style: none;border-top: 1px solid #dddddd;background-color:#fff;">=0D=0A =
+                                                   <tr style=3D"margin: 0 a=
+uto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Ne=
+ue',Helvetica,Arial,sans-serif;">=0D=0A                                    =
+                    <td style=3D"margin: 0 auto;font-family: 'HelveticaNeue=
+-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;=
+">=0D=0A                                                            <a clas=
+s=3D"job-title" href=3D"http://www.dice.com/jobs/detail/Software-Developer-=
+%26%2345-Mid%26%2345Level/cxjudgpa/569335=3FCMPID=3DEM_SP_UP_JS_US_AV_JA_JA=
+DR_2&utm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm_campaign=3DJ=
+ob%2BAlerts" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','He=
+lvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;display: bl=
+ock;font-size: 20px;text-decoration: none;color: #006699;padding-bottom: 10=
+px;">Software Developer - Mid-Level</a>=0D=0A                              =
+                              <div class=3D"location-company" style=3D"marg=
+in: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helve=
+tica Neue',Helvetica,Arial,sans-serif;color: #959595;font-size: 14px;">=0D=
+=0A                                                                <span st=
+yle=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Li=
+ght','Helvetica Neue',Helvetica,Arial,sans-serif;">The Judge Group | Chicag=
+o, IL</span>=0D=0A                                                         =
+   </div>=0D=0A                                                        </td=
+>=0D=0A                                                    </tr>=0D=0A     =
+                                           </table>=0D=0A                  =
+                              <table class=3D"jobs-table" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-family: 'Helve=
+ticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,san=
+s-serif;width: 100%;padding: 20px 30px;text-decoration: none;list-style: no=
+ne;border-top: 1px solid #dddddd;background-color:#fff;">=0D=0A            =
+                                        <tr style=3D"margin: 0 auto;font-fa=
+mily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helveti=
+ca,Arial,sans-serif;">=0D=0A                                               =
+         <td style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','He=
+lvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A   =
+                                                         <a class=3D"job-ti=
+tle" href=3D"http://www.dice.com/jobs/detail/Direct-client-requirement-%26%=
+2345-Technical-Manager-%26%2345-Level-3-%40-Chicago-IL/10121915/499342=3FCM=
+PID=3DEM_SP_UP_JS_US_AV_JA_JADR_3&utm_source=3DServer&utm_medium=3DEmail&ut=
+m_content=3D&utm_campaign=3DJob%2BAlerts" style=3D"margin: 0 auto;font-fami=
+ly: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica=
+,Arial,sans-serif;display: block;font-size: 20px;text-decoration: none;colo=
+r: #006699;padding-bottom: 10px;">Direct client requirement - Technical Man=
+ager - Level 3 @ Chicago IL</a>=0D=0A                                      =
+                      <div class=3D"location-company" style=3D"margin: 0 au=
+to;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neu=
+e',Helvetica,Arial,sans-serif;color: #959595;font-size: 14px;">=0D=0A      =
+                                                          <span style=3D"ma=
+rgin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Hel=
+vetica Neue',Helvetica,Arial,sans-serif;">Kutir Inc | Chicago, IL</span>=0D=
+=0A                                                            </div>=0D=0A=
+                                                        </td>=0D=0A        =
+                                            </tr>=0D=0A                    =
+                            </table>=0D=0A                                 =
+               <table class=3D"jobs-table" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light'=
+,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;width: =
+100%;padding: 20px 30px;text-decoration: none;list-style: none;border-top: =
+1px solid #dddddd;background-color:#fff;">=0D=0A                           =
+                         <tr style=3D"margin: 0 auto;font-family: 'Helvetic=
+aNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-s=
+erif;">=0D=0A                                                        <td st=
+yle=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Li=
+ght','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A                  =
+                                          <a class=3D"job-title" href=3D"ht=
+tp://www.dice.com/jobs/detail/.Net-Developer-%26%2340mid%26%2345level%26%23=
+41-%26%2345-Full-Time/10118866/422253=3FCMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_4=
+&utm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm_campaign=3DJob%2=
+BAlerts" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvet=
+ica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;display: block;=
+font-size: 20px;text-decoration: none;color: #006699;padding-bottom: 10px;"=
+>.Net Developer (mid-level) - Full Time</a>=0D=0A                          =
+                                  <div class=3D"location-company" style=3D"=
+margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','H=
+elvetica Neue',Helvetica,Arial,sans-serif;color: #959595;font-size: 14px;">=
+=0D=0A                                                                <span=
+ style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue=
+ Light','Helvetica Neue',Helvetica,Arial,sans-serif;">RPartners | Chicago, =
+IL</span>=0D=0A                                                            =
+</div>=0D=0A                                                        </td>=
+=0D=0A                                                    </tr>=0D=0A      =
+                                          </table>=0D=0A                   =
+                             <table class=3D"jobs-table" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-family: 'Helvet=
+icaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans=
+-serif;width: 100%;padding: 20px 30px;text-decoration: none;list-style: non=
+e;border-top: 1px solid #dddddd;background-color:#fff;">=0D=0A             =
+                                       <tr style=3D"margin: 0 auto;font-fam=
+ily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetic=
+a,Arial,sans-serif;">=0D=0A                                                =
+        <td style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Hel=
+vetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A    =
+                                                        <a class=3D"job-tit=
+le" href=3D"http://www.dice.com/jobs/detail/Organizational-Change-Managemen=
+t-and-Training-Consultant/RTL66359/488194=3FCMPID=3DEM_SP_UP_JS_US_AV_JA_JA=
+DR_5&utm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm_campaign=3DJ=
+ob%2BAlerts" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','He=
+lvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;display: bl=
+ock;font-size: 20px;text-decoration: none;color: #006699;padding-bottom: 10=
+px;">Organizational Change Management and Training Consultant</a>=0D=0A    =
+                                                        <div class=3D"locat=
+ion-company" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','He=
+lvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;color: #959=
+595;font-size: 14px;">=0D=0A                                               =
+                 <span style=3D"margin: 0 auto;font-family: 'HelveticaNeue-=
+Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;"=
+>SWC Technology Partners | Oak Brook, IL</span>=0D=0A                      =
+                                      </div>=0D=0A                         =
+                               </td>=0D=0A                                 =
+                   </tr>=0D=0A                                             =
+   </table>=0D=0A                                                <table cla=
+ss=3D"jobs-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','=
+Helvetica Neue',Helvetica,Arial,sans-serif;width: 100%;padding: 20px 30px;t=
+ext-decoration: none;list-style: none;border-top: 1px solid #dddddd;backgro=
+und-color:#fff;">=0D=0A                                                    =
+<tr style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica N=
+eue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A            =
+                                            <td style=3D"margin: 0 auto;fon=
+t-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Hel=
+vetica,Arial,sans-serif;">=0D=0A                                           =
+                 <a class=3D"job-title" href=3D"http://www.dice.com/jobs/de=
+tail/.NET-Developer/RTX1c8ffb/5441138=3FCMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_6=
+&utm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm_campaign=3DJob%2=
+BAlerts" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvet=
+ica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;display: block;=
+font-size: 20px;text-decoration: none;color: #006699;padding-bottom: 10px;"=
+>.NET Developer</a>=0D=0A                                                  =
+          <div class=3D"location-company" style=3D"margin: 0 auto;font-fami=
+ly: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica=
+,Arial,sans-serif;color: #959595;font-size: 14px;">=0D=0A                  =
+                                              <span style=3D"margin: 0 auto=
+;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue'=
+,Helvetica,Arial,sans-serif;">DATAIR Employee Benefit Systems, Inc. | Westm=
+ont, IL</span>=0D=0A                                                       =
+     </div>=0D=0A                                                        </=
+td>=0D=0A                                                    </tr>=0D=0A   =
+                                             </table>=0D=0A                =
+                                <table class=3D"jobs-table" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-family: 'Hel=
+veticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,s=
+ans-serif;width: 100%;padding: 20px 30px;text-decoration: none;list-style: =
+none;border-top: 1px solid #dddddd;background-color:#fff;">=0D=0A          =
+                                          <tr style=3D"margin: 0 auto;font-=
+family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helve=
+tica,Arial,sans-serif;">=0D=0A                                             =
+           <td style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','=
+Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A =
+                                                           <a class=3D"job-=
+title" href=3D"http://www.dice.com/jobs/detail/Software-Engineer/90922825/1=
+26069=3FCMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_7&utm_source=3DServer&utm_medium=
+=3DEmail&utm_content=3D&utm_campaign=3DJob%2BAlerts" style=3D"margin: 0 aut=
+o;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue=
+',Helvetica,Arial,sans-serif;display: block;font-size: 20px;text-decoration=
+: none;color: #006699;padding-bottom: 10px;">Software Engineer</a>=0D=0A   =
+                                                         <div class=3D"loca=
+tion-company" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','H=
+elvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;color: #95=
+9595;font-size: 14px;">=0D=0A                                              =
+                  <span style=3D"margin: 0 auto;font-family: 'HelveticaNeue=
+-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;=
+">AVS Consultants Inc | Chicago, IL</span>=0D=0A                           =
+                                 </div>=0D=0A                              =
+                          </td>=0D=0A                                      =
+              </tr>=0D=0A                                                </=
+table>=0D=0A                                                <table class=3D=
+"jobs-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"marg=
+in: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helve=
+tica Neue',Helvetica,Arial,sans-serif;width: 100%;padding: 20px 30px;text-d=
+ecoration: none;list-style: none;border-top: 1px solid #dddddd;background-c=
+olor:#fff;">=0D=0A                                                    <tr s=
+tyle=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue L=
+ight','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A                 =
+                                       <td style=3D"margin: 0 auto;font-fam=
+ily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetic=
+a,Arial,sans-serif;">=0D=0A                                                =
+            <a class=3D"job-title" href=3D"http://www.dice.com/jobs/detail/=
+Business-Analyst-%26%2345-Tech-Startup/10507524/354687=3FCMPID=3DEM_SP_UP_J=
+S_US_AV_JA_JADR_8&utm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm=
+_campaign=3DJob%2BAlerts" style=3D"margin: 0 auto;font-family: 'HelveticaNe=
+ue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-seri=
+f;display: block;font-size: 20px;text-decoration: none;color: #006699;paddi=
+ng-bottom: 10px;">Business Analyst - Tech Startup</a>=0D=0A                =
+                                            <div class=3D"location-company"=
+ style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue=
+ Light','Helvetica Neue',Helvetica,Arial,sans-serif;color: #959595;font-siz=
+e: 14px;">=0D=0A                                                           =
+     <span style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helv=
+etica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">Enterprise =
+Peak | Chicago, IL</span>=0D=0A                                            =
+                </div>=0D=0A                                               =
+         </td>=0D=0A                                                    </t=
+r>=0D=0A                                                </table>=0D=0A     =
+                                           <table class=3D"jobs-table" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-f=
+amily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvet=
+ica,Arial,sans-serif;width: 100%;padding: 20px 30px;text-decoration: none;l=
+ist-style: none;border-top: 1px solid #dddddd;background-color:#fff;">=0D=
+=0A                                                    <tr style=3D"margin:=
+ 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetic=
+a Neue',Helvetica,Arial,sans-serif;">=0D=0A                                =
+                        <td style=3D"margin: 0 auto;font-family: 'Helvetica=
+Neue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-se=
+rif;">=0D=0A                                                            <a =
+class=3D"job-title" href=3D"http://www.dice.com/jobs/detail/SAP-SD/91021876=
+/SDIL=3FCMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_9&utm_source=3DServer&utm_medium=
+=3DEmail&utm_content=3D&utm_campaign=3DJob%2BAlerts" style=3D"margin: 0 aut=
+o;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue=
+',Helvetica,Arial,sans-serif;display: block;font-size: 20px;text-decoration=
+: none;color: #006699;padding-bottom: 10px;">SAP SD</a>=0D=0A              =
+                                              <div class=3D"location-compan=
+y" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Ne=
+ue Light','Helvetica Neue',Helvetica,Arial,sans-serif;color: #959595;font-s=
+ize: 14px;">=0D=0A                                                         =
+       <span style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','He=
+lvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">Technitia=
+ | Chicago, IL</span>=0D=0A                                                =
+            </div>=0D=0A                                                   =
+     </td>=0D=0A                                                    </tr>=
+=0D=0A                                                </table>=0D=0A       =
+                                         <table class=3D"jobs-table" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-fam=
+ily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetic=
+a,Arial,sans-serif;width: 100%;padding: 20px 30px;text-decoration: none;lis=
+t-style: none;border-top: 1px solid #dddddd;background-color:#fff;">=0D=0A =
+                                                   <tr style=3D"margin: 0 a=
+uto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Ne=
+ue',Helvetica,Arial,sans-serif;">=0D=0A                                    =
+                    <td style=3D"margin: 0 auto;font-family: 'HelveticaNeue=
+-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;=
+">=0D=0A                                                            <a clas=
+s=3D"job-title" href=3D"http://www.dice.com/jobs/detail/Mechanical-Quality-=
+Technologist/cybercod/SN1-14616472=3FCMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_10&u=
+tm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm_campaign=3DJob%2BA=
+lerts" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetic=
+a Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;display: block;fo=
+nt-size: 20px;text-decoration: none;color: #006699;padding-bottom: 10px;">M=
+echanical Quality Technologist</a>=0D=0A                                   =
+                         <div class=3D"location-company" style=3D"margin: 0=
+ auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica =
+Neue',Helvetica,Arial,sans-serif;color: #959595;font-size: 14px;">=0D=0A   =
+                                                             <span style=3D=
+"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','=
+Helvetica Neue',Helvetica,Arial,sans-serif;">CyberCoders | Chicago, IL</spa=
+n>=0D=0A                                                            </div>=
+=0D=0A                                                        </td>=0D=0A  =
+                                                  </tr>=0D=0A              =
+                                  </table>=0D=0A                           =
+         </div>=0D=0A                                    <div class=3D"view=
+-more-section" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','=
+Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A =
+                                       <table class=3D"view-more-table" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-=
+family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helve=
+tica,Arial,sans-serif;width: 100%;padding: 20px 30px;border-bottom: 1px sol=
+id #dddddd;padding-top: 5px !important;background-color:#fff;"> =0D=0A     =
+                                       <tr style=3D"margin: 0 auto;font-fam=
+ily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetic=
+a,Arial,sans-serif;">=0D=0A                                                =
+<td height=3D"20" width=3D"100%" style=3D"font-size: 20px;line-height: 20px=
+;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','=
+Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A                        =
+                            <a href=3D"https://www.dice.com/config/viewAler=
+tJobs/kirktolliver28@gmail.com/8a81b298562efee901564135501b2e3b=3FCMPID=3DE=
+M_SP_UP_JS_US_AV_JA_JADR_CTA" style=3D"margin: 0 auto;font-family: 'Helveti=
+caNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-=
+serif;display: block;padding: 6px 12px;font-size: 14px;font-weight: 400;lin=
+e-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align:=
+ middle;background-image: none;border: 1px solid transparent;border-radius:=
+ 4px;color: #fff;background-color: #337ab7;border-color: #2e6da4;text-decor=
+ation: none;">View more jobs</a>=0D=0A                                     =
+           </td>=0D=0A                                            </tr>=0D=
+=0A                                        </table>=0D=0A                  =
+                  </div>=0D=0A                                    <div clas=
+s=3D"alert-criteria-section" style=3D"margin: 0 auto;font-family: 'Helvetic=
+aNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-s=
+erif;padding: 20px 30px;background-color:#fff;">=0D=0A                     =
+                   <table class=3D"criteria-section" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-family: 'HelveticaN=
+eue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-ser=
+if;width: 100%;padding: 20px 30px;padding-bottom: 5px !important;background=
+-color:#fff;">=0D=0A                                            <tr style=
+=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light=
+','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A                     =
+                           <td style=3D"margin: 0 auto;font-family: 'Helvet=
+icaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans=
+-serif;display: block;"><h3 style=3D"margin: 0 auto;font-family: 'Helvetica=
+Neue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-se=
+rif;font-weight: 200;margin-bottom: 20px;">Your Job Alert Criteria</h3></td=
+>=0D=0A                                            </tr> =0D=0A            =
+                                <tr style=3D"margin: 0 auto;font-family: 'H=
+elveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial=
+,sans-serif;">=0D=0A                                                <td sty=
+le=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Lig=
+ht','Helvetica Neue',Helvetica,Arial,sans-serif;display: block;color:#000;"=
+>=0D=0A                                                    <p style=3D"marg=
+in: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helve=
+tica Neue',Helvetica,Arial,sans-serif;font-size: 17px;color:#000;"><span cl=
+ass=3D"criteria-label" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-=
+Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;f=
+ont-weight: bold;font-size: 17px;">Alert Title:</span> Entry Level</p>=0D=
+=0A                                                        <p style=3D"marg=
+in: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helve=
+tica Neue',Helvetica,Arial,sans-serif;font-size: 17px;color:#000;"><span cl=
+ass=3D"criteria-label" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-=
+Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;f=
+ont-weight: bold;font-size: 17px;">Created:</span> 07/31/2016</p>=0D=0A    =
+                                                        <p style=3D"margin:=
+ 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetic=
+a Neue',Helvetica,Arial,sans-serif;font-size: 17px;color:#000;"><span class=
+=3D"criteria-label" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Lig=
+ht','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;font=
+-weight: bold;font-size: 17px;">Delivery Frequency:</span> Daily</p>=0D=0A =
+                                                       <p style=3D"margin: =
+0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica=
+ Neue',Helvetica,Arial,sans-serif;font-size: 17px;color:#000;"><span class=
+=3D"criteria-label" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Lig=
+ht','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;font=
+-weight: bold;font-size: 17px;">Search Terms:</span> Entry,Level</p>=0D=0A =
+                                                       <p style=3D"margin: =
+0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica=
+ Neue',Helvetica,Arial,sans-serif;font-size: 17px;color:#000;"><span class=
+=3D"criteria-label" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Lig=
+ht','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;font=
+-weight: bold;font-size: 17px;">Location:</span> sauk village il</p>=0D=0A =
+                                                           <p style=3D"marg=
+in: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helve=
+tica Neue',Helvetica,Arial,sans-serif;font-size: 17px;color:#000;"><span cl=
+ass=3D"criteria-label" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-=
+Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;f=
+ont-weight: bold;font-size: 17px;">Distance/Range:</span> 30 miles</p>=0D=
+=0A                                                </td>=0D=0A             =
+                               </tr>=0D=0A                                 =
+       </table>=0D=0A                                        <table class=
+=3D"manage-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D=
+"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','=
+Helvetica Neue',Helvetica,Arial,sans-serif;width: 100%;padding: 20px 30px;p=
+adding-bottom: 5px !important;padding-top: 10px !important;"> =0D=0A       =
+                                     <tr style=3D"margin: 0 auto;font-famil=
+y: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,=
+Arial,sans-serif;">=0D=0A                                                <t=
+d height=3D"20" width=3D"100%" style=3D"font-size: 20px;line-height: 20px;m=
+argin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','He=
+lvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A                          =
+                          <a href=3D"http://www.dice.com/dashboard/alerts=
+=3F&CMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_CRITERIA&utm_source=3DServer&utm_medi=
+um=3DEmail&utm_content=3D&utm_campaign=3DJob%2BAlerts&u=3Dkirktolliver28@gm=
+ail.com" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvet=
+ica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;color: #069;pad=
+ding: 20px;padding-left:10px;text-decoration: none;font-size: 17px;display:=
+ block;">Manage your Job Alert</a>=0D=0A                                   =
+             </td>=0D=0A                                            </tr>=
+=0D=0A                                        </table>=0D=0A               =
+                     </div>=0D=0A                                </div>=0D=
+=0A                                <div class=3D"footer-section" style=3D"m=
+argin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','He=
+lvetica Neue',Helvetica,Arial,sans-serif;background-color: #f5f5f5;">=0D=0A=
+                                    <table class=3D"social-table" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-family=
+: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,A=
+rial,sans-serif;width: 100%;padding: 20px 30px;padding-bottom: 5px !importa=
+nt;padding-top: 10px !important;">=0D=0A                                   =
+     <tr style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvet=
+ica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A       =
+                                     <td class=3D"icons" style=3D"margin: 0=
+ auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica =
+Neue',Helvetica,Arial,sans-serif;text-align: center !important;"> =0D=0A   =
+                                             <a href=3D"https://www.youtube=
+.com/user/BestJobsEver" style=3D"color: #959595;text-decoration: underline=
+;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','=
+Helvetica Neue',Helvetica,Arial,sans-serif;"><img class=3D"socialIcon" src=
+=3D"http://assets.dice.com/techpro/img/emailSocialIconsYoutube.png" alt=3D"=
+Dice on Youtube" style=3D"-ms-interpolation-mode: bicubic;border: none;disp=
+lay: inline-block;height: 64px;outline: none;text-decoration: none;width: 6=
+4px;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light=
+','Helvetica Neue',Helvetica,Arial,sans-serif;"></a>=0D=0A                 =
+                               <a href=3D"https://www.facebook.com/dice" st=
+yle=3D"color: #959595;text-decoration: underline;margin: 0 auto;font-family=
+: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,A=
+rial,sans-serif;"><img class=3D"socialIcon" src=3D"http://assets.dice.com/t=
+echpro/img/emailSocialIconsFacebook.png" alt=3D"Dice on Facebook" style=3D"=
+-ms-interpolation-mode: bicubic;border: none;display: inline-block;height: =
+64px;outline: none;text-decoration: none;width: 64px;margin: 0 auto;font-fa=
+mily: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helveti=
+ca,Arial,sans-serif;"></a>=0D=0A                                           =
+     <a href=3D"https://twitter.com/DiceTechJobs" style=3D"color: #959595;t=
+ext-decoration: underline;margin: 0 auto;font-family: 'HelveticaNeue-Light'=
+,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;"><img =
+class=3D"socialIcon" src=3D"http://assets.dice.com/techpro/img/emailSocialI=
+consTwitter.png" alt=3D"Dice on Twitter" style=3D"-ms-interpolation-mode: b=
+icubic;border: none;display: inline-block;height: 64px;outline: none;text-d=
+ecoration: none;width: 64px;margin: 0 auto;font-family: 'HelveticaNeue-Ligh=
+t','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;"></a=
+>=0D=0A                                                <a href=3D"https://p=
+lus.google.com/+Dice/posts" style=3D"color: #959595;text-decoration: underl=
+ine;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light=
+','Helvetica Neue',Helvetica,Arial,sans-serif;"><img class=3D"socialIcon" s=
+rc=3D"http://assets.dice.com/techpro/img/emailSocialIconsGPlus.png" alt=3D"=
+Dice on Google Plus" style=3D"-ms-interpolation-mode: bicubic;border: none;=
+display: inline-block;height: 64px;outline: none;text-decoration: none;widt=
+h: 64px;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue L=
+ight','Helvetica Neue',Helvetica,Arial,sans-serif;"></a>=0D=0A             =
+                               </td>=0D=0A                                 =
+       </tr>=0D=0A                                    </table>=0D=0A       =
+                             <table class=3D"app-table" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-family: 'Helveti=
+caNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-=
+serif;width: 100%;padding: 20px 30px;padding-bottom: 5px !important;padding=
+-top: 10px !important;">=0D=0A                                        <tr s=
+tyle=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue L=
+ight','Helvetica Neue',Helvetica,Arial,sans-serif;">=0D=0A                 =
+                           <td class=3D"app-icons" style=3D"margin: 0 auto;=
+font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',=
+Helvetica,Arial,sans-serif;text-align: center !important;">=0D=0A          =
+                                      <a href=3D"http://c00.adobe.com/d53bf=
+41a-0d61-47b4-b7f1-6df9b46831cf/DI_EM_JA_MA_UP/i/794201100" style=3D"color:=
+ #959595;padding-right: 10px;text-decoration: none;margin: 0 auto;font-fami=
+ly: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica=
+,Arial,sans-serif;">=0D=0A                                                <=
+img src=3D"http://assets.dice.com/techpro/img/appstore-badge@2x.png" width=
+=3D"129" height=3D"45" alt=3D"App Store" class=3D"app-store" style=3D"-ms-i=
+nterpolation-mode: bicubic;border: none;display: inline-block;outline: none=
+;text-decoration: none;width: auto;margin: 0 auto;font-family: 'HelveticaNe=
+ue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-seri=
+f;">=0D=0A                                                </a>=0D=0A       =
+                                         <a href=3D"http://c00.adobe.com/d5=
+3bf41a-0d61-47b4-b7f1-6df9b46831cf/DI_EM_JA_MA_UP/g/com.dice.app.jobs" styl=
+e=3D"color: #959595;text-decoration: none;margin: 0 auto;font-family: 'Helv=
+eticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sa=
+ns-serif;">=0D=0A                                                <img src=
+=3D"http://assets.dice.com/techpro/img/googleplay-badge@2x.png" alt=3D"Goog=
+le Play" width=3D"155px" height=3D"45px" class=3D"app-store" style=3D"-ms-i=
+nterpolation-mode: bicubic;border: none;display: inline-block;outline: none=
+;text-decoration: none;width: auto;margin: 0 auto;font-family: 'HelveticaNe=
+ue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-seri=
+f;">=0D=0A                                                </a>=0D=0A       =
+                                     </td>=0D=0A                           =
+             </tr>=0D=0A                                    </table>=0D=0A =
+                                   <table class=3D"bot-msg" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0 auto;font-family: 'Hel=
+veticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,s=
+ans-serif;width: 100%;padding: 20px 30px;padding-bottom: 5px !important;pad=
+ding-top: 10px !important;background-color: #f5f5f5;">=0D=0A               =
+                         <tr style=3D"margin: 0 auto;font-family: 'Helvetic=
+aNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-s=
+erif;">=0D=0A                                            <td style=3D"margi=
+n: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvet=
+ica Neue',Helvetica,Arial,sans-serif;">=0D=0A                              =
+                  <p class=3D"message-section" style=3D"margin: 0 auto;font=
+-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helv=
+etica,Arial,sans-serif;padding: 20px 30px 5px;font-size: 13px;color: #95959=
+5;">You are currently subscribed as kirktolliver28@gmail.com. <a href=3D"ht=
+tp://www.dice.com/dashboard/alerts=3F&CMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_CRI=
+TERIA_FOOT&utm_source=3DServer&utm_medium=3DEmail&utm_content=3D&utm_campai=
+gn=3DJob%2BAlerts&u=3Dkirktolliver28@gmail.com" style=3D"color: #959595;tex=
+t-decoration: underline;margin: 0 auto;font-family: 'HelveticaNeue-Light','=
+Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">Manage =
+your alerts</a> or <a href=3D"http://www.dice.com/utilities/emailPreference=
+s=3Fuser=3Dmember&CMPID=3DEM_SP_UP_JS_US_AV_JA_JADR_UNSUBSCRIBE&utm_source=
+=3DServer&utm_medium=3DEmail&utm_content=3D&utm_campaign=3DJob%2BAlerts&CMP=
+ID=3DEM_SP_UP_JS_US_AV_JA_JADR_&utm_source=3DServer&utm_medium=3DEmail&utm_=
+content=3D&utm_campaign=3DJob%2BAlerts" style=3D"color: #959595;text-decora=
+tion: underline;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetic=
+a Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;">Unsubscribe</a>=
+</p>=0D=0A                                                <p class=3D"messa=
+ge-section" style=3D"margin: 0 auto;font-family: 'HelveticaNeue-Light','Hel=
+vetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;padding: 20p=
+x 30px 5px;font-size: 13px;color: #959595;">Dice 225 W. Santa Clara Street,=
+ San Jose, CA 95113</p>=0D=0A                                              =
+  <p class=3D"message-section" style=3D"margin: 0 auto;font-family: 'Helvet=
+icaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans=
+-serif;padding: 20px 30px 5px;font-size: 13px;color: #959595;padding-bottom=
+: 50px;">Copyright &copy; 1999-2018. All rights reserved. Use is subject to=
+ <a href=3D"http://www.dice.com/about/terms_and_conditions=3FCMPID=3DEM_SP_=
+UP_JS_US_AV_JA_JADR_TANDC" style=3D"color: #959595;text-decoration: underli=
+ne;margin: 0 auto;font-family: 'HelveticaNeue-Light','Helvetica Neue Light'=
+,'Helvetica Neue',Helvetica,Arial,sans-serif;">Terms and Conditions</a>.</p=
+>=0D=0A                                            </td>=0D=0A             =
+                           </tr>=0D=0A                                    <=
+/table>=0D=0A                                </div>=0D=0A                  =
+          </td>=0D=0A                        </tr>=0D=0A                   =
+ </table>=0D=0A                </center>=0D=0A            </td>=0D=0A      =
+  </tr>=0D=0A    </table>=0D=0A=0D=0A<img border=3D"0" width=3D"1" height=
+=3D"1" alt=3D"" src=3D"http://dhi.et.e.sparkpost.com/q/00vdr62LRjgvTBsmgWwt=
+iw~~/AAAAAQA~/RgRdEzX6PlcDZGhpWAQAAAAAQgoAAHoCMlvUA8G2UhhraXJrdG9sbGl2ZXIyO=
+EBnbWFpbC5jb20~">=0D=0A</body>=0D=0A</html>
+

@@ -1,0 +1,599 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 2002:a17:90a:3450:0:0:0:0 with SMTP id o74-v6csp5520283pjb;
+        Tue, 12 Jun 2018 08:25:53 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKIYEbx2XI9DqURBgHfaK0uwCG/akm0P3RRJtFpUZnTJDAqQGK2eBtYcqYLj6jM/gkx4X/ZL
+X-Received: by 2002:a37:85c5:: with SMTP id h188-v6mr966668qkd.40.1528817153349;
+        Tue, 12 Jun 2018 08:25:53 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528817153; cv=none;
+        d=google.com; s=arc-20160816;
+        b=UpQ7cpXReOMJCud88S8EhaHRZc5gYhHukh9rqCCZ+kcz+a4VKh5stFo/n5WzMAOELu
+         UcRzFbs2cw4DpjVqFd34GMqXmrmgNOtQz069Ps3MLJYQFQwpeLDP25js7EnsAGij1ILs
+         //CD59Xye458S/xxTUI0+uSw/EzAcBjA5YEYomNZr/cUOOA5USReRifMwWAgVp7gsCYF
+         fh4s1m5vGcFtVDLmCxPmErMI9SuK/ocWQr/gwoOhY4Xa9vnHufz0BSRiQGWd1X5aBNc0
+         tJpeEEai0JFU4UXosTvQstLzxccIXB0hxGEfdTT8cWgAJfN/I/LNDwQkmyx8OJw+MCV/
+         RYgA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:list-unsubscribe:message-id:sender
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=xuGh2qRjgbn9E0FK+IK6BkV41MsgcPSC7VFEG+QBoYM=;
+        b=L/hlTPFOtQJ8F1FcvK7hpXkBBRxTWXFQiHfBSRb0tccfQGMVNE2X7nGkkArUw+krxi
+         xpl7/+cYxVqDeAxaVX6/cXB/YqLxVWmHhtcTLZPKVFQVFv8CVho/nALQ+5fuXkqeej4u
+         43oi0Yi0Q8Aie9yqB3Td5Qe6drd7xqdeoafaIXeemnLk+Rp5fpAewZ8etes/AYQyBqrk
+         i9kQ2K3G9124bvr+GDXIurGRcHT63ffQQkLZQcBnG5TiW2pWNfrny6BQoaJbSyOg7yY3
+         AOP2qd0qtNe2SjnxLdoSeJpWmP6e3jzNCcT+egxyJWWhTgUWarAywR7IjMHxVCWouKSf
+         KtCA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mn.co header.s=krs header.b=BjqKThCN;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b="LVK/vDIa";
+       spf=pass (google.com: domain of bounce+07c597.c06c8-kirktolliver28=gmail.com@mn.co designates 184.173.105.108 as permitted sender) smtp.mailfrom="bounce+07c597.c06c8-kirktolliver28=gmail.com@mn.co"
+Return-Path: <bounce+07c597.c06c8-kirktolliver28=gmail.com@mn.co>
+Received: from p108.mailgun.us (p108.mailgun.us. [184.173.105.108])
+        by mx.google.com with UTF8SMTPS id 63-v6si471886qkz.182.2018.06.12.08.25.53
+        for <kirktolliver28@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 Jun 2018 08:25:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+07c597.c06c8-kirktolliver28=gmail.com@mn.co designates 184.173.105.108 as permitted sender) client-ip=184.173.105.108;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mn.co header.s=krs header.b=BjqKThCN;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b="LVK/vDIa";
+       spf=pass (google.com: domain of bounce+07c597.c06c8-kirktolliver28=gmail.com@mn.co designates 184.173.105.108 as permitted sender) smtp.mailfrom="bounce+07c597.c06c8-kirktolliver28=gmail.com@mn.co"
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mn.co; q=dns/txt; s=krs;
+ t=1528817152; h=Content-Type: Mime-Version: Subject: From: To:
+ List-Unsubscribe: Message-Id: Sender: Date: X-Feedback-Id;
+ bh=xuGh2qRjgbn9E0FK+IK6BkV41MsgcPSC7VFEG+QBoYM=; b=BjqKThCNKrBMbdMbs6E6ihQbzU+RRcxOma37P64yXSSvIlNDjFvbLLiadn5rnBdes1YXp2E8
+ ZAx+MGjbvQ0mifONDPBMnYSXB2EteZfpHkqUxUAk9wl86Juisp3UZ9tvd6DxdH6I7QCrnUPs
+ f1FzQVk46Qdfaeyv5xXMgC4vP+U=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg;
+ t=1528817152; h=Content-Type: Mime-Version: Subject: From: To:
+ List-Unsubscribe: Message-Id: Sender: Date: X-Feedback-Id;
+ bh=xuGh2qRjgbn9E0FK+IK6BkV41MsgcPSC7VFEG+QBoYM=; b=LVK/vDIaxlKhpX4OyjArUhmo0j3IjryE1SF8nUcMtcm0Ff7SLi4ZlY5tKiQZv+c17vdU1Uz3
+ 13LN67UsEJz8cF49TxfW19qLps5LlJmwBXTGWyhiKeYWutTAmoFXV6vsfP9MxYhvaoeF7ZGX
+ /PLpReWuTsuBvXSYTJBRTf1z2R4=
+X-Feedback-Id: 58c0ba1faa3de6199f78c7b2:mailgun
+X-Mailgun-Sending-Ip: 184.173.105.108
+X-Mailgun-Sid: WyJhMGFkMyIsICJraXJrdG9sbGl2ZXIyOEBnbWFpbC5jb20iLCAiYzA2YzgiXQ==
+X-Mailgun-Batch-Id: 467a4a84-40fa-4bdd-81fc-fb2a812c8d47
+Received: by luna.mailgun.net with HTTP; Tue, 12 Jun 2018 15:25:51 +0000
+Date: Tue, 12 Jun 2018 15:25:51 +0000
+Sender: blackenuf@mn.co
+Message-Id: <20180612152551.1.6D14F6052C00E731@mn.co>
+X-Mailgun-Tag: notification_space_post_create_notify_all
+List-Unsubscribe: mailto:u+mq6wgmbwmm4cm2j5giydcobqgyytemjvgi2tkmjogexdmrbrgrddmmbvgjbtamcfg4ztcjjugbww4ltdn4tgqplgha3tcyjqmjrtonrzmjsgkmtfgizdkyrxgmydomjvmuytoy3cgathepllnfzgw5dpnrwgs5tfoizdqjjugbtw2yljnqxgg33nez2d2jjsie@mn.co
+To: kirktolliver28@gmail.com
+From: Blaggenuf <blackenuf@mn.co>
+Subject: Your Host Boyce shared: Would you date someone who's made this kind
+ of confession to...
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="2796006de03d428db673fae51807223d"
+
+--2796006de03d428db673fae51807223d
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+
+
+=3D=3D=3D=3D=3D  =3D=3D=3D=3D=3D
+
+Your Host Boyce shared: Would you date someone who's made this kind of conf=
+ession to...
+
+Would you date someone who's made this kind of confession to you?=C2=A0http=
+s://www.youtube.com/watch?v=3D3g4eOXIyhH4
+
+
+
+My boyfriend cut off a man's private parts
+https://www.youtube.com/watch?v=3D3g4eOXIyhH4
+
+
+
+Go to Post: https://mightynetworks.com/app/8/spaces/561578/posts/1714563
+
+
+-----
+Blaggenuf is powered by Mighty Networks (mightynetworks.com).
+Mighty Networks is a platform for creating specialized professional network=
+s.
+-----
+Unfollow this post: https://blackenuf.mn.co/posts/1714563?unfollow=3D1
+Update preferences: https://blackenuf.mn.co/your-settings/notifications
+Unsubscribe from notifications in Blaggenuf:  https://blackenuf.mn.co/notif=
+ication_settings/561578?nm=3Dnone
+
+
+Unsubscribe from all Mighty Networks emails going forward: https://mightyne=
+tworks.com/u
+
+-----
+127 Lytton Ave
+Palo Alto, CA 94301
+
+    Download the iOS app: https://mightybell-app.app.link/PaL1Pperlv
+
+    Download the Android app: https://mightybell-app.app.link/PaL1Pperlv
+
+
+--2796006de03d428db673fae51807223d
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpor=
+t">
+<title>Your Host Boyce shared: Would you date someone who's made this kind =
+of confession to...</title>
+<link rel=3D"stylesheet" media=3D"screen" href=3D"https://assets1-productio=
+n.mightynetworks.com/assets/mb_mailer_reset-4df69cebc59b306656c124f3ad93f08=
+6d0a31ac9cde7f689a5f8fc0ecc69dc0f.css">
+<link rel=3D"stylesheet" media=3D"screen" href=3D"https://assets1-productio=
+n.mightynetworks.com/assets/mb_mailer_main-e3b8b5f08e688e1834789203abf0c898=
+ada161069d53997cfdb344802569c286.css">
+<link rel=3D"stylesheet" media=3D"all" href=3D"https://cdn.mn.co/theme/mail=
+_css/424949/AE7431/c56ef32ba43c5ac8b029b935fd6e50f9d4efd50d9ae0192a23267ef2=
+9dab870c_v3.css?notification_id=3D%25notification_id%25&amp;utm_campaign=3D=
+notification_space_post_create_notify_all&amp;utm_medium=3Demail&amp;utm_so=
+urce=3Dtransactional_emails" class=3D"theme-link theme-link-light_carlton">
+<style>
+  table td {border-collapse: collapse;}
+  @media only screen and (max-width: 480px) {
+    a[href^=3D"tel"],
+    a[href^=3D"sms"] {
+      text-decoration: none;
+      color: black; /* or whatever your want */
+      pointer-events: none;
+      cursor: default;
+    }
+ =20
+    .mobile_link a[href^=3D"tel"],
+    .mobile_link a[href^=3D"sms"] {
+      text-decoration: default;
+      color: orange !important; /* or whatever your want */
+      pointer-events: auto;
+      cursor: default;
+    }
+ =20
+    #email-wrapper {
+      max-width: 480px !important;
+      width: 100% !important;
+    }
+ =20
+    .gutter-padding {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+ =20
+    .rsvp-buttons a {
+      margin-bottom: 10px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    #email-wrapper {
+      max-width: 320px !important;
+    }
+ =20
+    .gutter-padding {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+</style>
+<style>body {
+width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjus=
+t: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;
+}
+body {
+background-color: #fff; color: #4E545E;
+}
+body.communities-app {
+background-color: #F7F7F8;
+}
+</style>
+</head>
+<body id=3D"email-body" style=3D"width: 100% !important; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; color: #4E545E; margin: 0; paddin=
+g: 0;" bgcolor=3D"#fff">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D'width: 100=
+%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ color: #191F28; font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-seri=
+f,"Apple Color Emoji","Segoe UI Emoji"; border: none;'>
+<tr>
+<td id=3D"email-background-container" style=3D'font-family: "Avenir","Segoe=
+ UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; width=
+: 100% !important; color: #191F28; line-height: 100% !important; margin: 0;=
+ padding: 0; border: none;' bgcolor=3D"#acaeb3" valign=3D"top">
+<center id=3D"email-background" style=3D"width: 100% !important; background=
+-color: #acaeb3; color: #191F28; line-height: 100% !important; margin: 0; p=
+adding: 0;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"email-wrapper" style=3D'width: 500px; border-collapse: collapse; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; color: #191F28; font-family: "Aveni=
+r","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoj=
+i"; border: none;'>
+<tr>
+<td id=3D"email-content-container" style=3D'font-family: "Avenir","Segoe UI=
+",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; position=
+: relative; border: none;' bgcolor=3D"#fff" valign=3D"top">
+<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" id=3D"email-content" style=3D'width: 100%; border-collaps=
+e: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #191F28; =
+font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Em=
+oji","Segoe UI Emoji"; position: relative; border: none;'>
+<tr>
+<td class=3D"margins" style=3D'font-family: "Avenir","Segoe UI",Helvetica,A=
+rial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; width: 40px; border: =
+none;' valign=3D"top"></td>
+<td style=3D'font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji"; border: none;' valign=3D"top">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"email-content-header" style=3D'width: 100%; border-collapse: collapse; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #191F28; font-family: =
+"Avenir","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe U=
+I Emoji"; margin-top: 20px; border-bottom-color: #424949; border: none;'>
+<tr>
+<td style=3D'font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji"; border: none;' valign=3D"middle">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D'width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt; color: #191F28; font-family: "Avenir","Segoe UI",Helvetic=
+a,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; border: none;'>
+<tr>
+<td class=3D"center" style=3D'font-family: "Avenir","Segoe UI",Helvetica,Ar=
+ial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; border: none;' align=
+=3D"center" valign=3D"middle">
+<a class=3D"mighty-avatar-medium" href=3D"https://mightynetworks.com/app/8/=
+spaces/561578" id=3D"email-content-header-avatar" title=3D"Blaggenuf" style=
+=3D"-moz-border-radius: 32px; -webkit-border-radius: 32px; border-radius: 3=
+2px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizin=
+g: border-box; width: 64px; height: 64px; display: inline-block; overflow: =
+hidden; vertical-align: middle; position: relative; z-index: 1; -moz-backgr=
+ound-clip: padding; -o-background-clip: padding-box; -webkit-background-cli=
+p: padding; background-clip: padding-box; color: #191F28; text-decoration: =
+none; margin-bottom: 10px; background: no-repeat center center / 66px 66px;=
+">
+<img alt=3D"Blaggenuf" src=3D"https://media1-production-mightynetworks.imgi=
+x.net/asset/2597112/shutterstock_345235520.jpg?ixlib=3Drails-0.3.0&amp;fm=
+=3Djpg&amp;q=3D100&amp;auto=3Dformat&amp;w=3D128&amp;h=3D128&amp;fit=3Dcrop=
+&amp;crop=3Dfaces" style=3D"outline: none; text-decoration: none; -ms-inter=
+polation-mode: bicubic; position: static; top: -1px; left: -1px; width: 64p=
+x; height: 64px; -moz-border-radius: 32px; -webkit-border-radius: 32px; bor=
+der-radius: 32px; z-index: 0; border: none;">
+</a>
+</td>
+</tr>
+<tr>
+<td class=3D"header-title-whitespace" style=3D'font-family: "Avenir","Segoe=
+ UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; heigh=
+t: 10px; border: none;' valign=3D"middle"></td>
+</tr>
+<tr>
+<td style=3D'font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji"; border: none;' valign=3D"middle">
+<div class=3D"header-title center" style=3D"font-size: 18px; color: #191F28=
+; line-height: 1.2;" align=3D"center">
+<a href=3D"https://mightynetworks.com/app/8/spaces/561578" title=3D"Blaggen=
+uf" style=3D"color: #191F28; text-decoration: none;">Blaggenuf</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"header-whitespace" style=3D'font-family: "Avenir","Segoe UI",H=
+elvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; height: 20p=
+x; border: none;' valign=3D"middle"></td>
+</tr>
+</table>
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"email-content-body" style=3D'width: 100%; border-collapse: collapse; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; color: #191F28; font-family: "A=
+venir","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI =
+Emoji"; border: none;'>
+<tr>
+<td class=3D"body-top-whitespace" style=3D'font-family: "Avenir","Segoe UI"=
+,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; height: 3=
+0px; border: none;' valign=3D"top"></td>
+</tr>
+<tr>
+<td style=3D'font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji"; border: none;' valign=3D"top">
+<div align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"notification-block">
+<div class=3D"user-avatar">
+<a class=3D"mighty-avatar-user-large no-underline email-avatar" href=3D"htt=
+ps://blackenuf.mn.co/members/1122617" style=3D"-moz-border-radius: 48px; -w=
+ebkit-border-radius: 48px; border-radius: 48px; -moz-box-sizing: border-box=
+; -webkit-box-sizing: border-box; box-sizing: border-box; width: 96px; heig=
+ht: 96px; display: block; overflow: hidden; vertical-align: middle; positio=
+n: relative; z-index: 1; -moz-background-clip: padding; -o-background-clip:=
+ padding-box; -webkit-background-clip: padding; background-clip: padding-bo=
+x; text-decoration: none; text-align: center; color: #AE7431; background: n=
+o-repeat center center / 98px 98px; margin: auto;">
+<img alt=3D"Boyce Watkins" src=3D"https://media1-production-mightynetworks.=
+imgix.net/asset/2606094/boycepic.PNG?ixlib=3Drails-0.3.0&amp;auto=3Dformat&=
+amp;w=3D192&amp;h=3D192&amp;fit=3Dcrop&amp;crop=3Dfaces" style=3D"outline: =
+none; text-decoration: none; -ms-interpolation-mode: bicubic; position: sta=
+tic; top: -1px; left: -1px; width: 96px; height: 96px; -moz-border-radius: =
+48px; -webkit-border-radius: 48px; border-radius: 48px; z-index: 0; border:=
+ none;">
+</a>
+<div>
+<a class=3D"no-underline user-name" href=3D"https://blackenuf.mn.co/members=
+/1122617" style=3D"text-decoration: none; font-size: 17px; font-weight: 500=
+; color: #191F28; line-height: 1.2; display: block; text-align: center; mar=
+gin: auto; padding: 5px 0;">Boyce Watkins</a>
+</div>
+<div>
+<a class=3D"no-underline badge-name" href=3D"https://blackenuf.mn.co/member=
+s/1122617" style=3D"text-decoration: none; font-size: 12px; text-transform:=
+ uppercase; color: #ACAEB3; display: block; text-align: center; margin: aut=
+o;">Blaggenuf Economics</a>
+</div>
+</div>
+
+</div>
+<table style=3D'width: 100%; border-collapse: collapse; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; color: #191F28; font-family: "Avenir","Segoe UI"=
+,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; border: n=
+one;'>
+<tr>
+<td class=3D"notification-text-top-whitespace" style=3D'font-family: "Aveni=
+r","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoj=
+i"; height: 24px; border: none;' valign=3D"top"></td>
+</tr>
+</table>
+<a class=3D"text-align-center notification-text" href=3D"https://mightynetw=
+orks.com/app/8/spaces/561578/posts/1714563" style=3D"text-align: center; di=
+splay: block; color: #191F28; text-decoration: none; font-size: 26px; line-=
+height: normal;"><strong>Your Host Boyce shared</strong>: Would you date so=
+meone who's made this kind of confession to...</a>
+<table style=3D'width: 100%; border-collapse: collapse; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; color: #191F28; font-family: "Avenir","Segoe UI"=
+,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; border: n=
+one;'>
+<tr>
+<td class=3D"notification-text-top-whitespace" style=3D'font-family: "Aveni=
+r","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoj=
+i"; height: 24px; border: none;' valign=3D"top"></td>
+</tr>
+</table>
+<center>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"button-action-container" style=3D'width: 100%; border-collapse: coll=
+apse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #191F28; font-fa=
+mily: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","S=
+egoe UI Emoji"; text-align: center; border: none;'>
+<tbody>
+<tr>
+<td style=3D'font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji"; border: none;' valign=3D"top">
+<a class=3D"mighty-btn-pill-large mighty-btn-filled-secondary" href=3D"http=
+s://mightynetworks.com/app/8/spaces/561578/posts/1714563" title=3D"Go to Po=
+st" style=3D"-moz-box-sizing: border-box; -webkit-box-sizing: border-box; b=
+ox-sizing: border-box; -moz-transition: ease-in-out .2s; -o-transition: eas=
+e-in-out .2s; -webkit-transition: ease-in-out .2s; transition: ease-in-out =
+.2s; display: inline-block; line-height: 1; cursor: pointer; text-align: ce=
+nter; text-decoration: none; font-weight: 500; white-space: nowrap; -moz-bo=
+rder-radius: 40px; -webkit-border-radius: 40px; border-radius: 40px; min-wi=
+dth: 100px; font-size: 18px; color: #fff; background: #AE7431 no-repeat cen=
+ter center / 20px 20px; padding: 17px 25px; border: 1px solid #ae7431;">Go =
+to Post</a>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+<div class=3D"post-content notification-post" style=3D"max-width: 280px; ma=
+rgin: 0 auto;">
+<table style=3D'width: 100%; border-collapse: collapse; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; color: #191F28; font-family: "Avenir","Segoe UI"=
+,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; border: n=
+one;'>
+<tr>
+<td class=3D"post-top-whitespace" style=3D'font-family: "Avenir","Segoe UI"=
+,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; height: 6=
+0px; border: none;' valign=3D"top"></td>
+</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"user-attribution" style=3D'width: 100%; border-collapse: collapse; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt; color: #191F28; font-family: "=
+Avenir","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI=
+ Emoji"; margin-bottom: 10px; border: none;'>
+<tr>
+<td class=3D"post-user-avatar-small" style=3D'font-family: "Avenir","Segoe =
+UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; paddin=
+g-right: 5px; width: 40px; border: none;' valign=3D"top">
+<div class=3D"user-avatar">
+<a class=3D"mighty-avatar-user-small no-underline email-avatar" href=3D"htt=
+ps://blackenuf.mn.co/members/1122617" style=3D"-moz-border-radius: 20px; -w=
+ebkit-border-radius: 20px; border-radius: 20px; -moz-box-sizing: border-box=
+; -webkit-box-sizing: border-box; box-sizing: border-box; width: 40px; heig=
+ht: 40px; display: block; overflow: hidden; vertical-align: middle; positio=
+n: relative; z-index: 1; -moz-background-clip: padding; -o-background-clip:=
+ padding-box; -webkit-background-clip: padding; background-clip: padding-bo=
+x; text-decoration: none; text-align: center; color: #AE7431; background: n=
+o-repeat center center / 42px 42px; margin: auto;">
+<img alt=3D"Boyce Watkins" src=3D"https://media1-production-mightynetworks.=
+imgix.net/asset/2606094/boycepic.PNG?ixlib=3Drails-0.3.0&amp;auto=3Dformat&=
+amp;w=3D80&amp;h=3D80&amp;fit=3Dcrop&amp;crop=3Dfaces" style=3D"outline: no=
+ne; text-decoration: none; -ms-interpolation-mode: bicubic; position: stati=
+c; top: -1px; left: -1px; width: 40px; height: 40px; -moz-border-radius: 20=
+px; -webkit-border-radius: 20px; border-radius: 20px; z-index: 0; border: n=
+one;">
+</a>
+</div>
+
+</td>
+<td style=3D'font-family: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji"; border: none;' valign=3D"top">
+<div class=3D"user-name" style=3D"font-size: 17px; font-weight: 500; color:=
+ #191F28; line-height: 1.2; padding: 5px 0;">Boyce Watkins</div>
+<div class=3D"badge-name" style=3D"font-size: 12px; text-transform: upperca=
+se; color: #ACAEB3;">Blaggenuf Economics</div>
+</td>
+</tr>
+</table>
+
+<a class=3D"no-underline" href=3D"https://blackenuf.mn.co/posts/1714563" ti=
+tle=3D"Visit Post" style=3D"text-decoration: none; color: #AE7431;">
+</a>
+<div class=3D"mighty-wysiwyg-content fr-view" style=3D"font-size: 17px; lin=
+e-height: 27px; font-weight: 300; word-wrap: break-word; color: #191F28;">W=
+ould you date someone who's made this kind of confession to you?&nbsp;<br>h=
+ttps://www.youtube.com/watch?v=3D3g4eOXIyhH4</div>
+<a class=3D"embedded-link-container" href=3D"https://www.youtube.com/watch?=
+v=3D3g4eOXIyhH4" style=3D"display: block; color: #191F28; text-decoration: =
+none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5=
+px; overflow: hidden; line-height: 1.2; border: 1px solid #d6d8db;">
+<img class=3D"embedded-image" src=3D"https://media1-production-mightynetwor=
+ks.imgix.net/asset/2783144/mqdefault.jpg?ixlib=3Drails-0.3.0&amp;fm=3Djpg&a=
+mp;q=3D75&amp;auto=3Dformat" title=3D"My boyfriend cut off a man's private =
+parts" style=3D"outline: none; text-decoration: none; -ms-interpolation-mod=
+e: bicubic; width: 100%; border: none;">
+<div class=3D"embedded-title" style=3D"font-size: 16px; font-weight: 400; m=
+argin: 10px 0; padding: 0 10px;">My boyfriend cut off a man's private parts=
+</div>
+<div class=3D"embedded-description" style=3D"font-size: 13px; margin: 10px =
+0; padding: 0 10px;">To subscribe to Dr Shonna's platform, please sign up a=
+t FlyNubianQueen.com</div>
+<div class=3D"embedded-provider" style=3D"margin: 10px 0; padding: 0 10px;">
+<img class=3D"embedded-provider-favicon" src=3D"https://i.embed.ly/1/image?=
+url=3Dhttps%3A%2F%2Fs.ytimg.com%2Fyts%2Fimg%2Ffavicon-vfl8qSV2F.ico&amp;key=
+=3D87b0feb451da11e184354040d3dc5c07" style=3D"outline: none; text-decoratio=
+n: none; -ms-interpolation-mode: bicubic; display: inline-block; width: 30p=
+x; height: 30px; border: none;">
+<div class=3D"embedded-provider-name" style=3D"display: inline-block; color=
+: #ACAEB3; font-size: 13px;">YouTube</div>
+</div>
+</a>
+
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td class=3D"body-bottom-whitespace" style=3D'font-family: "Avenir","Segoe =
+UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; height=
+: 60px; border: none;' valign=3D"top"></td>
+</tr>
+</table>
+</td>
+<td class=3D"margins" style=3D'font-family: "Avenir","Segoe UI",Helvetica,A=
+rial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; width: 40px; border: =
+none;' valign=3D"top"></td>
+</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"email-footer" style=3D'width: 100%; border-collapse: collapse; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; color: #ACAEB3; font-family: "Avenir"=
+,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"=
+; text-align: center; border: none;' bgcolor=3D"#f3f3f3">
+<tr>
+<td class=3D"margins" style=3D'font-family: "Avenir","Segoe UI",Helvetica,A=
+rial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; width: 40px; border: =
+none;' valign=3D"top"></td>
+<td class=3D"footer-content" style=3D'font-family: "Avenir","Segoe UI",Helv=
+etica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; padding-top: 2=
+0px; padding-bottom: 20px; border: none;' valign=3D"top">
+<div class=3D"pdiv small" style=3D'font-family: "Avenir","Segoe UI",Helveti=
+ca,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; font-size: 12px; =
+font-weight: 200; line-height: 1.5; margin: 0;'>
+You're a member of Blaggenuf
+</div>
+<div class=3D"pdiv small" id=3D"email-change-preferences" style=3D'font-fam=
+ily: "Avenir","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Se=
+goe UI Emoji"; font-size: 12px; font-weight: 200; line-height: 1.5; margin:=
+ 0;'>
+<a class=3D"subscription-update-link no-underline" href=3D"https://blackenu=
+f.mn.co/posts/1714563?unfollow=3D1" title=3D"Unfollow this post" style=3D"t=
+ext-decoration: none; border-right-width: 1px; border-right-color: #ACAEB3;=
+ border-right-style: solid; color: #AE7431; padding: 0 6px 0 4px;">
+Unfollow this Post
+</a>
+<a class=3D"subscription-update-link no-underline" href=3D"https://blackenu=
+f.mn.co/your-settings/notifications" title=3D"Change your notification pref=
+erences" style=3D"text-decoration: none; border-right-width: 1px; border-ri=
+ght-color: #ACAEB3; border-right-style: solid; color: #AE7431; padding: 0 6=
+px 0 4px;">
+Update Preferences
+</a>
+<a class=3D"subscription-update-link no-underline" href=3D"https://blackenu=
+f.mn.co/notification_settings/561578?nm=3Dnone&amp;utm_content=3Dspace_unsu=
+bscribe" title=3D"Unsubscribe from notifications in Blaggenuf" style=3D"tex=
+t-decoration: none; color: #AE7431; padding: 0 6px 0 4px;">
+Unsubscribe
+</a>
+</div>
+
+<div class=3D"pdiv small sent-by-mighty" style=3D'font-family: "Avenir","Se=
+goe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; fo=
+nt-size: 12px; font-weight: 200; line-height: 1.5; margin: 20px 0 0;'>Sent =
+by <a href=3D"https://mightynetworks.com" target=3D"" class=3D"no-underline=
+" title=3D"" style=3D"text-decoration: none; color: #AE7431;">Mighty Networ=
+ks</a> 127 Lytton Ave, Palo Alto, CA 94301</div>
+</td>
+<td class=3D"margins" style=3D'font-family: "Avenir","Segoe UI",Helvetica,A=
+rial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; width: 40px; border: =
+none;' valign=3D"top"></td>
+</tr>
+<tr>
+<td class=3D"margins" style=3D'font-family: "Avenir","Segoe UI",Helvetica,A=
+rial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; width: 40px; border: =
+none;' valign=3D"top"></td>
+<td class=3D"footer-content" style=3D'font-family: "Avenir","Segoe UI",Helv=
+etica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; padding-top: 2=
+0px; padding-bottom: 20px; border: none;' valign=3D"top">
+<div class=3D"app-store-footer" style=3D"padding-bottom: 40px;">
+<a class=3D"app-store-badge" href=3D"https://mightybell-app.app.link/PaL1Pp=
+erlv" style=3D"color: #AE7431;"><img height=3D"36" src=3D"https://assets1-p=
+roduction-mightynetworks.imgix.net/assets/store_badges/app-store-badge-751b=
+730d56332b57625603101ecf4387b3aa364a193e06c9ea293ce1aa467102.png" width=3D"=
+127" style=3D"outline: none; text-decoration: none; -ms-interpolation-mode:=
+ bicubic; border: none;"></a>
+<span class=3D"app-store-horizontal-whitespace" style=3D"width: 10px;">&nbs=
+p;</span>
+<a class=3D"play-store-badge" href=3D"https://mightybell-app.app.link/PaL1P=
+perlv" style=3D"color: #AE7431;"><img height=3D"36" src=3D"https://assets1-=
+production-mightynetworks.imgix.net/assets/store_badges/google-play-badge-4=
+f754dd21efc2ae52f992ee81e3f8fba12512b42ad1c1076e1b934f7b7ece5a1.png" width=
+=3D"121" style=3D"outline: none; text-decoration: none; -ms-interpolation-m=
+ode: bicubic; border: none;"></a>
+</div>
+
+</td>
+<td class=3D"margins" style=3D'font-family: "Avenir","Segoe UI",Helvetica,A=
+rial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; width: 40px; border: =
+none;' valign=3D"top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mn.co/o/eJwd=
+y0sOwiAQANDTyLIZvp0NKz_XIDiATkpLQ4mJt7dx_fKSJ3CEgr0CieCkklZZKyc5uZs0DwdWXQH=
+us5YXA-s2URNv_8zFaUqoZ7AmIajktMU8R0RlSyyi-4X7Mlqt_Mld4Xlfa-R69lUMv7XBhSkObl=
+s49kg57O0YgXqOI4c_f0Os9QeeoDHN"></body>
+</html>
+
+--2796006de03d428db673fae51807223d--

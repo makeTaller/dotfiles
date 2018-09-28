@@ -1,0 +1,373 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 2002:a17:90a:3450:0:0:0:0 with SMTP id o74-v6csp5396188pjb;
+        Tue, 12 Jun 2018 06:43:07 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLDxTp6LVe6N4RKTh5n9vUAWBzLYXKD3NGjAu4pK65KebCKVT1sEqRWfCi+/Rh+LqAl0N0u
+X-Received: by 2002:a6b:5d0f:: with SMTP id r15-v6mr510455iob.178.1528810987003;
+        Tue, 12 Jun 2018 06:43:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528810986; cv=none;
+        d=google.com; s=arc-20160816;
+        b=a8nV0EbTcwFCf44nNQCTwnNGFlGs+Z3flZtR044cyLJOchXkD/g7Oak6Lv1Acjk5Gm
+         TH5kFSJmCrcG4KNWqLJSV5IPl/9xpV7pOScHq/kKyZM33ZLhX2D0JYqAqhXAujCZ1Lvi
+         izQ7IjkjMkopj0gkKkDKTFczXQ34RosfmRL2bolDvAzu1K1NKzl4anP9asq0uIr65VTy
+         2chOmwr0f+lxnV7JeD1pFX30E/9+UinuOflthN25DIhxifah1UE6CKOcDB5MBap1xDgr
+         6hiVry1/stM6vWKmt2ZriJyowpIkpbd5Iymokf7fhSOjk7vWz7eg5Ia3zDoNRMvDrmKa
+         v9Zg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:list-id:feedback-id:list-unsubscribe-post
+         :list-unsubscribe:message-id:reply-to:date:subject:to:from
+         :dkim-signature:arc-authentication-results;
+        bh=n2txO1uwsv7kJ2kFnYhVOyU+hKQBlAq4SdWuNALXAKA=;
+        b=GSF3Y/zbfrPiqZvMf6YTVpDhbkdZkdbbZT6/8JHog6YE3Ertk86hTDxzSECzxdN5a2
+         c4KG9b3sTV8HbDmdtzvrVkOVeiu9dDbOFTUCFuJ4wJ3cdfQeeLFeQHmEEVbt7oXUge3p
+         B58rWABTj6IfsgZfQp5lxTEfo9jTaBCUoVUGS6jORW0J0YkERLrnDfyMMWH9/NXQPEuD
+         07RdxY0ObyO9bnYltB1IYF1eE0fa1fY0Ax/Wk5H5V/JoWfNGcBKrj6Aa/Lgys/4St16D
+         ZTN65OPVpmNSg5N8WNo6OL2kXf3bOKc82XK4xRJW9MEKkRCDYL69HphrHFbm9yTWgiP9
+         dhKg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ims.techbriefs.info header.s=sim header.b=vxnVicPm;
+       spf=pass (google.com: domain of info@ims.techbriefs.info designates 161.47.56.135 as permitted sender) smtp.mailfrom=info@ims.techbriefs.info;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ims.techbriefs.info
+Return-Path: <info@ims.techbriefs.info>
+Received: from grida135.slgnt.us (grida135.slgnt.us. [161.47.56.135])
+        by mx.google.com with UTF8SMTPS id o20-v6si164832ioo.66.2018.06.12.06.43.06
+        for <kirktolliver28@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 12 Jun 2018 06:43:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of info@ims.techbriefs.info designates 161.47.56.135 as permitted sender) client-ip=161.47.56.135;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ims.techbriefs.info header.s=sim header.b=vxnVicPm;
+       spf=pass (google.com: domain of info@ims.techbriefs.info designates 161.47.56.135 as permitted sender) smtp.mailfrom=info@ims.techbriefs.info;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ims.techbriefs.info
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=ims.techbriefs.info; s=sim; x=1529415786;
+	i=@ims.techbriefs.info; h=from:to:subject:date:reply-to:
+	message-id:list-unsubscribe:list-unsubscribe-post:feedback-id:
+	list-id:mime-version:content-type; bh=n2txO1uwsv7kJ2kFnYhVOyU+hK
+	QBlAq4SdWuNALXAKA=; b=vxnVicPmG3611OXvl2sdnqgiEinLYCSKlnjOHcHm5V
+	+eOtue7d+DB4lpBVGuy16Qh4DViAf3Qd4e/oXYk6KVAf2fluR8RF36Jv5TwNKvSx
+	uMhL7WggE3UH3HFojNb1y838N5f09rcfU9BJBi2j3F7WAJfPcX6Sx9qOE3D7Dd0/
+	w=
+From: "Tech Briefs" <info@ims.techbriefs.info>
+To: "KIRK" <kirktolliver28@gmail.com>
+Subject: New Products & Technologies Presented by Tech Briefs
+Date: Tue, 12 Jun 2018 13:33:08 +0000
+Reply-To: "Tech Briefs" <eresponse@techbriefs.info>
+Message-ID: <PATT3L8_95135_vg/prSTek6UZsMKzvgScTQ==.6E9F@grida135.slgnt.us>
+X-GRID-REF: 6E9F628C76C14C6F958F0F1789153FC2.PATT3L8_95135_vg/prSTek6UZsMKzvgScTQ==
+X-GRID-QID: 49038
+List-Unsubscribe: <https://ims.techbriefs.info/optiext/optiextension.dll?ID=XtsXusfzNrMhVTEakSSTqCy_kHK0GZ_g8UDrWc6_eaO_TeFb5%2BVpaZYnPKsFhinyhJqqGY_RZwIp0rNd374DSW89SIErm>, <mailto:unsubscribe@grid.slgnt.us?subject=UNSUB.6E9F628C76C14C6F958F0F1789153FC2.PATT3L8_95135_vg/prSTek6UZsMKzvgScTQ==>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-MA-Reference: SIM_XyYXvWWyRJjmE75SnY9bxR0D7glRuJwoO4MTQPGKW6ojFNMXv
+X-MA-Instance: SIM_XyYXvWWyRJjmE75SnY9bxR0D7glRuJwoO4MTQPGKW6ojFNMXv.f3903f8c62174216e3af45430fb0a513
+Feedback-ID: 8:1848:95135:R1CHPATT3L
+List-ID: <69.1848.ims.techbriefs.info>
+X-MailingID: 1848_8
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="_NexPart_001_"
+
+--_NexPart_001_
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+View in browser
+https://ims.techbriefs.info/optiext/optiextension.dll?ID=3DXtsXuBnV66ho=
+xo0hmz6rpf_NuDkj93Av9KMlrjbt8ST9F6tH4T0vcdz258l6qJqejP0dioeYQmOsfK9gb0g=
+VD5e7KfLzT
+
+FREE PRODUCT INFO FROM TECH BRIEFS MEDIA
+
+Welcome to the TECH BRIEFS MEDIA Product Information Service. Simply
+click on &quot;View All Products&quot; button to visit supplier
+websites and instantly request product information from the June 2018
+editions of Tech Briefs, Motion Design, Sensor Technology, Aerospace
+& Defense Technology, Aerospace Manufacturing & Machining, and
+Medical Design Briefs.
+
+Sponsors:
+
+For customer service, email us at eresponse=40techbriefs.info. To
+unsubscribe from TECH BRIEFS MEDIA Online Product Information
+Service, click here.
+https://ims.techbriefs.info/optiext/optiextension.dll?ID=3DXtsXuZxvKyzw=
+xmXBklFXy6PxU0B0V6cAdpRFQTd0W0RIcb3b5vqr2WH84uGy0r9LO3Y6VkuYmzXD0bMFTXm=
+Kajdq_LozS
+Using the TECH BRIEFS MEDIA's Product
+Information Service, you agree that TECH BRIEFS MEDIA may send
+inquiry information to only those companies you visit or request more
+information on. If you do not wish to receive future TECH BRIEFS
+MEDIA Online Product Information Service mailings you may opt-out and
+we will not share your contact information with marketers.=C2=A9 Copyri=
+ght 2018 Tech Briefs Media Group, an SAE International
+company, 261 Fifth Avenue, Suite 1901, New York, NY, 10016. All
+product names contained herein are the trademarks of their respective
+holders. TECH BRIEFS MEDIA is not responsible for the content or
+privacy of links to Web sites outside the TECH BRIEFS MEDIA Network.*Th=
+e publisher is not responsible for the contents of the articles
+herein, and any person following the advice or procedures in these
+articles does so at his or her own risk. The publisher is not liable
+for the content or representations in advertisements. Neither the
+publisher nor any contributor will be responsible for any error of
+omission in the information provided and/or for the results obtained
+from the use of such information.If you have any concerns about this em=
+ail, its contents or how it is
+to be used, please read our Privacy Policy
+
+--_NexPart_001_
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+<=21DOCTYPE HTML PUBLIC =22-//W3C//DTD HTML 4.0 Transitional//EN=22>
+<html><head><meta http-equiv=3D=22Content-Type=22 content=3D=22text/htm=
+l; charset=3Dutf-8=22 />
+=09<title>FREE PRODUCT INFO FROM TECH BRIEFS MEDIA</title>
+=09<link href=3D'http://fonts.googleapis.com/css?family=3DOpen+Sans=7CR=
+oboto+Condensed:700' rel=3D'stylesheet' type=3D'text/css'>
+</head><body bgcolor=3D=22=23FFFFFF=22><div style=3D=22display:none;fon=
+t-size:0px;color:=23999999;line-height:0px;max-height:0px;max-width:0px=
+;opacity:0;overflow:hidden;=22>New Products & Technologies Presented by=
+ Tech Briefs</div><img width=3D=221=22 height=3D=221=22 src=3D=22https:=
+//gridinboundus.blob.core.windows.net/gic/i.png?h=3D6Lpvam3CPZBfkzwTbVS=
+xtRvQsSofMd_fXpDhm4Q8kpUwetNb_1sOqLiF338Dy8pE=22 style=3D=22display:non=
+e; margin:0; padding:0; visibility:hidden; overflow:hidden; max-height:=
+0;width:0px;height:0px;font-size:0;color:=23FFFFFF;mso-hide:all;float: =
+left;line-height:0;=22 alt=3D=22=22><img width=3D=221=22 height=3D=221=22=
+ src=3D=22https://ims.techbriefs.info/optiext/optiextension.dll?ID=3DXt=
+sXt68HH_BaYzOi8QZMp7Y89iRLc9uf22i593RvF6Kqz5Lb50Kpq9gcJvC2nQPBTqjl1sNxZ=
+YApGHR5xno36a%2BSullrb=22 style=3D=22display:none; margin:0; padding:0;=
+ visibility:hidden; overflow:hidden; max-height:0;width:0px;height:0px;=
+font-size:0;color:=23FFFFFF;mso-hide:all;float: left;line-height:0;=22 =
+alt=3D=22=22><table width=3D=22700=22 cellpadding=3D=220=22 cellspacing=
+=3D=220=22 border=3D=220=22 align=3D=22center=22><tbody><tr><td align=3D=
+=22center=22><a target=3D=22_blank=22 rel=3D=22noopener=22 href=3D=22ht=
+tps://ims.techbriefs.info/optiext/optiextension.dll?ID=3DXtsXtmhUdxWJew=
+SNuzbF1gou1cGBmyzb1zKSa4hvwH%2Bs5ZQb5y2XMcTYXtWn0RA0Pdw_A8Eunn6VoXowexJ=
+THaKm5AE5Y=22><font color=3D=22=23666666=22 face=3D=22Arial, Helvetica,=
+ sans-serif=22 size=3D=222=22>View in browser</font></a></td></tr></tbo=
+dy></table><br /><table cellspacing=3D=220=22 cellpadding=3D=2215=22 al=
+ign=3D=22center=22 width=3D=22600=22><tbody><tr><td colspan=3D=222=22 a=
+lign=3D=22center=22><img border=3D=220=22 src=3D=22http://nasatech.hoti=
+ms.com/hotdata/publishers/assocbsns6957074/advertiser/8333167/3222753/i=
+mage2.jpg=22 /><br /><br /><br />
+&nbsp;</td></tr><tr><td colspan=3D=222=22 align=3D=22left=22 bgcolor=3D=
+=22=23f6f5f5=22><table width=3D=22100%=22 border=3D=220=22 cellspacing=3D=
+=220=22 cellpadding=3D=220=22 align=3D=22center=22><tbody><tr><td><img =
+border=3D=220=22 width=3D=2215=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/ntb258/eresponse/spacer.gif=22 /></t=
+d><td><div style=3D=22margin-top:10px;=22><font style=3D=22FONT-SIZE: 2=
+1pt; font-family: 'Roboto Condensed', Tahoma, sans-serif; font-weight:b=
+old;=22 color=3D=22=23000000=22 size=3D=226=22 face=3D=22Arial, Helveti=
+ca, sans-serif=22><strong>FREE PRODUCT INFO FROM TECH BRIEFS MEDIA</str=
+ong></font></div></td></tr></tbody></table></td></tr><tr><td bgcolor=3D=
+=22=23f6f5f5=22 style=3D=22font-family: 'Open Sans', Arial, sans-serif;=
+ line-height:1.5em; font-size:12pt;=22><table width=3D=22100%=22 border=
+=3D=220=22 cellspacing=3D=220=22 cellpadding=3D=220=22 align=3D=22cente=
+r=22><tbody><tr><td><img border=3D=220=22 width=3D=2215=22 src=3D=22htt=
+p://nasatech.hotims.com/hotdata/publishers/assocbsns6957074/ntb258/eres=
+ponse/spacer.gif=22 /></td><td valign=3D=22top=22><font style=3D=22font=
+-family: 'Open Sans', Arial, sans-serif; line-height:1.5em; font-size:1=
+2pt;=22 face=3D=22Arial, Helvetica, sans-serif=22>Welcome to the TECH B=
+RIEFS MEDIA Product Information Service. Simply click on &quot;View All=
+ Products&quot; button to visit supplier websites and instantly request=
+ product information from the June 2018 editions of Tech Briefs, Motion=
+ Design, Sensor Technology, Aerospace &amp; Defense Technology, Aerospa=
+ce Manufacturing &amp; Machining, and Medical Design Briefs.</font></td=
+></tr><tr><td><img border=3D=220=22 width=3D=2215=22 src=3D=22http://na=
+satech.hotims.com/hotdata/publishers/assocbsns6957074/ntb258/eresponse/=
+spacer.gif=22 /></td><td><br /><a target=3D=22_blank=22 rel=3D=22noopen=
+er=22 href=3D=22https://ims.techbriefs.info/optiext/optiextension.dll?I=
+D=3DXtsXvE%2B8Ay7EVpyiH7suKsdjAe4sMg0PWKEao4TseYve87mH4H%2BPC4DTv2R9XYr=
+gDM%2By81KoNqCwtzV9MfdI2eM1Cwt5N=22><img border=3D=220=22 src=3D=22http=
+://nasatech.hotims.com/hotdata/publishers/assocbsns6957074/ntb258/eresp=
+onse/btn.png=22 /></a><br /><br /><br />
+&nbsp;</td></tr></tbody></table></td><td bgcolor=3D=22=23f6f5f5=22 vali=
+gn=3D=22top=22><table width=3D=22100%=22 border=3D=220=22 cellspacing=3D=
+=220=22 cellpadding=3D=220=22 align=3D=22center=22><tbody><tr><td><a ta=
+rget=3D=22_blank=22 rel=3D=22noopener=22 href=3D=22https://ims.techbrie=
+fs.info/optiext/optiextension.dll?ID=3DXtsXqRR2xfCaWVmMH1ryddgVh3j4aoia=
+Fm%2BfJMGBNkbjDlGH4da%2BB1vtbxu_Fc32fExKjJteiDE20u8wkLM%2Bf02kkLBPz=22>=
+<img border=3D=220=22 src=3D=22http://nasatech.hotims.com/hotdata/publi=
+shers/assocbsns6957074/ntb258/2018-06-01/cover_image.jpg=22 /></a></td>=
+<td><img border=3D=220=22 width=3D=2215=22 src=3D=22http://nasatech.hot=
+ims.com/hotdata/publishers/assocbsns6957074/ntb258/eresponse/spacer.gif=
+=22 /></td></tr></tbody></table><br /><br />
+&nbsp;</td></tr><tr><td colspan=3D=222=22 align=3D=22center=22 bgcolor=3D=
+=22=23ffffff=22><table width=3D=22700=22 border=3D=220=22 cellspacing=3D=
+=220=22 cellpadding=3D=220=22 align=3D=22center=22><tbody><tr><td align=
+=3D=22center=22 colspan=3D=222=22><div style=3D=22margin-top:10px;=22><=
+font style=3D=22FONT-SIZE: 16pt; font-family: 'Roboto Condensed', Tahom=
+a, sans-serif; font-weight:bold;=22 color=3D=22=23000000=22 size=3D=226=
+=22><strong>Sponsors:</strong></font></div><br /><br />
+&nbsp;</td></tr><tr><=21--<td width=3D=2215=22><img src=3D=22http://nas=
+atech.hotims.com/hotdata/publishers/assocbsns6957074/ntb258/eresponse/s=
+pacer.gif=22 border=3D=220=22 width=3D=2215=22></td>--><td align=3D=22c=
+enter=22><table cellpadding=3D=220=22 cellspacing=3D=220=22 border=3D=22=
+0=22 width=3D=22510=22 align=3D=22center=22><tbody><tr><td align=3D=22c=
+enter=22><table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22=
+left=22><tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10=
+px;=22><a target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-de=
+coration:none; display:inline-block;=22 href=3D=22https://ims.techbrief=
+s.info/optiext/optiextension.dll?ID=3DXtsXv8jxdgf7QKxI0NUL3uA_Bm3oPH%2B=
+kUdgHITRfLklvf6Db5ghCxK2QVxo_9oV9wBmaNsK_VTPwsxyUssN0AQrghxij5=22><img =
+border=3D=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hot=
+ims.com/hotdata/publishers/assocbsns6957074/advertiser/7707473/3523750/=
+image2.gif=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXwSqaf1aUk6knd_w1DZPnbZrG4r4tb%2BJ3SjMr=
+jhwm4GEH5myAZm3hGI7gCp9r18l7bHRBF%2BT3quWNUgU0GnSkYSp5k=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/8313103/3429982/image2.jp=
+g=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXu6zpQNprlOVdqgYcXsXD6Devkrwyz_qdTb4ujL=
+yttbNb5QLelr7TEIKMXDhzHhEFlH6KTpjizk%2BYdTtbicM3rYDPP=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/8172536/3516895/image2.jp=
+g=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXw8peZH7v1ar3w_uVJ%2By3KC3GvTUTC3LWbKRq=
+3LSJqKUH4rYR5FvQOjBURL_aGeQCYAkkQRQnFqa3DHYrp16Af1Jzy=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/8383741/3516011/image2.jp=
+g=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXu4gItu8f9J1v6pfAJH3fQq9pp768TgvDWtb0wZ=
+SQzOTH4ExfIPYeHYRRIrFS6kuWFc6pVf08jsXGBovAFbdaaMLXc=22><img border=3D=22=
+0=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/hotd=
+ata/publishers/assocbsns6957074/advertiser/8175445/3524475/image2.jpg=22=
+ /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXvvsrm2mH334scxHlaNm6k4K1LfkuBTApocXJ7l=
+jDniSb5t8jyNwQnrgz5Mi4Y4O2yJn1axLjuqvF_KnGrYY9V0jXO=22><img border=3D=22=
+0=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/hotd=
+ata/publishers/assocbsns6957074/advertiser/7719015/3518738/image2.gif=22=
+ /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXv6MmyKNsn_q6Qzl_Z0VL4wB3pSLdn7ijui6Jq%=
+2BLeZ_eb5EfOt1VPi8Gtvi7jCU4s1ExIwhb_c4z_m8CvOoNN3zfHP=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/7855903/3517186/image2.gi=
+f=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXuoUdyphFc59bHMWzJx%2BYPpRQNeUxlZAdeyOa=
+EbMHBrMH5wiDEGpglHcuti9TxfUjwFWYVGCtiIlw_IAPpDEUihePv=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/7780394/3523736/image2.gi=
+f=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXq7QOiOO%2BkW1csjwNjVjLW3BuAKAOugHJYPAM=
+SF9biX%2BH5xygeUiCOQDn5cTVFJfLkgEuAtyPk5j7wgT38qkrEdBzI=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/8380321/3507594/image2.jp=
+g=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXudSjaLJSTuB%2BkLcA7UeeHp88hbRtqeVHBZsv=
+cSbV1rEb57UE0jXlyzQDoBvUPkG1P1B4mtNMMl2MS_%2BCKd7k7zR5L=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/7709739/3525154/image2.gi=
+f=22 /></a></td></tr></tbody></table>
+&nbsp;
+
+<table cellpadding=3D=220=22 cellspacing=3D=220=22 align=3D=22left=22><=
+tbody><tr><td style=3D=22padding-bottom:10px; padding-right:10px;=22><a=
+ target=3D=22_blank=22 rel=3D=22noopener=22 style=3D=22text-decoration:=
+none; display:inline-block;=22 href=3D=22https://ims.techbriefs.info/op=
+tiext/optiextension.dll?ID=3DXtsXqSo%2Bb8XamgjwadAIeAlWXgTWIOMzm84FZQkS=
+q1n2T_dH5x1VrLat_ioljSf81fFejKC8Wh5sOaZ3LXh0hJWs9bJjT=22><img border=3D=
+=220=22 class=3D=22deviceWidth=22 src=3D=22http://nasatech.hotims.com/h=
+otdata/publishers/assocbsns6957074/advertiser/8090814/3526537/image2.jp=
+g=22 /></a></td></tr></tbody></table>
+&nbsp;</td></tr></tbody></table></td></tr></tbody></table><br /><br />
+&nbsp;</td></tr><tr><td colspan=3D=222=22 bgcolor=3D=22=23f6f5f5=22><ta=
+ble width=3D=22100%=22 border=3D=220=22 cellspacing=3D=2212=22 cellpadd=
+ing=3D=220=22><tbody><tr><td><font style=3D=22font-family: 'Open Sans',=
+ Arial, sans-serif; line-height:1.2em; font-size:9pt; color:=23666666=22=
+ face=3D=22Arial, Helvetica, sans-serif=22 size=3D=222=22>For customer =
+service, email us at <a href=3D=22mailto:eresponse=40techbriefs.info=22=
+>eresponse=40techbriefs.info</a>. To unsubscribe from TECH BRIEFS MEDIA=
+ Online Product Information Service, <a href=3D=22https://ims.techbrief=
+s.info/optiext/optiextension.dll?ID=3DXtsXuZxvKyzwxmXBklFXy6PxU0B0V6cAd=
+pRFQTd0W0RIcb3b5vqr2WH84uGy0r9LO3Y6VkuYmzXD0bMFTXmKajdq_LozS=22>click h=
+ere</a>. </font><font style=3D=22font-family: 'Open Sans', Arial, sans-=
+serif; line-height:1.2em; font-size:9pt; color:=23666666=22 face=3D=22A=
+rial, Helvetica, sans-serif=22 size=3D=222=22> Using the TECH BRIEFS ME=
+DIA's Product Information Service, you agree that TECH BRIEFS MEDIA may=
+ send inquiry information to only those companies you visit or request =
+more information on. If you do not wish to receive future TECH BRIEFS M=
+EDIA Online Product Information Service mailings you may opt-out and we=
+ will not share your contact information with marketers.<br /><br />
+&copy; Copyright 2018 Tech Briefs Media Group, an SAE International com=
+pany, 261 Fifth Avenue, Suite 1901, New York, NY, 10016. All product na=
+mes contained herein are the trademarks of their respective holders. TE=
+CH BRIEFS MEDIA is not responsible for the content or privacy of links =
+to Web sites outside the TECH BRIEFS MEDIA Network.<br /><br />
+*The publisher is not responsible for the contents of the articles here=
+in, and any person following the advice or procedures in these articles=
+ does so at his or her own risk. The publisher is not liable for the co=
+ntent or representations in advertisements. Neither the publisher nor a=
+ny contributor will be responsible for any error of omission in the inf=
+ormation provided and/or for the results obtained from the use of such =
+information.<br /><br />
+If you have any concerns about this email, its contents or how it is to=
+ be used, please read our <a target=3D=22_blank=22 rel=3D=22noopener=22=
+ href=3D=22https://ims.techbriefs.info/optiext/optiextension.dll?ID=3DX=
+tsXv42rJNgo_0mgqJL3_ZholhZ0VCirSW61xZnWcnWHVBXH4AO0_XkItJ54kH6Bwf03_nyl=
+xMkTkQMjOutu4Akz6AAj8=22>Privacy Policy</a></font></td></tr></tbody></t=
+able></td></tr></tbody></table><img border=3D=220=22 src=3D=22http://na=
+satech.hotims.com/r5/mailingaction.asp?mail_action_type=3D2&mailing_ref=
+_code=3DTB_June2018NTB&email=3Dkirktolliver28=40gmail.com=22 /></body><=
+/html>
+
+--_NexPart_001_--
+

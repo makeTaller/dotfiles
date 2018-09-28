@@ -1,0 +1,557 @@
+Delivered-To: kirktolliver28@gmail.com
+Received: by 10.50.36.3 with SMTP id m3csp26047igj;
+        Fri, 5 Jun 2015 08:56:00 -0700 (PDT)
+X-Received: by 10.50.64.244 with SMTP id r20mr41558860igs.33.1433519760875;
+        Fri, 05 Jun 2015 08:56:00 -0700 (PDT)
+Return-Path: <david_e_bright@yahoo.com>
+Received: from nm27-vm3.bullet.mail.ne1.yahoo.com (nm27-vm3.bullet.mail.ne1.yahoo.com. [98.138.91.157])
+        by mx.google.com with ESMTPS id z9si2149164igw.33.2015.06.05.08.56.00
+        for <kirktolliver28@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 05 Jun 2015 08:56:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of david_e_bright@yahoo.com designates 98.138.91.157 as permitted sender) client-ip=98.138.91.157;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of david_e_bright@yahoo.com designates 98.138.91.157 as permitted sender) smtp.mail=david_e_bright@yahoo.com;
+       dkim=pass header.i=@yahoo.com;
+       dmarc=pass (p=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1433519760; bh=ZbicUx7IeVlp7nZHluzXMiTmcLxGHMILAW5K95/3UhY=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=mwjFLoUsEdcbk4ECbvZ2382eJ/nq7rjrnc8DykIeorHiQH8zfN/mL6ewDj6R/PqEaBZoSksJ6FFY8oAb8/MJEUbq/L78VGjkyXbDSpCA3vz1NQACbQcPxx6/SQbO+beDrHn11qeMkPn7siA+ROuEP/g7GHeGtbXxM9Oi8A8RsC5EX2GwTNR6WMt6WnuwKj3JvqQEz0Ohq5FWILK1OJp+fO/bwmQcEpqdJGgQIs+8JLPaCbsW5L2BB6MwQeSehpHFES7Nd0luwc16rHuwOF2Dpt3qVN+T7sWRQLjbs1IhALgLkgXygcpEVK2FwEqKpd3IgQ6nyts46vibR9JG7/Oo4g==
+Received: from [98.138.100.102] by nm27.bullet.mail.ne1.yahoo.com with NNFMP; 05 Jun 2015 15:56:00 -0000
+Received: from [98.138.89.161] by tm101.bullet.mail.ne1.yahoo.com with NNFMP; 05 Jun 2015 15:56:00 -0000
+Received: from [127.0.0.1] by omp1017.mail.ne1.yahoo.com with NNFMP; 05 Jun 2015 15:56:00 -0000
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 202761.31162.bm@omp1017.mail.ne1.yahoo.com
+X-YMail-OSG: 5M1R3ZoVM1mw_frII12xJIw3lO8ZH2RVlNSM7U17MRa0i0AzkqFWEs.Nx4MF8z8
+ JxIglweQOI0B.AAEI9dYITXOGMRnV3rtf0elaHKImNe5178fsoGsE2lUUb54g7pXhcisXGbPIo8x
+ UR9d_RulWHhJqByyyvTqDN9NrVvOar3UNIr9y9qWyV.V7XWkfAdYG6nPBKyBaMlGO4.9iTD9qIbr
+ ksI66EZDr0aXxLAriN0MOonq_z0rqOdII3QX.SpgPA0YnaSY3SsuuPDAR4UorFwMQ4XqRXer.JqE
+ cy1cz9tCr5eRyN5B8Kh3ex.80TuHrWRFY.z0jLBsU3jaqbNeDujd54MWlxjSx.PhWi754gOjCFSP
+ o38vsP79Z6mBXtrHhP5TqtUo9Rs84RUnTgzIgI9LIknpxROPZeZ8RGpesb9cigx5E2WrAH41cmn0
+ vV8AsRzQX3SaGmZ27jnKpgx4PNf.sHoTviSr3lW0aSAH7nNybMliUpSXHCOr6E.0KQX8dxWCHbbU
+ ckxNZ.sHl3DyVwDU-
+Received: by 98.138.101.170; Fri, 05 Jun 2015 15:55:59 +0000 
+Date: Fri, 5 Jun 2015 15:55:58 +0000 (UTC)
+From: David Bright <david_e_bright@yahoo.com>
+Reply-To: David Bright <david_e_bright@yahoo.com>
+To: kirk <kirktolliver28@gmail.com>
+Message-ID: <687440355.5812013.1433519759029.JavaMail.yahoo@mail.yahoo.com>
+In-Reply-To: <5570D0C0.9000806@gmail.com>
+References: <5570D0C0.9000806@gmail.com>
+Subject: Re: Kirk's Java Calendar
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_5812012_2089908800.1433519759013"
+Content-Length: 26795
+
+------=_Part_5812012_2089908800.1433519759013
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Kirk,
+Here are a few things to think about:
+You will need a constructor for the Month class that will either take a Str=
+ing name like this:
+public Month(String nameIn){=C2=A0=C2=A0 ...
+}
+And/or another constructor that can take a name and a "calAlg", that is, yo=
+ur offset for the day:
+public Month(String nameIn, int offset){=C2=A0 ...
+}
+You should think about making your static values both public and final:
+public static final String [] NAMES =3D {"January","Febuary","March","April=
+","May","June","July","August","September","October","November","December"}=
+;
+
+=C2=A0=C2=A0=C2=A0 public static final String[] WEEK =3D{"su ","mo ","tu ",=
+"we ","th ","fr ","sa "};
+=C2=A0=C2=A0=C2=A0 public static final int[] NUM_DAYS =3D{31,28,30,31,30,31=
+,31,30,30,31,30,31};=C2=A0=20
+
+
+The upper case is a convention to let developers know that these are final =
+values.=C2=A0 Statics should normally be.
+I also created add this method:
+public void setMonth(String nameIn)
+=C2=A0=C2=A0=C2=A0 {
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 int start =3D (int) Year.January.ordi=
+nal();
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 int end =3D (int) Year.December.ordin=
+al();
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 for (int i =3D start; i < end; i++)
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 {
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 if ( Month.NAMES[ =
+i ] =3D=3D nameIn )
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 {=C2=A0=C2=A0=C2=
+=A0=20
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0=
+ name =3D Month.NAMES[ i ];
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0=
+ length =3D Month.NUM_DAYS[ i ];=C2=A0=C2=A0=C2=A0=20
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0=
+ index =3D i;
+=C2=A0=C2=A0=C2=A0=C2=A0=20
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0=
+ return;
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 }
+=C2=A0=C2=A0=C2=A0 =C2=A0=C2=A0=C2=A0 }
+=C2=A0=C2=A0=C2=A0 }
+
+The variables "length, name" and "index" are member variables, i.e.:
+public class Month{=C2=A0 ...=C2=A0=C2=A0=C2=A0 int length;=C2=A0=C2=A0=C2=
+=A0 String name;=C2=A0=C2=A0=C2=A0 int index;...
+}
+That will make your code a bit easier to develop.
+"length" is the number of days in the month."name" is the name of the month=
+."index" is the value of the enum you created.
+All of this is based on the code you had in your example.
+
+This method will set the number of days, the name of the month, etc, for yo=
+ur class once a developer passes in a String.
+You might want to use it in a constructor.
+If you want to use the Date class (though I'm not sure why) think about usi=
+ng this:
+java.util.Date dte=3Dnew java.util.Date();
+
+Let me know if you need more explanation.
+I have a working version of the code based on your class, but, I figured yo=
+u'd want to walk though this on your own.=C2=A0 If not, let me know, and I =
+can send you the full code and you can walk though that.=C2=A0 It needs wor=
+k in a few places that I would leave to you.=C2=A0=20
+
+Let me know if you want the full=C2=A0 code.
+David
+
+      From: kirk <kirktolliver28@gmail.com>
+ To: David Bright <david_e_bright@yahoo.com>=20
+ Sent: Thursday, June 4, 2015 5:27 PM
+ Subject: Re: Kirk's Java Calendar
+  =20
+
+
+=20
+=20
+ On 06/04/2015 11:03 AM, David Bright wrote:
+ =20
+  Hey, Kirk.=C2=A0 I'll take a look tonight and let you know.=20
+ =20
+  David
+  =20
+      From: Kirk Tolliver <kirktolliver28@gmail.com>
+ To: David Bright <david_e_bright@yahoo.com>=20
+ Sent: Wednesday, June 3, 2015 6:12 PM
+ Subject: Re: Kirk's Java Calendar
+  =20
+     Hey,
+=20
+  I made a few changes in adding the static method calAlg=C2=A0 to calculat=
+e the first and last postions of each month.
+=20
+  I am still working on some bugs, but let me know if you see anything wron=
+g in the logic.
+ =20
+=20
+  =20
+ On Mon, May 25, 2015 at 10:14 AM, Kirk Tolliver <kirktolliver28@gmail.com>=
+ wrote:
+=20
+ Yeah I sent an older copy before i went to bed. I am working on making tho=
+se changes now though.
+   =20
+ On Sun, May 24, 2015 at 5:51 PM, David Bright <david_e_bright@yahoo.com> w=
+rote:
+=20
+   I found errors in this code that I'm pretty sure you're aware of.=C2=A0 =
+let me know if you need help/suggestions.=20
+  David
+  =20
+      From: Kirk Tolliver <kirktolliver28@gmail.com>
+ To: David Bright <david_e_bright@yahoo.com>=20
+ Sent: Saturday, May 23, 2015 11:35 PM
+ Subject: Re: Kirk's Java Calendar
+  =20
+    =20
+=20
+  Hey David,=20
+=20
+   I have made the following changes=C2=A0 in the attached program and comm=
+ented  the code a little more.
+   =20
+   - =C2=A0I decided to=C2=A0 use a static method in starting  the day of t=
+he week, that will be=C2=A0 passed through the Month  constructor.   =20
+=20
+   - I will iterate an ArrayList of  Month objects.
+   - =C2=A0I will let you know if and when I  get stuck.
+ Regards.=20
+  =E2=80=8B     =20
+=20
+     =20
+ =20
+   =20
+ =20
+    =20
+=20
+    =20
+=20
+=20
+
+  
+------=_Part_5812012_2089908800.1433519759013
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"color:#000; background-color:#fff; font-family:He=
+lveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;fo=
+nt-size:13px"><div>Kirk,</div><div id=3D"yui_3_16_0_1_1433519172065_3005"><=
+br></div><div>Here are a few things to think about:</div><div id=3D"yui_3_1=
+6_0_1_1433519172065_3892"><br></div><div id=3D"yui_3_16_0_1_1433519172065_3=
+006">You will need a constructor for the Month class that will either take =
+a String name like this:</div><div id=3D"yui_3_16_0_1_1433519172065_3893"><=
+br></div><div id=3D"yui_3_16_0_1_1433519172065_3894">public Month(String na=
+meIn)</div><div id=3D"yui_3_16_0_1_1433519172065_3898">{</div><div id=3D"yu=
+i_3_16_0_1_1433519172065_3899">&nbsp;&nbsp; ...<br></div><div id=3D"yui_3_1=
+6_0_1_1433519172065_3097">}</div><div id=3D"yui_3_16_0_1_1433519172065_3096=
+"><br></div><div id=3D"yui_3_16_0_1_1433519172065_3098" dir=3D"ltr">And/or =
+another constructor that can take a name and a "calAlg", that is, your offs=
+et for the day:</div><div id=3D"yui_3_16_0_1_1433519172065_3099" dir=3D"ltr=
+"><br></div><div id=3D"yui_3_16_0_1_1433519172065_3095" dir=3D"ltr">public =
+Month(String nameIn, int offset)</div><div id=3D"yui_3_16_0_1_1433519172065=
+_3100" dir=3D"ltr">{</div><div id=3D"yui_3_16_0_1_1433519172065_3900" dir=
+=3D"ltr">&nbsp; ...<br></div><div id=3D"yui_3_16_0_1_1433519172065_3901" di=
+r=3D"ltr">}</div><div id=3D"yui_3_16_0_1_1433519172065_3101" dir=3D"ltr"><b=
+r></div><div id=3D"yui_3_16_0_1_1433519172065_3196" dir=3D"ltr">You should =
+think about making your static values both public and final:</div><div id=
+=3D"yui_3_16_0_1_1433519172065_3195" dir=3D"ltr"><br></div><div id=3D"yui_3=
+_16_0_1_1433519172065_3167" dir=3D"ltr">public static final String [] NAMES=
+ =3D {"January","Febuary","March","April","May","June","July","August","Sep=
+tember","October","November","December"};<br style=3D"" class=3D""><br styl=
+e=3D"" class=3D"">&nbsp;&nbsp;&nbsp; public static final String[] WEEK =3D{=
+"su ","mo ","tu ","we ","th ","fr ","sa "};<br style=3D"" class=3D"">&nbsp;=
+&nbsp;&nbsp; public static final int[] NUM_DAYS =3D{31,28,30,31,30,31,31,30=
+,30,31,30,31};&nbsp; <br style=3D"" class=3D""></div><div id=3D"yui_3_16_0_=
+1_1433519172065_3166" dir=3D"ltr"><br></div><div id=3D"yui_3_16_0_1_1433519=
+172065_3168" dir=3D"ltr"><br></div><div id=3D"yui_3_16_0_1_1433519172065_31=
+94" dir=3D"ltr">The upper case is a convention to let developers know that =
+these are final values.&nbsp; Statics should normally be.</div><div id=3D"y=
+ui_3_16_0_1_1433519172065_3169" dir=3D"ltr"><br></div><div id=3D"yui_3_16_0=
+_1_1433519172065_3165" dir=3D"ltr">I also created add this method:</div><di=
+v id=3D"yui_3_16_0_1_1433519172065_3902" dir=3D"ltr"><br></div><div style=
+=3D"" class=3D"" dir=3D"ltr" id=3D"yui_3_16_0_1_1433519172065_3202"><span s=
+tyle=3D"" class=3D"" id=3D"yui_3_16_0_1_1433519172065_3226">public void set=
+Month(String nameIn)<br style=3D"" class=3D"">&nbsp;&nbsp;&nbsp; {<br style=
+=3D"" class=3D"">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; int start =3D (int) =
+Year.January.ordinal();<br style=3D"" class=3D"">&nbsp;&nbsp;&nbsp; &nbsp;&=
+nbsp;&nbsp; int end =3D (int) Year.December.ordinal();<br style=3D"" class=
+=3D"">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; for (int i =3D start; i &lt; en=
+d; i++)<br style=3D"" class=3D"">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {<br=
+ style=3D"" class=3D"">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&n=
+bsp; if ( Month.NAMES[ i ] =3D=3D nameIn )<br style=3D"" class=3D"">&nbsp;&=
+nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp; <br s=
+tyle=3D"" class=3D"">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbs=
+p; &nbsp;&nbsp;&nbsp; name =3D Month.NAMES[ i ];<br style=3D"" class=3D"">&=
+nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; =
+length =3D Month.NUM_DAYS[ i ];&nbsp;&nbsp;&nbsp; <br style=3D"" class=3D""=
+>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp=
+; index =3D i;<br style=3D"" class=3D"">&nbsp;&nbsp;&nbsp;&nbsp; <br style=
+=3D"" class=3D"">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &=
+nbsp;&nbsp;&nbsp; return;<br style=3D"" class=3D"">&nbsp;&nbsp;&nbsp; &nbsp=
+;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br style=3D"" class=3D"">&nbsp;&nbsp;&nb=
+sp; &nbsp;&nbsp;&nbsp; }<br style=3D"" class=3D"">&nbsp;&nbsp;&nbsp; }<br s=
+tyle=3D"" class=3D""></span></div><div id=3D"yui_3_16_0_1_1433519172065_395=
+6" style=3D"" class=3D"" dir=3D"ltr"><br style=3D"" class=3D""></div><div i=
+d=3D"yui_3_16_0_1_1433519172065_3957" dir=3D"ltr">The variables "length, na=
+me" and "index" are member variables, i.e.:</div><div dir=3D"ltr"><br></div=
+><div dir=3D"ltr">public class Month</div><div dir=3D"ltr">{</div><div id=
+=3D"yui_3_16_0_1_1433519172065_3467" dir=3D"ltr">&nbsp; ...</div><div id=3D=
+"yui_3_16_0_1_1433519172065_3468" dir=3D"ltr">&nbsp;&nbsp;&nbsp; int length=
+;</div><div id=3D"yui_3_16_0_1_1433519172065_3469" dir=3D"ltr">&nbsp;&nbsp;=
+&nbsp; String name;</div><div id=3D"yui_3_16_0_1_1433519172065_3431" dir=3D=
+"ltr">&nbsp;&nbsp;&nbsp; int index;</div><div id=3D"yui_3_16_0_1_1433519172=
+065_3430" dir=3D"ltr">...<br></div><div id=3D"yui_3_16_0_1_1433519172065_34=
+70" dir=3D"ltr">}</div><div id=3D"yui_3_16_0_1_1433519172065_3375" dir=3D"l=
+tr"><br></div><div id=3D"yui_3_16_0_1_1433519172065_3376" dir=3D"ltr">That =
+will make your code a bit easier to develop.</div><div id=3D"yui_3_16_0_1_1=
+433519172065_3429" dir=3D"ltr"><br></div><div id=3D"yui_3_16_0_1_1433519172=
+065_3170" dir=3D"ltr">"length" is the number of days in the month.</div><di=
+v id=3D"yui_3_16_0_1_1433519172065_3374" dir=3D"ltr">"name" is the name of =
+the month.</div><div id=3D"yui_3_16_0_1_1433519172065_3373" dir=3D"ltr">"in=
+dex" is the value of the enum you created.</div><div id=3D"yui_3_16_0_1_143=
+3519172065_3372" dir=3D"ltr"><br></div><div id=3D"yui_3_16_0_1_143351917206=
+5_3371" dir=3D"ltr">All of this is based on the code you had in your exampl=
+e.<br></div><div id=3D"yui_3_16_0_1_1433519172065_3510"><br></div><div id=
+=3D"yui_3_16_0_1_1433519172065_3511">This method will set the number of day=
+s, the name of the month, etc, for your class once a developer passes in a =
+String.</div><div id=3D"yui_3_16_0_1_1433519172065_3512"><br></div><div id=
+=3D"yui_3_16_0_1_1433519172065_3513">You might want to use it in a construc=
+tor.</div><div id=3D"yui_3_16_0_1_1433519172065_3759"><br></div><div id=3D"=
+yui_3_16_0_1_1433519172065_3758" dir=3D"ltr">If you want to use the Date cl=
+ass (though I'm not sure why) think about using this:</div><div id=3D"yui_3=
+_16_0_1_1433519172065_3692" dir=3D"ltr"><br></div><div id=3D"yui_3_16_0_1_1=
+433519172065_3757" dir=3D"ltr">java.util.Date dte=3Dnew java.util.Date();<b=
+r></div><div id=3D"yui_3_16_0_1_1433519172065_3756"><br></div><div id=3D"yu=
+i_3_16_0_1_1433519172065_3693">Let me know if you need more explanation.</d=
+iv><div id=3D"yui_3_16_0_1_1433519172065_3698"><br></div><div dir=3D"ltr" i=
+d=3D"yui_3_16_0_1_1433519172065_3699">I have a working version of the code =
+based on your class, but, I figured you'd want to walk though this on your =
+own.&nbsp; If not, let me know, and I can send you the full code and you ca=
+n walk though that.&nbsp; It needs work in a few places that I would leave =
+to you.&nbsp; <br></div><div id=3D"yui_3_16_0_1_1433519172065_3813" dir=3D"=
+ltr"><br></div><div id=3D"yui_3_16_0_1_1433519172065_3814" dir=3D"ltr">Let =
+me know if you want the full&nbsp; code.</div><div id=3D"yui_3_16_0_1_14335=
+19172065_3839" dir=3D"ltr"><br></div><div dir=3D"ltr">David<br></div><div d=
+ir=3D"ltr"><br>  </div><div id=3D"yui_3_16_0_1_1433519172065_3009" style=3D=
+"font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grand=
+e, sans-serif; font-size: 13px;"> <div id=3D"yui_3_16_0_1_1433519172065_300=
+8" style=3D"font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, L=
+ucida Grande, sans-serif; font-size: 16px;"> <div id=3D"yui_3_16_0_1_143351=
+9172065_3007" dir=3D"ltr"> <hr size=3D"1">  <font id=3D"yui_3_16_0_1_143351=
+9172065_3203" face=3D"Arial" size=3D"2"> <b><span style=3D"font-weight:bold=
+;">From:</span></b> kirk &lt;kirktolliver28@gmail.com&gt;<br> <b><span styl=
+e=3D"font-weight: bold;">To:</span></b> David Bright &lt;david_e_bright@yah=
+oo.com&gt; <br> <b><span style=3D"font-weight: bold;">Sent:</span></b> Thur=
+sday, June 4, 2015 5:27 PM<br> <b><span style=3D"font-weight: bold;">Subjec=
+t:</span></b> Re: Kirk's Java Calendar<br> </font> </div> <div id=3D"yui_3_=
+16_0_1_1433519172065_3010" class=3D"y_msg_container"><br><div id=3D"yiv0006=
+018449"><div class=3D"qtdSeparateBR"><br><br></div><div class=3D"yiv0006018=
+449yqt8088116322" id=3D"yiv0006018449yqt33051"><div id=3D"yui_3_16_0_1_1433=
+519172065_3011">
+    <br clear=3D"none">
+    <br clear=3D"none">
+    <div id=3D"yui_3_16_0_1_1433519172065_3012" class=3D"yiv0006018449moz-c=
+ite-prefix">On 06/04/2015 11:03 AM, David Bright
+      wrote:<br clear=3D"none">
+    </div>
+    <blockquote type=3D"cite">
+      <div style=3D"color:#000;background-color:#fff;font-family:HelveticaN=
+eue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-size:=
+13px;">
+        <div>Hey, Kirk.&nbsp; I'll take a look tonight and let you know.</d=
+iv>
+        <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3277"><br clear=
+=3D"none">
+        </div>
+        <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3275"><br clear=
+=3D"none">
+        </div>
+        <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3276">David<br c=
+lear=3D"none">
+        </div>
+        <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3274"><span></sp=
+an></div>
+        <br clear=3D"none">
+        <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3263" style=3D"f=
+ont-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, =
+sans-serif;font-size:13px;">
+          <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3262" style=3D=
+"font-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande=
+, sans-serif;font-size:16px;">
+            <div dir=3D"ltr" id=3D"yiv0006018449yui_3_16_0_1_1433433774900_=
+3261">
+              <hr size=3D"1"> <font face=3D"Arial" size=3D"2"> <b><span sty=
+le=3D"font-weight:bold;">From:</span></b> Kirk
+                Tolliver <a rel=3D"nofollow" shape=3D"rect" class=3D"yiv000=
+6018449moz-txt-link-rfc2396E" ymailto=3D"mailto:kirktolliver28@gmail.com" t=
+arget=3D"_blank" href=3D"mailto:kirktolliver28@gmail.com">&lt;kirktolliver2=
+8@gmail.com&gt;</a><br clear=3D"none">
+                <b><span style=3D"font-weight:bold;">To:</span></b> David
+                Bright <a rel=3D"nofollow" shape=3D"rect" class=3D"yiv00060=
+18449moz-txt-link-rfc2396E" ymailto=3D"mailto:david_e_bright@yahoo.com" tar=
+get=3D"_blank" href=3D"mailto:david_e_bright@yahoo.com">&lt;david_e_bright@=
+yahoo.com&gt;</a> <br clear=3D"none">
+                <b><span style=3D"font-weight:bold;">Sent:</span></b>
+                Wednesday, June 3, 2015 6:12 PM<br clear=3D"none">
+                <b><span style=3D"font-weight:bold;">Subject:</span></b>
+                Re: Kirk's Java Calendar<br clear=3D"none">
+              </font> </div>
+            <div class=3D"yiv0006018449y_msg_container" id=3D"yiv0006018449=
+yui_3_16_0_1_1433433774900_3264"><br clear=3D"none">
+              <div id=3D"yiv0006018449">
+                <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3268">
+                  <div dir=3D"ltr" id=3D"yiv0006018449yui_3_16_0_1_14334337=
+74900_3267">
+                    <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_3266=
+">
+                      <div id=3D"yiv0006018449yui_3_16_0_1_1433433774900_32=
+65">Hey,<br clear=3D"none">
+                        <br clear=3D"none">
+                      </div>
+                      I made a few changes in adding the static method <spa=
+n style=3D"color:rgb(255,153,0);">calAlg</span>&nbsp; to
+                      calculate the first and last postions of each
+                      month.<br clear=3D"none">
+                      <br clear=3D"none">
+                    </div>
+                    I am still working on some bugs, but let me know if
+                    you see anything wrong in the logic.<br clear=3D"none">
+                  </div>
+                  <div class=3D"yiv0006018449qtdSeparateBR"><br clear=3D"no=
+ne">
+                    <br clear=3D"none">
+                  </div>
+                  <div class=3D"yiv0006018449yqt6255947737" id=3D"yiv000601=
+8449yqt76349">
+                    <div class=3D"yiv0006018449gmail_extra" id=3D"yiv000601=
+8449yui_3_16_0_1_1433433774900_3270"><br clear=3D"none">
+                      <div class=3D"yiv0006018449gmail_quote" id=3D"yiv0006=
+018449yui_3_16_0_1_1433433774900_3269">On Mon, May 25,
+                        2015 at 10:14 AM, Kirk Tolliver <span dir=3D"ltr">&=
+lt;<a rel=3D"nofollow" shape=3D"rect" ymailto=3D"mailto:kirktolliver28@gmai=
+l.com" target=3D"_blank" href=3D"mailto:kirktolliver28@gmail.com">kirktolli=
+ver28@gmail.com</a>&gt;</span>
+                        wrote:<br clear=3D"none">
+                        <blockquote class=3D"yiv0006018449gmail_quote" id=
+=3D"yiv0006018449yui_3_16_0_1_1433433774900_3272" style=3D"margin:0 0 0 .8e=
+x;border-left:1px #ccc solid;padding-left:1ex;">
+                          <div dir=3D"ltr" id=3D"yiv0006018449yui_3_16_0_1_=
+1433433774900_3271">Yeah I sent an older copy before i
+                            went to bed. I am working on making those
+                            changes now though.<br clear=3D"none">
+                          </div>
+                          <div class=3D"yiv0006018449HOEnZb">
+                            <div class=3D"yiv0006018449h5">
+                              <div class=3D"yiv0006018449gmail_extra"><br c=
+lear=3D"none">
+                                <div class=3D"yiv0006018449gmail_quote">On
+                                  Sun, May 24, 2015 at 5:51 PM, David
+                                  Bright <span dir=3D"ltr">&lt;<a rel=3D"no=
+follow" shape=3D"rect" ymailto=3D"mailto:david_e_bright@yahoo.com" target=
+=3D"_blank" href=3D"mailto:david_e_bright@yahoo.com">david_e_bright@yahoo.c=
+om</a>&gt;</span>
+                                  wrote:<br clear=3D"none">
+                                  <blockquote class=3D"yiv0006018449gmail_q=
+uote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1e=
+x;">
+                                    <div>
+                                      <div style=3D"color:#000;background-c=
+olor:#fff;font-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, Luci=
+da Grande, sans-serif;font-size:13px;">
+                                        <div dir=3D"ltr">I found errors in
+                                          this code that I'm pretty sure
+                                          you're aware of.&nbsp; let me kno=
+w
+                                          if you need help/suggestions.</di=
+v>
+                                        <div dir=3D"ltr"><br clear=3D"none"=
+>
+                                        </div>
+                                        <div dir=3D"ltr">David<br clear=3D"=
+none">
+                                        </div>
+                                        <div><span></span></div>
+                                        <br clear=3D"none">
+                                        <div style=3D"font-family:Helvetica=
+Neue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-size=
+:13px;">
+                                          <div style=3D"font-family:Helveti=
+caNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-si=
+ze:16px;">
+                                            <div dir=3D"ltr">
+                                              <hr size=3D"1"> <font face=3D=
+"Arial" size=3D"2"><span>
+                                                  <b><span style=3D"font-we=
+ight:bold;">From:</span></b>
+                                                  Kirk Tolliver &lt;<a rel=
+=3D"nofollow" shape=3D"rect" ymailto=3D"mailto:kirktolliver28@gmail.com" ta=
+rget=3D"_blank" href=3D"mailto:kirktolliver28@gmail.com">kirktolliver28@gma=
+il.com</a>&gt;<br clear=3D"none">
+                                                  <b><span style=3D"font-we=
+ight:bold;">To:</span></b>
+                                                  David Bright &lt;<a rel=
+=3D"nofollow" shape=3D"rect" ymailto=3D"mailto:david_e_bright@yahoo.com" ta=
+rget=3D"_blank" href=3D"mailto:david_e_bright@yahoo.com">david_e_bright@yah=
+oo.com</a>&gt;
+                                                  <br clear=3D"none">
+                                                </span><b><span style=3D"fo=
+nt-weight:bold;">Sent:</span></b>
+                                                Saturday, May 23, 2015
+                                                11:35 PM<span><br clear=3D"=
+none">
+                                                  <b><span style=3D"font-we=
+ight:bold;">Subject:</span></b>
+                                                  Re: Kirk's Java
+                                                  Calendar<br clear=3D"none=
+">
+                                                </span></font> </div>
+                                            <div><br clear=3D"none">
+                                              <div>
+                                                <div>
+                                                  <div dir=3D"ltr">
+                                                    <div>
+                                                      <div><br clear=3D"non=
+e">
+                                                        <br clear=3D"none">
+                                                      </div>
+                                                      <div>Hey David,</div>
+                                                      <br clear=3D"none">
+                                                      <br clear=3D"none">
+                                                    </div>
+                                                    <div>
+                                                      <div>I have made
+                                                        the following
+                                                        changes&nbsp; in th=
+e
+                                                        attached program
+                                                        and commented
+                                                        the code a
+                                                        little more.<br cle=
+ar=3D"none">
+                                                        <ul><li>&nbsp;I dec=
+ided
+                                                          to&nbsp; use a
+                                                          static method
+                                                          in starting
+                                                          the day of the
+                                                          week, that
+                                                          will be&nbsp;
+                                                          passed through
+                                                          the Month
+                                                          constructor. <br =
+clear=3D"none">
+                                                          </li><li>I will
+                                                          iterate an
+                                                          ArrayList of
+                                                          Month objects.</l=
+i><li>&nbsp;I will
+                                                          let you know
+                                                          if and when I
+                                                          get stuck.</li></=
+ul>
+                                                        <div>Regards.</div>
+                                                        <div><br clear=3D"n=
+one">
+                                                        </div>
+                                                        <div>=E2=80=8B</div=
+>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <br clear=3D"none">
+                                              <br clear=3D"none">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </blockquote>
+                                </div>
+                                <br clear=3D"none">
+                              </div>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                      <br clear=3D"none">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br clear=3D"none">
+              <br clear=3D"none">
+            </div>
+          </div>
+        </div>
+      </div>
+    </blockquote>
+    <br clear=3D"none">
+  </div></div></div><br><br></div> </div> </div>  </div></body></html>
+------=_Part_5812012_2089908800.1433519759013--
