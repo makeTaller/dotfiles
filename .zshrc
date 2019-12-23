@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 alias w3m="w3m duckduckgo.com"
+alias vi=nvim
+alias vim=nvim
 screenfetch
 set -o vi 
 export LC_ALL=en_US.UTF-8
