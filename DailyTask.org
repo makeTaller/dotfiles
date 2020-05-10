@@ -1,0 +1,31 @@
+#+TITLE: Daily Task
+#+DESCRIPTION: Plan ahead and commit to doing my life right daily.
+
+* Daily Task
+** Lesson planning
+**** Make a honest effort to learn all I can about routing with React-Router
+** TODO Personal Hygen
+**** Cut my hair
+    SCHEDULED: <2020-05-08 Fri>
+
+** DONE [#A] Quit Smoking
+  CLOSED: [2020-05-07 Thu 18:29]
+
+   - I believe in you kirk, I always believed in you!!!
+   - Day 1 = Lungs are beginning to heal. I am using a patch.
+   SCHEDULED: <2020-05-08 Fri 10:00>
+
+** Chores
+*** TODO Install lock on basement door
+    SCHEDULED: <2020-05-08 Fri>
+
+*** DONE Turn in timesheet to have-a-heart
+    CLOSED: [2020-05-07 Thu 13:39] SCHEDULED: <2020-05-07 Thu 12:30>
+
+*** TODO Cut the grass
+    SCHEDULED: <2020-05-08 Fri>
+
+** TODO [#C] Appointment s :appts:
+   SCHEDULED: <2020-05-11 Mon 22:00>
+
+** Make doctors appointment and signed health care forms
