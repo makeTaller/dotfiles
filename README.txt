@@ -8,3 +8,5 @@ Step to make the dot files work.
 3. Change .i3status to include the new wireless interface.
 
 4. Make sure you put the "config" file in the .config directory for i3.
+
+5. Find out why arch linux is not loading my react modules
