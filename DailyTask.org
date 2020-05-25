@@ -39,4 +39,5 @@
 ** Send the lawn mower to the doctor
 ** Show carin the house
 ** Working on my book finally
+** Start a private git repo for novel
 
