@@ -43,4 +43,5 @@
 ** Combine all the org documents into one or two files
 ** Working on understanding how components work together
 ** Learn all you can about forms to complete your build week project
+** Learn Redux to manage state and finish project
 
