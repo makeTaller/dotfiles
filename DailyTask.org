@@ -45,4 +45,5 @@
 ** Learn all you can about forms to complete your build week project
 ** Learn Redux to manage state and finish project
 ** Cut the grass before it gets out of hand kirk
+** Begin with learning in the training kit an finish the project
 
