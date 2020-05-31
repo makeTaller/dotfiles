@@ -46,4 +46,5 @@
 ** Learn Redux to manage state and finish project
 ** Cut the grass before it gets out of hand kirk
 ** Begin with learning in the training kit an finish the project
+** Begining to learn redux and will add validation to components.
 
