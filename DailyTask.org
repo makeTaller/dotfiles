@@ -47,4 +47,6 @@
 ** Cut the grass before it gets out of hand kirk
 ** Begin with learning in the training kit an finish the project
 ** Begining to learn redux and will add validation to components.
+** Redux store is responsible for accessing state with get state method
+** Redux is responsible for the subscribing state as well.
 
