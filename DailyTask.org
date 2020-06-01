@@ -30,11 +30,8 @@
    SCHEDULED: <2020-05-11 Mon 22:00>
 
 ** Make doctors appointment and signed health care forms
-
 ** Start working on my Book and other things
-
 ** remember to not be afraid of anyone or anything period
-
 ** Work on becoming the strongest version of yourself kirk
 ** Send the lawn mower to the doctor
 ** Show carin the house
@@ -49,4 +46,5 @@
 ** Begining to learn redux and will add validation to components.
 ** Redux store is responsible for accessing state with get state method
 ** Redux is responsible for the subscribing state as well.
+** Making progress with Redux 
 
