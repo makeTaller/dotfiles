@@ -47,4 +47,5 @@
 ** Redux store is responsible for accessing state with get state method
 ** Redux is responsible for the subscribing state as well.
 ** Making progress with Redux 
+** Getting prepared and focused for class
 
