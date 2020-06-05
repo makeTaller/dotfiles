@@ -48,5 +48,6 @@
 ** Redux is responsible for the subscribing state as well.
 ** Making progress with Redux 
 ** Getting prepared and focused for class
-** Begin practice on playing the piano 
+** Begin practice on playing the piano  
+** Restore moms Amazon Rights 
 
