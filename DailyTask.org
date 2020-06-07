@@ -53,4 +53,5 @@
 ** Brush teeth with Charcoal 
 ** Was able to make progress 
 ** Make a bash shell program to log the uptime of each week 
+** Working on a consistent schedule for learning to play the guitar and piano  
 
