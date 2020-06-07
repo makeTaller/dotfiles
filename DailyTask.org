@@ -53,7 +53,9 @@
 ** Brush teeth with Charcoal 
 ** Was able to make progress 
 ** Make a bash shell program to log the uptime of each week 
+** Life is what it is, because it is what it wasn't! And it wasn't what it is.:w
+
 ** Working on a consistent schedule for learning to play the guitar and piano  
-*** 6:00 - 14:00 Study
-*** 14:00 - 18:00 Music Practice
+*** TODO 6:00 - 14:00 Study
+*** TODO 14:00 - 18:00 Music Practice
 
