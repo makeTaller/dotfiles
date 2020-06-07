@@ -52,4 +52,5 @@
 ** Restore moms Amazon Rights 
 ** Brush teeth with Charcoal 
 ** Was able to make progress 
+** Make a bash shell program to log the uptime of each week 
 
