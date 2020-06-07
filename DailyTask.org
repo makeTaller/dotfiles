@@ -54,4 +54,6 @@
 ** Was able to make progress 
 ** Make a bash shell program to log the uptime of each week 
 ** Working on a consistent schedule for learning to play the guitar and piano  
+*** 6:00 - 14:00 Study
+*** 14:00 - 18:00 Music Practice
 
