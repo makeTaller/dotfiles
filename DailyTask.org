@@ -47,14 +47,15 @@
 ** Redux store is responsible for accessing state with get state method
 ** Redux is responsible for the subscribing state as well.
 ** Making progress with Redux 
-** Getting prepared and focused for class
-** Begin practice on playing the piano  
-** Restore moms Amazon Rights 
+** TODO Begin practice on playing the piano  
+   SCHEDULED: <2020-06-07 Sun>
+** DONE Restore moms Amazon Rights 
+   CLOSED: [2020-06-05 Fri 14:37]
 ** Brush teeth with Charcoal 
-** Was able to make progress 
 ** Make a bash shell program to log the uptime of each week 
 ** Life is what it is, because it is what it wasn't! And it wasn't what it is.
-** Dropoff phone to ups store
+** TODO Dropoff phone to ups store
+   SCHEDULED: <2020-06-01 Mon>
 
 ** Working on a consistent schedule for learning to play the guitar and piano  
 *** TODO 6:00 - 14:00 Study
@@ -63,4 +64,5 @@
 ** Questions to Ask Lambda Instructor
 *** I see that some code is able to be run inside of a rendering before the return statement. 
     how does this effect the code when I try to do the same thing in functional coding?
-**** https://scriptverse.academy/tutorials/reactjs-select.html
+**** https://scriptverse.academy/tutorials/reactjs-select.htmlk
+*** have we formally went over dropdown menus?
