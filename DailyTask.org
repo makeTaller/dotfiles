@@ -66,3 +66,7 @@
     how does this effect the code when I try to do the same thing in functional coding?
 **** https://scriptverse.academy/tutorials/reactjs-select.htmlk
 *** have we formally went over dropdown menus?
+
+** Troubleshooting in React
+*** When an unused parameter is in a function it will complian about a variable being undefined
+
