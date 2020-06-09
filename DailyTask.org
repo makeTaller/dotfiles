@@ -70,3 +70,6 @@
 ** Troubleshooting in React
 *** When an unused parameter is in a function it will complian about a variable being undefined
 
+    
+** Added novel Ideas
+
