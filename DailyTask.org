@@ -72,4 +72,6 @@
 
     
 ** Added novel Ideas
+** What The fuc happened to my dotfiles directory?
+*** find out was this a hack or a lack?
 
