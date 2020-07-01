@@ -78,4 +78,7 @@ li#+TITLE: Daily Task
 *** add the lenovo keyboard to windows
 *** What goes around will come back around
 *** Worktin on the root problem... Me 
+** TODO Cancel amazon Music Asap
+** start to organize System 
+   SCHEDULED: <2020-07-03 Fri>
 
