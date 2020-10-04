@@ -1,4 +1,4 @@
-li#+TITLE: Daily Task
+#+TITLE: Daily Task
 #+DESCRIPTION: Plan ahead and commit to doing my life right daily.
 
 * Daily Task
@@ -7,6 +7,8 @@ li#+TITLE: Daily Task
 ** TODO Personal Hygen
 **** Cut my hair
     SCHEDULED: <2020-05-08 Fri>
+    I have yet to do what I said i would
+    however I am getting back focused
 
 ** DONE [#A] Quit Smoking
   CLOSED: [2020-05-07 Thu 18:29]
@@ -29,6 +31,7 @@ li#+TITLE: Daily Task
 ** TODO [#C] Appointment s :appts:
    SCHEDULED: <2020-05-11 Mon 22:00>
 
+
 ** Make doctors appointment and signed health care forms
 ** Start working on my Book and other things
 ** remember to not be afraid of anyone or anything period
@@ -45,6 +48,7 @@ li#+TITLE: Daily Task
 ** Begin with learning in the training kit an finish the project
 ** Begining to learn redux and will add validation to components.
 ** Redux store is responsible for accessing state with get state method
+** Done deal
 ** Redux is responsible for the subscribing state as well.
 ** Making progress with Redux 
 ** TODO Begin practice on playing the piano  
