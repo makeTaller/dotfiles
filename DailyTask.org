@@ -4,6 +4,8 @@
 * Daily Task
 ** Lesson planning
 **** Make a honest effort to learn all I can about routing with React-Router
+     THis Time everthing will be different because I will believe in myself
+
 ** TODO Personal Hygen
 **** Cut my hair
     SCHEDULED: <2020-05-08 Fri>
