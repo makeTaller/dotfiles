@@ -1,4 +1,5 @@
 filetype off                  " required
+"execute pathogen#infect()
 
 let python_highlight_all=1
 let g:javascript_plugin_flow = 1
@@ -12,8 +13,14 @@ let g:vim_jsx_pretty_highlight_close_tag = 1
 
 let g:indentguides_spacechar = '┆'
 let g:indentguides_tabchar = '|'
-let g:tmuxline_theme = 'airline'
 
+"let g:airline#extensions#tmuxline#enabled = 0
+
+let g:tmuxline_theme = 'airline'
+"----Mapping ---"
+
+"If you would like to have indent guides enabled by default, 
+" let g:indent_guides_enable_on_vim_startup = 1
 
 filetype plugin indent on    " required
 " syntax on 
